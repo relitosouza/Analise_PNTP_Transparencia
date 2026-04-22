@@ -4,9 +4,9 @@
     "cartilha": "PNTP 2026 — Atricon",
     "gerado_em": "2026-04-22T17:41:44.693461",
     "total_criterios": 50,
-    "encontrados": 29,
-    "ausentes": 21,
-    "score_percentual": 58.0
+    "encontrados": 30,
+    "ausentes": 20,
+    "score_percentual": 60.0
   },
   "resultados": [
     {
@@ -135,11 +135,11 @@
       "dimensao": "Receitas",
       "item": "Série histórica de receitas (≥3 anos)",
       "peso": "essencial",
-      "encontrado": false,
-      "url_encontrada": "",
-      "evidencia": "",
-      "termo_localizado": "",
-      "observacao": "Timeout na busca"
+      "encontrado": true,
+      "url_encontrada": "https://transparencia-osasco.smarapd.com.br/#/dinamico/receitas/receitaanalitica",
+      "evidencia": "Série histórica disponível de 2020 a 2026. O relatório analítico detalha a arrecadação por data.",
+      "termo_localizado": "exercício",
+      "observacao": "Atende parcialmente: possui os anos, mas a previsão e arrecadação estão em relatórios distintos."
     },
     {
       "id": "2.4",
