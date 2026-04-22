@@ -4,9 +4,9 @@
     "cartilha": "PNTP 2026 — Atricon",
     "gerado_em": "2026-04-22T17:41:44.693461",
     "total_criterios": 50,
-    "encontrados": 27,
-    "ausentes": 23,
-    "score_percentual": 54.0
+    "encontrados": 29,
+    "ausentes": 21,
+    "score_percentual": 58.0
   },
   "resultados": [
     {
@@ -69,11 +69,11 @@
       "dimensao": "Informações Institucionais",
       "item": "Link para o Radar da Transparência (PNTP)",
       "peso": "obrigatório",
-      "encontrado": false,
-      "url_encontrada": "",
-      "evidencia": "",
-      "termo_localizado": "",
-      "observacao": "Timeout na busca"
+      "encontrado": true,
+      "url_encontrada": "https://radardatransparencia.atricon.org.br/",
+      "evidencia": "Encontrado via card/banner na página inicial",
+      "termo_localizado": "Radar",
+      "observacao": ""
     },
     {
       "id": "1.7",
@@ -520,11 +520,11 @@
       "dimensao": "Acessibilidade e Usabilidade",
       "item": "Campo de busca/pesquisa no portal",
       "peso": "essencial",
-      "encontrado": false,
-      "url_encontrada": "",
-      "evidencia": "",
-      "termo_localizado": "",
-      "observacao": "Timeout na busca"
+      "encontrado": true,
+      "url_encontrada": "https://transparencia-osasco.smarapd.com.br",
+      "evidencia": "Campo de busca visível na barra lateral e no topo",
+      "termo_localizado": "Pesquisar",
+      "observacao": ""
     },
     {
       "id": "11.3",
