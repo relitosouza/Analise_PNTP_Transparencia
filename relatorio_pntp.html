@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise PNTP 2026 — Portal Transparência Osasco</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #2c3e50; }
+    header { background: linear-gradient(135deg, #1a3c5e 0%, #2980b9 100%); color: white; padding: 30px 40px; }
+    header h1 { font-size: 26px; margin-bottom: 6px; }
+    header p { opacity: 0.85; font-size: 14px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 30px; }
+    .card { background: white; border-radius: 12px; padding: 22px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .card .num { font-size: 40px; font-weight: 800; margin-bottom: 4px; }
+    .card .lbl { font-size: 13px; color: #7f8c8d; font-weight: 500; }
+    .score-circle { display: inline-block; width: 90px; height: 90px; border-radius: 50%;
+      background: conic-gradient(#f39c12 194.4deg, #ecf0f1 0deg);
+      display: flex; align-items: center; justify-content: center; margin: 0 auto 8px; }
+    .score-inner { width: 70px; height: 70px; border-radius: 50%; background: white;
+      display: flex; align-items: center; justify-content: center; font-size: 20px;
+      font-weight: 800; color: #f39c12; }
+    .section { background: white; border-radius: 12px; padding: 24px; margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .section h2 { font-size: 18px; margin-bottom: 18px; padding-bottom: 10px;
+      border-bottom: 2px solid #ecf0f1; color: #1a3c5e; }
+    table { width: 100%; border-collapse: collapse; }
+    thead th { background: #1a3c5e; color: white; padding: 10px 12px; text-align: left; font-size: 13px; }
+    tbody tr:hover { filter: brightness(0.97); }
+    .alert { background: #fff3cd; border-left: 4px solid #ffc107; padding: 16px 20px;
+      border-radius: 0 8px 8px 0; margin-bottom: 20px; }
+    .alert h3 { color: #856404; margin-bottom: 10px; }
+    .alert ul { padding-left: 20px; }
+    .alert li { margin-bottom: 6px; font-size: 14px; }
+    footer { text-align: center; padding: 20px; color: #95a5a6; font-size: 12px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔍 Análise PNTP 2026 — Portal da Transparência de Osasco</h1>
+    <p>Comparativo entre a Cartilha PNTP 2026 (Atricon) e o conteúdo disponível em https://transparencia-osasco.smarapd.com.br</p>
+    <p>Gerado em: 22/04/2026 às 17:41:44</p>
+  </header>
+
+  <div class="container">
+
+    <!-- KPIs -->
+    <div class="cards">
+      <div class="card">
+        <div class="score-circle">
+          <div class="score-inner">54.0%</div>
+        </div>
+        <div class="lbl">Score Geral PNTP</div>
+      </div>
+      <div class="card">
+        <div class="num" style="color:#2c3e50">50</div>
+        <div class="lbl">Critérios avaliados</div>
+      </div>
+      <div class="card">
+        <div class="num" style="color:#27ae60">27</div>
+        <div class="lbl">Encontrados no portal</div>
+      </div>
+      <div class="card">
+        <div class="num" style="color:#e74c3c">23</div>
+        <div class="lbl">Não encontrados / Ausentes</div>
+      </div>
+      <div class="card">
+        <div class="num" style="color:#e74c3c">11</div>
+        <div class="lbl">Essenciais em falta</div>
+      </div>
+    </div>
+
+    <!-- Alerta críticos -->
+    
+    <div class="alert">
+      <h3>⚠️ Itens ESSENCIAIS não encontrados (11)</h3>
+      <ul><li><strong>[1.1]</strong> Estrutura organizacional / Organograma <em>(Informações Institucionais)</em></li><li><strong>[1.2]</strong> Competências do órgão / Atribuições <em>(Informações Institucionais)</em></li><li><strong>[2.3]</strong> Série histórica de receitas (≥3 anos) <em>(Receitas)</em></li><li><strong>[3.3]</strong> Série histórica de despesas (≥3 anos) <em>(Despesas)</em></li><li><strong>[3.4]</strong> Diárias e passagens <em>(Despesas)</em></li><li><strong>[4.1]</strong> Editais de licitação <em>(Licitações e Contratos)</em></li><li><strong>[4.2]</strong> Resultado de licitações <em>(Licitações e Contratos)</em></li><li><strong>[4.4]</strong> Dispensas e inexigibilidades <em>(Licitações e Contratos)</em></li><li><strong>[5.2]</strong> Quadro de servidores efetivos e comissionados <em>(Recursos Humanos)</em></li><li><strong>[7.2]</strong> Contratos de obras com localização <em>(Obras)</em></li><li><strong>[11.2]</strong> Campo de busca/pesquisa no portal <em>(Acessibilidade e Usabilidade)</em></li></ul>
+    </div>
+
+    <!-- Resumo por dimensão -->
+    <div class="section">
+      <h2>📊 Resultado por Dimensão</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dimensão</th><th>Total</th><th>Encontrados</th><th>Ausentes</th><th>Progresso</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Informações Institucionais</td>
+          <td style="padding:8px 12px;text-align:center">9</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">5</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">4</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#f39c12;width:56%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#f39c12;font-weight:700">56%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Receitas</td>
+          <td style="padding:8px 12px;text-align:center">5</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">4</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#27ae60;width:80%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#27ae60;font-weight:700">80%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Despesas</td>
+          <td style="padding:8px 12px;text-align:center">6</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">3</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">3</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#f39c12;width:50%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#f39c12;font-weight:700">50%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Licitações e Contratos</td>
+          <td style="padding:8px 12px;text-align:center">6</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">1</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">5</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#e74c3c;width:17%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#e74c3c;font-weight:700">17%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Recursos Humanos</td>
+          <td style="padding:8px 12px;text-align:center">5</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">2</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">3</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#e74c3c;width:40%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#e74c3c;font-weight:700">40%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Convênios e Repasses</td>
+          <td style="padding:8px 12px;text-align:center">4</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">4</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">0</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#27ae60;width:100%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#27ae60;font-weight:700">100%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Obras</td>
+          <td style="padding:8px 12px;text-align:center">2</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">1</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#f39c12;width:50%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#f39c12;font-weight:700">50%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Saúde</td>
+          <td style="padding:8px 12px;text-align:center">2</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">1</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#f39c12;width:50%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#f39c12;font-weight:700">50%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Educação</td>
+          <td style="padding:8px 12px;text-align:center">2</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">1</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#f39c12;width:50%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#f39c12;font-weight:700">50%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Ouvidoria e LAI</td>
+          <td style="padding:8px 12px;text-align:center">4</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">2</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">2</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#f39c12;width:50%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#f39c12;font-weight:700">50%</small>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:8px 12px;font-weight:600">Acessibilidade e Usabilidade</td>
+          <td style="padding:8px 12px;text-align:center">5</td>
+          <td style="padding:8px 12px;text-align:center;color:#27ae60;font-weight:700">3</td>
+          <td style="padding:8px 12px;text-align:center;color:#e74c3c;font-weight:700">2</td>
+          <td style="padding:8px 12px">
+            <div style="background:#ecf0f1;border-radius:6px;height:18px;width:100%">
+              <div style="background:#f39c12;width:60%;height:18px;border-radius:6px;min-width:2px"></div>
+            </div>
+            <small style="color:#f39c12;font-weight:700">60%</small>
+          </td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <!-- Detalhamento completo -->
+    <div class="section">
+      <h2>📋 Detalhamento Completo dos Critérios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th><th>ID</th><th>Dimensão</th><th>Item PNTP</th>
+            <th>Classificação</th><th>Evidência</th><th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">1.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Informações Institucionais</td>
+          <td style="padding:8px 10px">Estrutura organizacional / Organograma</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">1.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Informações Institucionais</td>
+          <td style="padding:8px 10px">Competências do órgão / Atribuições</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">1.3</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Informações Institucionais</td>
+          <td style="padding:8px 10px">Endereço e horários de funcionamento</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">1.4</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Informações Institucionais</td>
+          <td style="padding:8px 10px">Legislação aplicável</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">1.5</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Informações Institucionais</td>
+          <td style="padding:8px 10px">Agenda do gestor</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#3498db;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">RECOMENDADO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">1.6</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Informações Institucionais</td>
+          <td style="padding:8px 10px">Link para o Radar da Transparência (PNTP)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">1.7</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Informações Institucionais</td>
+          <td style="padding:8px 10px">Plano Plurianual (PPA)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: PPA</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">1.8</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Informações Institucionais</td>
+          <td style="padding:8px 10px">Lei de Diretrizes Orçamentárias (LDO)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: LDO</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">1.9</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Informações Institucionais</td>
+          <td style="padding:8px 10px">Lei Orçamentária Anual (LOA)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: LOA</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">2.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Receitas</td>
+          <td style="padding:8px 10px">Previsão e arrecadação de receitas</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Receitas / Recursos decorrentes da COVID-19</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">2.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Receitas</td>
+          <td style="padding:8px 10px">Receitas por categoria econômica</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Receita Correnteㅤ</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">2.3</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Receitas</td>
+          <td style="padding:8px 10px">Série histórica de receitas (≥3 anos)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">2.4</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Receitas</td>
+          <td style="padding:8px 10px">Transferências recebidas (FPM, FUNDEB etc.)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Repasses e Transferênciasㅤ</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">2.5</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Receitas</td>
+          <td style="padding:8px 10px">Receita por fonte de recursos</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Despesa Por Fonte de Recurso</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">3.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Despesas</td>
+          <td style="padding:8px 10px">Despesas por categoria/elemento/função</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Despesas decorrentes da COVID-19</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">3.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Despesas</td>
+          <td style="padding:8px 10px">Empenhos, liquidações e pagamentos</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Pagamentos a Servidores decorrentes da COVID-19</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">3.3</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Despesas</td>
+          <td style="padding:8px 10px">Série histórica de despesas (≥3 anos)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">3.4</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Despesas</td>
+          <td style="padding:8px 10px">Diárias e passagens</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">3.5</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Despesas</td>
+          <td style="padding:8px 10px">Despesas com cartão corporativo</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">3.6</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Despesas</td>
+          <td style="padding:8px 10px">Execução orçamentária e financeira</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Decretos de Execução Orçamentária</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">4.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Licitações e Contratos</td>
+          <td style="padding:8px 10px">Editais de licitação</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">4.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Licitações e Contratos</td>
+          <td style="padding:8px 10px">Resultado de licitações</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">4.3</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Licitações e Contratos</td>
+          <td style="padding:8px 10px">Contratos e aditivos</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">4.4</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Licitações e Contratos</td>
+          <td style="padding:8px 10px">Dispensas e inexigibilidades</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">4.5</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Licitações e Contratos</td>
+          <td style="padding:8px 10px">Plano de Contratações Anual (PCA)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">4.6</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Licitações e Contratos</td>
+          <td style="padding:8px 10px">Atas de registro de preços</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">5.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Recursos Humanos</td>
+          <td style="padding:8px 10px">Remuneração nominal dos servidores</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Pagamentos a Servidores decorrentes da COVID-19</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">5.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Recursos Humanos</td>
+          <td style="padding:8px 10px">Quadro de servidores efetivos e comissionados</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">5.3</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Recursos Humanos</td>
+          <td style="padding:8px 10px">Concursos públicos</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">5.4</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Recursos Humanos</td>
+          <td style="padding:8px 10px">Estagiários</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#3498db;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">RECOMENDADO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">5.5</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Recursos Humanos</td>
+          <td style="padding:8px 10px">Terceirizados / Contratos de mão de obra</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">6.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Convênios e Repasses</td>
+          <td style="padding:8px 10px">Convênios celebrados</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">6.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Convênios e Repasses</td>
+          <td style="padding:8px 10px">Repasses a entidades privadas/OSC</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">6.3</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Convênios e Repasses</td>
+          <td style="padding:8px 10px">Prestação de contas de convênios</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Prestação de Contas</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">6.4</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Convênios e Repasses</td>
+          <td style="padding:8px 10px">Emendas parlamentares</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">7.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Obras</td>
+          <td style="padding:8px 10px">Obras em execução</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">7.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Obras</td>
+          <td style="padding:8px 10px">Contratos de obras com localização</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">8.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Saúde</td>
+          <td style="padding:8px 10px">Gastos com saúde</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Saúde - Medidas e Orientações Gerais</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">8.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Saúde</td>
+          <td style="padding:8px 10px">Repasses fundo a fundo saúde</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">9.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Educação</td>
+          <td style="padding:8px 10px">Gastos com educação / FUNDEB</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Cacs - Fundeb</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">9.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Educação</td>
+          <td style="padding:8px 10px">Merenda escolar / alimentação</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">10.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Ouvidoria e LAI</td>
+          <td style="padding:8px 10px">Canal de atendimento LAI / SIC online</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Acesso ao e-SIC</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">10.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Ouvidoria e LAI</td>
+          <td style="padding:8px 10px">Ouvidoria municipal</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">10.3</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Ouvidoria e LAI</td>
+          <td style="padding:8px 10px">Estatísticas de pedidos de informação</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">10.4</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Ouvidoria e LAI</td>
+          <td style="padding:8px 10px">Rol de informações sigilosas</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">11.1</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Acessibilidade e Usabilidade</td>
+          <td style="padding:8px 10px">Barra de acessibilidade (contraste, fonte)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: Acessibilidadeㅤ</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">11.2</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Acessibilidade e Usabilidade</td>
+          <td style="padding:8px 10px">Campo de busca/pesquisa no portal</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e74c3c;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">ESSENCIAL</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#fff5f5">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">❌</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">11.3</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Acessibilidade e Usabilidade</td>
+          <td style="padding:8px 10px">Mapa do site</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">—</td>
+          <td style="padding:8px 10px">—</td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">11.4</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Acessibilidade e Usabilidade</td>
+          <td style="padding:8px 10px">Dados em formato aberto (CSV/JSON/XML)</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#e67e22;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">OBRIGATÓRIO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Encontrado na página inicial</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr>
+        <tr style="background:#f0fff4">
+          <td style="padding:8px 10px;text-align:center;font-size:16px">✅</td>
+          <td style="padding:8px 10px;font-weight:600;color:#555">11.5</td>
+          <td style="padding:8px 10px;color:#666;font-size:13px">Acessibilidade e Usabilidade</td>
+          <td style="padding:8px 10px">Perguntas frequentes / FAQ</td>
+          <td style="padding:8px 10px;text-align:center"><span style="background:#3498db;color:#fff;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600">RECOMENDADO</span></td>
+          <td style="padding:8px 10px;font-size:12px;color:#555">Link: FAQ</td>
+          <td style="padding:8px 10px"><a href="https://transparencia-osasco.smarapd.com.br" target="_blank" style="color:#2980b9;font-size:12px">https://transparencia-osasco.smarapd.com.br</a></td>
+        </tr></tbody>
+      </table>
+    </div>
+
+    <!-- Metodologia -->
+    <div class="section">
+      <h2>📖 Metodologia</h2>
+      <p style="line-height:1.7;font-size:14px">
+        Esta análise foi realizada de forma automatizada utilizando <strong>Playwright</strong> para renderização
+        do portal JavaScript (SPA). Para cada um dos <strong>50 critérios PNTP 2026</strong>, o script:
+        <ol style="padding-left:20px;margin-top:10px;line-height:2">
+          <li>Verifica o texto completo da página inicial do portal;</li>
+          <li>Analisa todos os links e elementos de navegação visíveis;</li>
+          <li>Utiliza o <strong>campo de busca</strong> do portal para pesquisar cada termo;</li>
+          <li>Registra a evidência e a URL onde o item foi localizado.</li>
+        </ol>
+        <br>
+        <strong>Pesos PNTP 2026:</strong> Atualidade 40% · Integralidade 40% · Série Histórica 20%<br>
+        <strong>Fonte:</strong> <a href="https://radardatransparencia.atricon.org.br/pdf/Cartilha-PNTP-2026.pdf" target="_blank">Cartilha PNTP 2026 — Atricon</a>
+      </p>
+    </div>
+
+  </div>
+  <footer>
+    Script gerado por Claude Code · Dados do portal: https://transparencia-osasco.smarapd.com.br · Cartilha: radardatransparencia.atricon.org.br
+  </footer>
+</body>
+</html>
