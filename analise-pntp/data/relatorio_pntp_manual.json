@@ -1,0 +1,16 @@
+{
+  "manual_updates": {
+    "1.1": {
+      "status": "ok",
+      "url": "",
+      "obs": "",
+      "updated_at": "manual"
+    },
+    "1.2": {
+      "status": "ok",
+      "url": "https://transparencia.osasco.sp.gov.br/",
+      "obs": "Não localizado no portal.",
+      "updated_at": "2026-04-23T10:38:26.104Z"
+    }
+  }
+}

@@ -172,6 +172,19 @@ table.summary tbody tr:nth-child(even){background:#fafbfc}
 /* ── Sem resultados ── */
 .no-results{text-align:center;padding:40px;color:#aaa;font-size:13px}
 
+/* ── Botões de Ação Manual ── */
+.manual-actions{display:flex;gap:4px;margin-top:6px}
+.btn-mini{font-size:9px;font-weight:700;padding:2px 6px;border-radius:4px;cursor:pointer;
+  border:1px solid var(--border);background:#fff;transition:all .1s}
+.btn-mini:hover{background:#f0f0f0}
+.btn-mini.ok:hover{background:#d5f5e3;border-color:#27ae60;color:#1e8449}
+.btn-mini.aus:hover{background:#fde8e4;border-color:#e74c3c;color:#c0392b}
+.status-syncing{opacity:.5;pointer-events:none}
+
+.manual-form{display:flex;flex-direction:column;gap:4px;margin-top:8px;background:#f8f9fa;padding:8px;border-radius:6px;border:1px solid #eee}
+.manual-form input{font-size:10px;padding:4px;border:1px solid #ddd;border-radius:4px;width:100%}
+.manual-form .btn-row{display:flex;gap:4px;margin-top:4px}
+
 /* ── Footer ── */
 footer{text-align:center;padding:16px;color:#bbb;font-size:11px;background:#fff;
   border-top:1px solid var(--border)}
@@ -923,6 +936,14 @@ function renderRows(){
           <div class="c-item">${r.item}</div>
           ${r.obs?`<div class="c-obs">${r.obs}</div>`:''}
           ${urlHtml(r)}
+          <div class="manual-form">
+            <input type="text" id="url-${r.id}" placeholder="URL da evidência..." value="${r.url||''}">
+            <input type="text" id="obs-${r.id}" placeholder="Observação personalizada..." value="${r.obs||''}">
+            <div class="btn-row">
+              <button class="btn-mini ok" onclick="updateManualStatus('${r.id}','ok')">✔ Disponível</button>
+              <button class="btn-mini aus" onclick="updateManualStatus('${r.id}','ausente')">✖ Ausente</button>
+            </div>
+          </div>
         </div>
         <div style="padding-top:2px"><span class="badge ${badgeClass(r.peso)}">${badgeLabel(r.peso)}</span></div>`;
       wrap.appendChild(div);
@@ -981,6 +1002,31 @@ function scrollToDim(id){
     el.classList.remove('collapsed');
     const body=el.querySelector('.dim-body');
     if(body) body.style.maxHeight='';
+  }
+}
+
+async function updateManualStatus(id, status) {
+  const row = ROWS.find(r => r.id === id);
+  if (!row) return;
+  
+  try {
+    const res = await fetch('http://localhost:5000/api/update', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id, status })
+    });
+    
+    if (res.ok) {
+      row.status = status;
+      alert(`Item ${id} atualizado para ${status}. Recarregue a página para ver no transform_report.`);
+      renderRows();
+      buildDims();
+    } else {
+      alert('Erro ao atualizar status. O servidor local (server.py) está rodando?');
+    }
+  } catch (e) {
+    console.error(e);
+    alert('Erro de conexão com o servidor local.');
   }
 }
 
