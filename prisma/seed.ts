@@ -1,8 +1,16 @@
 import { PrismaClient } from '@prisma/client'
+import { PrismaPg } from '@prisma/adapter-pg'
+import pg from 'pg'
 import fs from 'fs'
 import path from 'path'
+import * as dotenv from 'dotenv'
 
-const prisma = new PrismaClient()
+dotenv.config()
+
+const connectionString = process.env.POSTGRES_PRISMA_URL || process.env.DATABASE_URL
+const pool = new pg.Pool({ connectionString })
+const adapter = new PrismaPg(pool)
+const prisma = new PrismaClient({ adapter })
 
 async function main() {
   const manualDataPath = path.join(process.cwd(), 'data', 'relatorio_pntp_manual.json')
