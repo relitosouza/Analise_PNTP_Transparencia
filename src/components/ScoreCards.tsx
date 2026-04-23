@@ -18,7 +18,7 @@ export default function ScoreCards({ data }: Props) {
   const cards = [
     {
       value: `${score}%`,
-      label: 'Score PNTP 2026',
+      label: 'Score PNTP (Programa Nacional)',
       sublabel: rating.label,
       sublabelClass: rating.colorClass,
       valueClass: scoreColorClass(score),

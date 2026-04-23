@@ -131,7 +131,7 @@ export default function HomePage() {
             <p>
               Esta análise foi realizada de forma semi-automatizada. O script original
               utilizou <strong>Playwright</strong> para renderização do portal JavaScript (SPA)
-              e verificou a presença de termos-chave para cada critério PNTP 2026.
+              e verificou a presença de termos-chave para cada critério do Programa Nacional de Transparência Pública 2026.
             </p>
             <p>
               A versão atual consolida os dados previamente coletados e permite atualizações
@@ -163,7 +163,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-400">
         <p>
-          Análise PNTP 2026 — Portal da Transparência de Osasco · Gerado com Next.js
+          Análise — Programa Nacional de Transparência Pública 2026 — Portal da Transparência de Osasco · Gerado com Next.js
         </p>
       </footer>
     </div>
