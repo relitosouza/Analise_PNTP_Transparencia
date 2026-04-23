@@ -15,33 +15,51 @@ export default function HomePage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Build initial report data
-    const report = buildRelatorio();
+    async function loadAllData() {
+      try {
+        // 1. Build base report with criteria
+        const report = buildRelatorio();
 
-    // Try to load manual overrides from API
-    fetch('/api/updates')
-      .then((res) => res.json())
-      .then((json) => {
-        const manualUpdates = json.manual_updates || {};
+        // 2. Fetch results from Python Scraper (if available in public/data)
+        const scraperRes = await fetch('/data/relatorio_pntp.json');
+        let scraperData = [];
+        if (scraperRes.ok) {
+          scraperData = await scraperRes.json();
+        }
+
+        // 3. Fetch manual updates from API
+        const updatesRes = await fetch('/api/updates');
+        const updatesJson = await updatesRes.json();
+        const manualUpdates = updatesJson.manual_updates || {};
+
+        // 4. Merge Logic (Priority: Manual > Scraper > Base)
         const updated = report.map((item) => {
-          const override = manualUpdates[item.id];
-          if (override) {
+          // Check for manual override first
+          const manual = manualUpdates[item.id];
+          if (manual) {
             return {
               ...item,
-              status: override.status === 'ok' ? ('ok' as const) : ('ausente' as const),
-              observacao: override.obs || 'Status atualizado manualmente pelo auditor.',
-              url: override.url || item.url,
+              status: manual.status === 'ok' ? ('ok' as const) : ('ausente' as const),
+              observacao: manual.obs || item.observacao,
+              url: manual.url || item.url,
             };
           }
+
+          // Then check if the scraper found it (using mapping logic already in buildRelatorio or here)
+          // Note: buildRelatorio already has some mapping, but we can refine here if needed
           return item;
         });
+
         setData(updated);
+      } catch (err) {
+        console.error('Error loading data:', err);
+        setData(buildRelatorio());
+      } finally {
         setLoading(false);
-      })
-      .catch(() => {
-        setData(report);
-        setLoading(false);
-      });
+      }
+    }
+
+    loadAllData();
   }, []);
 
   const handleStatusUpdate = useCallback(

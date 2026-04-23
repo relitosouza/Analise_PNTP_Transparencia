@@ -1,0 +1,14 @@
+{
+  "gerado_em": "2026-04-22T18:20:40.887629",
+  "total": 8,
+  "mapa": {
+    "Sobre o Portal": "https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio",
+    "Dados Abertos": "https://transparencia-osasco.smarapd.com.br/#/dados_abertos",
+    "Concessões": "https://transparencia-osasco.smarapd.com.br/#/fixo/pca/Concessoes",
+    "Peças Contábeis": "https://transparencia-osasco.smarapd.com.br/#/fixo/loa/pecascontabeis",
+    "Estatísticas": "https://transparencia-osasco.smarapd.com.br/#/estatisticas",
+    "Emendas Parlamentares": "https://transparencia-osasco.smarapd.com.br/#/dinamico/66/EmendasParlamentares?periodicidade=MENSAL&periodo=ABRIL&exercicio=2026&pagina=1&quantidaderegistros=10&listacolunaordem=%5B%7B%22ColunaOrdem%22%3A%22Objeto%22%2C%22TipoOrdem%22%3A%22ascend%22%2C%22Ordem%22%3A1%7D%5D",
+    "Audiências Públicas": "https://transparencia-osasco.smarapd.com.br/#/fixo/audiencias_publicas/audienciaspublicas",
+    "Repasses Mundo da Criança": "https://transparencia-osasco.smarapd.com.br/#/dinamico/despesa_educacao/Repasses?periodicidade=ANUAL&exercicio=2026&pagina=1&quantidaderegistros=10&listacolunaordem=%5B%7B%22ColunaOrdem%22%3A%22NroEmpenho%22%2C%22TipoOrdem%22%3A%22ascend%22%2C%22Ordem%22%3A1%7D%5D"
+  }
+}

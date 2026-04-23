@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd analise-pntp && npm install && npm run build",
+  "outputDirectory": "analise-pntp/.next",
+  "installCommand": "cd analise-pntp && npm install",
+  "framework": "nextjs"
+}
