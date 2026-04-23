@@ -366,6 +366,14 @@ try:
 except:
     href_map = {}
 
+# Load manual updates
+try:
+    with open("relatorio_pntp_manual.json", "r", encoding="utf-8") as f:
+        manual_data = json.load(f)
+        manual_map = manual_data.get("manual_updates", {})
+except:
+    manual_map = {}
+
 for dim in dims:
     dim_found = 0
     dim_total = 0
@@ -382,6 +390,15 @@ for dim in dims:
         resp_text = ev["resp_text"] if ev else ("Encontrado no portal" if status == "OK" else "Nao localizado no portal.")
         path = ev["path"] if ev else ("Caminho nao especificado" if status == "OK" else "Nao identificado no portal")
         url = ev["url"] if ev else ("#" if status == "OK" else "")
+
+        # APPLY MANUAL OVERRIDES
+        if item["id"] in manual_map:
+            manual_item = manual_map[item["id"]]
+            manual_status = manual_item["status"]
+            status = "OK" if manual_status == "ok" else "MISSING"
+            resp_title = "Manual"
+            resp_text = manual_item.get("obs", "Status atualizado manualmente pelo auditor.")
+            url = manual_item.get("url", url)
         
         # Specific overrides for Licitacoes/Contratos based on deep scan
         if "8." in item["id"]: # Licitacoes
