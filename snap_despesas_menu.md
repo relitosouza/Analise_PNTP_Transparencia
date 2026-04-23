@@ -1,0 +1,53 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e6] [cursor=pointer]:
+      - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e7]
+      - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e8]
+    - generic [ref=e9]:
+      - complementary [ref=e10]
+      - generic [ref=e320]
+  - list [ref=e521]:
+    - listitem [ref=e522]:
+      - menuitem "dollar Contábil arrow-right" [ref=e523] [cursor=pointer]
+    - listitem [ref=e534]:
+      - menuitem "bank Receitas arrow-right" [ref=e535] [cursor=pointer]
+    - listitem [ref=e546]:
+      - menuitem "dollar Despesas arrow-right" [expanded] [active] [ref=e547] [cursor=pointer]
+    - listitem [ref=e558]:
+      - menuitem "dollar Empenhosㅤ arrow-right" [ref=e559] [cursor=pointer]
+    - listitem [ref=e570]:
+      - menuitem "dollar Financeiro arrow-right" [ref=e571] [cursor=pointer]
+    - listitem [ref=e582]:
+      - menuitem "calculator Fornecedor arrow-right" [ref=e583] [cursor=pointer]
+    - menuitem "alert Fornecimentosㅤ" [ref=e594] [cursor=pointer]:
+      - img "alert" [ref=e595]
+      - generic [ref=e598]: Fornecimentosㅤ
+    - menuitem "dollar Repasses e Transferênciasㅤ" [ref=e599] [cursor=pointer]:
+      - img "dollar" [ref=e600]
+      - generic [ref=e603]: Repasses e Transferênciasㅤ
+    - menuitem "ordered-list Decretos de Execução Orçamentária" [ref=e604] [cursor=pointer]:
+      - img "ordered-list" [ref=e605]
+      - generic [ref=e608]: Decretos de Execução Orçamentária
+    - menuitem "snippets Relatórios LRF - Lei de Responsabilidade Fiscal" [ref=e609] [cursor=pointer]:
+      - img "snippets" [ref=e610]
+      - generic [ref=e613]: Relatórios LRF - Lei de Responsabilidade Fiscal
+    - listitem [ref=e614]:
+      - menuitem "dollar Prestação de Contas arrow-right" [ref=e615] [cursor=pointer]
+    - menuitem "control Situação de Regularidade Municipal" [ref=e626] [cursor=pointer]:
+      - img "control" [ref=e627]
+      - generic [ref=e630]: Situação de Regularidade Municipal
+    - menuitem "file-text Decretos e Leis de Alterações Orçamentáriasㅤ" [ref=e631] [cursor=pointer]:
+      - img "file-text" [ref=e632]
+      - generic [ref=e635]: Decretos e Leis de Alterações Orçamentáriasㅤ
+    - menuitem "dollar Ordem Cronológica de Pagamentos" [ref=e636] [cursor=pointer]:
+      - img "dollar" [ref=e637]
+      - generic [ref=e640]: Ordem Cronológica de Pagamentos
+    - menuitem "dollar Restos a Pagar" [ref=e641] [cursor=pointer]:
+      - img "dollar" [ref=e642]
+      - generic [ref=e645]: Restos a Pagar
+  - generic:
+    - generic:
+      - generic
+  - generic:
+    - generic:
+      - generic

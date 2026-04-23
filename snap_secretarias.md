@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - generic "Menu Acessibilidade":
+    - button "Menu Acessibilidade" [ref=e1315] [cursor=pointer]
+  - generic [ref=e11]:
+    - banner [ref=e13]:
+      - generic [ref=e14]:
+        - navigation [ref=e18]
+        - generic [ref=e40]
+        - text:   
+    - list [ref=e54]:
+      - listitem [ref=e55]:
+        - link "Cidadão Cidadão" [ref=e56] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e59]:
+        - link "Servidor Servidor" [ref=e60] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e63]:
+        - link "Empresa Empresa" [ref=e64] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e72]:
+      - img "Secretarias" [ref=e78]
+      - heading "SECRETARIAS" [level=2] [ref=e81]
+      - generic [ref=e83]:
+        - generic [ref=e84]
+        - generic [ref=e112]
+        - generic [ref=e140]
+      - generic [ref=e168]:
+        - generic [ref=e169]
+        - generic [ref=e200]
+        - generic [ref=e231]
+      - generic [ref=e262]:
+        - generic [ref=e263]
+        - generic [ref=e294]
+        - generic [ref=e325]
+      - generic [ref=e356]:
+        - generic [ref=e357]
+        - generic [ref=e388]
+        - generic [ref=e419]
+      - generic [ref=e450]:
+        - generic [ref=e451]
+        - generic [ref=e479]
+        - generic [ref=e505]
+      - generic [ref=e536]:
+        - generic [ref=e537]
+        - generic [ref=e568]
+        - generic [ref=e599]
+      - generic [ref=e630]:
+        - generic [ref=e631]
+        - generic [ref=e662]
+        - generic [ref=e693]
+      - generic [ref=e724]:
+        - generic [ref=e725]
+        - generic [ref=e756]
+        - generic [ref=e784]
+      - generic [ref=e812]:
+        - generic [ref=e813]
+        - generic [ref=e841]
+        - generic [ref=e869]
+      - generic [ref=e897]:
+        - generic [ref=e898]
+        - generic [ref=e926]
+        - generic [ref=e954]
+      - generic [ref=e982]:
+        - generic [ref=e983]
+        - generic [ref=e1014]
+        - generic [ref=e1042]
+      - generic [ref=e1070]:
+        - generic [ref=e1071]
+        - generic [ref=e1102]
+        - generic [ref=e1130]
+      - generic [ref=e1158]:
+        - generic [ref=e1159]
+        - generic [ref=e1185]
+    - contentinfo [ref=e1216]:
+      - list [ref=e1223]:
+        - listitem [ref=e1224]
+        - listitem [ref=e1228]
+        - listitem [ref=e1232]
+  - generic [ref=e1236]:
+    - navigation [ref=e1238]:
+      - list [ref=e1239]:
+        - listitem [ref=e1240]
+        - listitem [ref=e1242]
+        - listitem [ref=e1244]
+        - listitem [ref=e1246]
+        - listitem [ref=e1248]
+        - listitem [ref=e1253]
+        - listitem [ref=e1255]
+        - listitem [ref=e1257]
+        - listitem [ref=e1259]
+    - list [ref=e1265]:
+      - listitem [ref=e1266]:
+        - link "Cidade de Osasco" [ref=e1267] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/sobre-osasco/
+      - listitem [ref=e1270]:
+        - link "Gabinete do Prefeito" [ref=e1271] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/gabinete-do-prefeito/
+      - listitem [ref=e1274]:
+        - link "Notícias" [ref=e1275] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/noticias/
+      - listitem [ref=e1278]:
+        - link "Imprensa Oficial" [ref=e1279] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/imprensa-oficial/
+      - listitem [ref=e1282]:
+        - text: +
+        - link "Secretarias" [ref=e1283] [cursor=pointer]:
+          - /url: /secretarias
+      - listitem [ref=e1284]:
+        - link "Serviços Online de Finanças" [ref=e1285] [cursor=pointer]:
+          - /url: http://sf.osasco.sp.gov.br/financas/
+      - listitem [ref=e1288]:
+        - link "Carta de Serviços" [ref=e1289] [cursor=pointer]:
+          - /url: https://osascodigital.osasco.sp.gov.br/#/
+      - listitem [ref=e1292]:
+        - link "Legislação Municipal" [ref=e1293] [cursor=pointer]:
+          - /url: https://leismunicipais.com.br/prefeitura/sp/osasco
+      - listitem [ref=e1296]:
+        - link "Galeria de Prefeitos" [ref=e1297] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/galeria-de-prefeitos/
+  - link [ref=e1300] [cursor=pointer]:
+    - /url: "#top-of-page"
+    - img [ref=e1301]
+  - generic [ref=e1304] [cursor=pointer]:
+    - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e1305]
+    - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e1306]
+  - dialog "cookieconsent" [ref=e1307]:
+    - generic [ref=e1308]:
+      - text: O portal osasco.sp.gov.br utiliza cookies próprios (primários), ou seja, do domínio osasco.sp.gov.br, para registrar as configurações e preferências de navegação dos usuários e gerar relatórios estatísticos através do Google Analytics, e também cookies de terceiros para complementar essas estatísticas. Os dados do Google Analytics e de terceiros são anonimizados antes de serem usados para análises e processamento de desempenho da web.
+      - button "cookies - Leia mais" [ref=e1309] [cursor=pointer]: Leia mais
+    - generic [ref=e1310]:
+      - button "Recusar cookies" [ref=e1311] [cursor=pointer]: Recusar
+      - button "Permitir cookies" [ref=e1312] [cursor=pointer]: Permitir

@@ -1,0 +1,26 @@
+{
+  "gerado_em": "2026-04-23T06:24:34.763137",
+  "resultados": [
+    {
+      "secao": "Licitações",
+      "url_base": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes",
+      "itens_auditados": [],
+      "possui_arquivos": false,
+      "detalhes": ""
+    },
+    {
+      "secao": "Contratos",
+      "url_base": "https://transparencia-osasco.smarapd.com.br/#/dinamico/compras_contratos_contratos/Contratos",
+      "itens_auditados": [],
+      "possui_arquivos": false,
+      "detalhes": ""
+    },
+    {
+      "secao": "Dispensas/Inexig",
+      "url_base": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_dispensa_inexigibilidade/Licitacoes",
+      "itens_auditados": [],
+      "possui_arquivos": false,
+      "detalhes": ""
+    }
+  ]
+}

@@ -1,0 +1,1494 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e6] [cursor=pointer]:
+      - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e7]
+      - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e8]
+    - generic [ref=e9]:
+      - complementary [ref=e10]:
+        - generic [ref=e11]:
+          - img "Brasão" [ref=e12] [cursor=pointer]
+          - generic [ref=e14]:
+            - textbox "Pesquisar" [ref=e15]
+            - button "search" [ref=e17] [cursor=pointer]:
+              - img "search" [ref=e18]:
+                - img [ref=e19]
+          - menu [ref=e21]:
+            - menuitem "home Sobre o Portal" [ref=e22] [cursor=pointer]:
+              - img "home" [ref=e23]:
+                - img [ref=e24]
+              - generic [ref=e26]: Sobre o Portal
+            - listitem [ref=e27]:
+              - menuitem "message Saiba mais arrow-right" [ref=e28] [cursor=pointer]:
+                - generic [ref=e30]:
+                  - img "message" [ref=e31]:
+                    - img [ref=e32]
+                  - generic [ref=e34]: Saiba mais
+                  - img "arrow-right" [ref=e36]:
+                    - img [ref=e37]
+            - menuitem "folder-open Dados Abertos" [ref=e39] [cursor=pointer]:
+              - img "folder-open" [ref=e40]:
+                - img [ref=e41]
+              - generic [ref=e43]: Dados Abertos
+            - listitem [ref=e44]:
+              - menuitem "setting Informações COVID-19 arrow-right" [ref=e45] [cursor=pointer]:
+                - generic [ref=e47]:
+                  - img "setting" [ref=e48]:
+                    - img [ref=e49]
+                  - generic [ref=e51]: Informações COVID-19
+                  - img "arrow-right" [ref=e53]:
+                    - img [ref=e54]
+            - menuitem "file-text Audiências Públicas" [ref=e56] [cursor=pointer]:
+              - img "file-text" [ref=e57]:
+                - img [ref=e58]
+              - generic [ref=e60]: Audiências Públicas
+            - menuitem "idcard Administração Pública" [ref=e61] [cursor=pointer]:
+              - img "idcard" [ref=e62]:
+                - img [ref=e63]
+              - generic [ref=e65]: Administração Pública
+            - listitem [ref=e66]:
+              - menuitem "message Canais de participação arrow-right" [ref=e67] [cursor=pointer]:
+                - generic [ref=e69]:
+                  - img "message" [ref=e70]:
+                    - img [ref=e71]
+                  - generic [ref=e73]: Canais de participação
+                  - img "arrow-right" [ref=e75]:
+                    - img [ref=e76]
+            - listitem [ref=e78]:
+              - menuitem "safety Concursos e Processos Seletivos arrow-right" [ref=e79] [cursor=pointer]:
+                - generic [ref=e81]:
+                  - img "safety" [ref=e82]:
+                    - img [ref=e83]
+                  - generic [ref=e86]: Concursos e Processos Seletivos
+                  - img "arrow-right" [ref=e88]:
+                    - img [ref=e89]
+            - listitem [ref=e91]:
+              - menuitem "profile Concessões arrow-right" [ref=e92] [cursor=pointer]:
+                - generic [ref=e94]:
+                  - img "profile" [ref=e95]:
+                    - img [ref=e96]
+                  - generic [ref=e98]: Concessões
+                  - img "arrow-right" [ref=e100]:
+                    - img [ref=e101]
+            - listitem [ref=e103]:
+              - menuitem "snippets Contas Públicas arrow-right" [ref=e104] [cursor=pointer]:
+                - generic [ref=e106]:
+                  - img "snippets" [ref=e107]:
+                    - img [ref=e108]
+                  - generic [ref=e110]: Contas Públicas
+                  - img "arrow-right" [ref=e112]:
+                    - img [ref=e113]
+            - listitem [ref=e115]:
+              - menuitem "file-pdf Controladoria Geral do Município de Osasco arrow-right" [ref=e116] [cursor=pointer]:
+                - generic [ref=e118]:
+                  - img "file-pdf" [ref=e119]:
+                    - img [ref=e120]
+                  - generic [ref=e122]: Controladoria Geral do Município de Osasco
+                  - img "arrow-right" [ref=e124]:
+                    - img [ref=e125]
+            - listitem [ref=e127]:
+              - menuitem "safety Gestão de Pessoas arrow-right" [ref=e128] [cursor=pointer]:
+                - generic [ref=e130]:
+                  - img "safety" [ref=e131]:
+                    - img [ref=e132]
+                  - generic [ref=e135]: Gestão de Pessoas
+                  - img "arrow-right" [ref=e137]:
+                    - img [ref=e138]
+            - listitem [ref=e140]:
+              - menuitem "snippets Legislação e Imprensa Oficial do Município arrow-right" [ref=e141] [cursor=pointer]:
+                - generic [ref=e143]:
+                  - img "snippets" [ref=e144]:
+                    - img [ref=e145]
+                  - generic [ref=e147]: Legislação e Imprensa Oficial do Município
+                  - img "arrow-right" [ref=e149]:
+                    - img [ref=e150]
+            - listitem [ref=e152]:
+              - menuitem "profile Licitações e Contratos arrow-right" [ref=e153] [cursor=pointer]:
+                - generic [ref=e155]:
+                  - img "profile" [ref=e156]:
+                    - img [ref=e157]
+                  - generic [ref=e159]: Licitações e Contratos
+                  - img "arrow-right" [ref=e161]:
+                    - img [ref=e162]
+            - menuitem "dollar Repasses Mundo da Criança" [ref=e164] [cursor=pointer]:
+              - img "dollar" [ref=e165]:
+                - img [ref=e166]
+              - generic [ref=e168]: Repasses Mundo da Criança
+            - listitem [ref=e169]:
+              - menuitem "message Ouvidoria Geral arrow-right" [ref=e170] [cursor=pointer]:
+                - generic [ref=e172]:
+                  - img "message" [ref=e173]:
+                    - img [ref=e174]
+                  - generic [ref=e176]: Ouvidoria Geral
+                  - img "arrow-right" [ref=e178]:
+                    - img [ref=e179]
+            - menuitem "file-search Fala Cidadão" [ref=e181] [cursor=pointer]:
+              - img "file-search" [ref=e182]:
+                - img [ref=e183]
+              - generic [ref=e185]: Fala Cidadão
+            - listitem [ref=e186]:
+              - menuitem "bank Patrimônio arrow-right" [ref=e187] [cursor=pointer]:
+                - generic [ref=e189]:
+                  - img "bank" [ref=e190]:
+                    - img [ref=e191]
+                  - generic [ref=e193]: Patrimônio
+                  - img "arrow-right" [ref=e195]:
+                    - img [ref=e196]
+            - listitem [ref=e198]:
+              - menuitem "file-search Políticas, Planos Municipais, Ind. e Inf. Temática arrow-right" [expanded] [active] [ref=e199] [cursor=pointer]:
+                - generic [ref=e201]:
+                  - img "file-search" [ref=e202]:
+                    - img [ref=e203]
+                  - generic [ref=e205]: Políticas, Planos Municipais, Ind. e Inf. Temática
+                  - img "arrow-right" [ref=e207]:
+                    - img [ref=e208]
+            - listitem [ref=e210]:
+              - menuitem "environment Projetos e Obras arrow-right" [ref=e211] [cursor=pointer]:
+                - generic [ref=e213]:
+                  - img "environment" [ref=e214]:
+                    - img [ref=e215]
+                  - generic [ref=e217]: Projetos e Obras
+                  - img "arrow-right" [ref=e219]:
+                    - img [ref=e220]
+            - listitem [ref=e222]:
+              - menuitem "setting Serviços arrow-right" [ref=e223] [cursor=pointer]:
+                - generic [ref=e225]:
+                  - img "setting" [ref=e226]:
+                    - img [ref=e227]
+                  - generic [ref=e229]: Serviços
+                  - img "arrow-right" [ref=e231]:
+                    - img [ref=e232]
+            - listitem [ref=e234]:
+              - menuitem "file-search Terceiro Setor arrow-right" [ref=e235] [cursor=pointer]:
+                - generic [ref=e237]:
+                  - img "file-search" [ref=e238]:
+                    - img [ref=e239]
+                  - generic [ref=e241]: Terceiro Setor
+                  - img "arrow-right" [ref=e243]:
+                    - img [ref=e244]
+            - listitem [ref=e246]:
+              - menuitem "idcard Convênios arrow-right" [ref=e247] [cursor=pointer]:
+                - generic [ref=e249]:
+                  - img "idcard" [ref=e250]:
+                    - img [ref=e251]
+                  - generic [ref=e253]: Convênios
+                  - img "arrow-right" [ref=e255]:
+                    - img [ref=e256]
+            - listitem [ref=e258]:
+              - menuitem "flag Convênios de Cooperação arrow-right" [ref=e259] [cursor=pointer]:
+                - generic [ref=e261]:
+                  - img "flag" [ref=e262]:
+                    - img [ref=e263]
+                  - generic [ref=e265]: Convênios de Cooperação
+                  - img "arrow-right" [ref=e267]:
+                    - img [ref=e268]
+            - listitem [ref=e270]:
+              - menuitem "team Peças Orçamentárias arrow-right" [ref=e271] [cursor=pointer]:
+                - generic [ref=e273]:
+                  - img "team" [ref=e274]:
+                    - img [ref=e275]
+                  - generic [ref=e277]: Peças Orçamentárias
+                  - img "arrow-right" [ref=e279]:
+                    - img [ref=e280]
+            - menuitem "profile Peças Contábeis" [ref=e282] [cursor=pointer]:
+              - img "profile" [ref=e283]:
+                - img [ref=e284]
+              - generic [ref=e286]: Peças Contábeis
+            - menuitem "line-chart Estatísticas" [ref=e287] [cursor=pointer]:
+              - img "line-chart" [ref=e288]:
+                - img [ref=e289]
+              - generic [ref=e291]: Estatísticas
+            - menuitem "info-circle Concessões" [ref=e292] [cursor=pointer]:
+              - img "info-circle" [ref=e293]:
+                - img [ref=e294]
+              - generic [ref=e297]: Concessões
+            - menuitem "dollar Emendas Parlamentares" [ref=e298] [cursor=pointer]:
+              - img "dollar" [ref=e299]:
+                - img [ref=e300]
+              - generic [ref=e302]: Emendas Parlamentares
+            - listitem [ref=e303]:
+              - menuitem "flag Relações Internacionais arrow-right" [ref=e304] [cursor=pointer]:
+                - generic [ref=e306]:
+                  - img "flag" [ref=e307]:
+                    - img [ref=e308]
+                  - generic [ref=e310]: Relações Internacionais
+                  - img "arrow-right" [ref=e312]:
+                    - img [ref=e313]
+          - img "menu-fold" [ref=e317] [cursor=pointer]:
+            - img [ref=e318]
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - heading "." [level=1] [ref=e323]
+          - button "bulb" [ref=e325] [cursor=pointer]:
+            - img "bulb" [ref=e326]:
+              - img [ref=e327]
+        - main [ref=e329]:
+          - generic [ref=e724]:
+            - generic [ref=e725]:
+              - link "home" [ref=e727] [cursor=pointer]:
+                - /url: "#/"
+                - img "home" [ref=e728]:
+                  - img [ref=e729]
+              - text: /
+            - generic [ref=e731]: Emendas Parlamentares
+          - heading "Emendas Parlamentaresㅤ" [level=4] [ref=e1275]
+          - generic [ref=e1277]:
+            - generic [ref=e1279] [cursor=pointer]:
+              - generic [ref=e1280]:
+                - combobox [ref=e1282]
+                - generic "Mensal" [ref=e1283]
+              - generic:
+                - img:
+                  - img
+            - generic [ref=e1285] [cursor=pointer]:
+              - generic [ref=e1286]:
+                - combobox [ref=e1288]
+                - generic "Abril" [ref=e1289]
+              - generic:
+                - img:
+                  - img
+            - generic [ref=e1291] [cursor=pointer]:
+              - generic [ref=e1292]:
+                - combobox [disabled] [ref=e1294]
+                - generic "2026" [ref=e1295]
+              - generic:
+                - img:
+                  - img
+          - generic [ref=e1296]:
+            - button "Filtros" [ref=e1297] [cursor=pointer]:
+              - img "filter" [ref=e1299]:
+                - img [ref=e1300]
+              - generic [ref=e1302]: Filtros
+              - generic [ref=e1303]: —
+            - button "Ordenação, 1 aplicada(s)" [ref=e1304] [cursor=pointer]:
+              - img "ordered-list" [ref=e1306]:
+                - img [ref=e1307]
+              - generic [ref=e1309]: Ordenação
+              - generic [ref=e1310]: "1"
+          - generic [ref=e1315]:
+            - table [ref=e1318]:
+              - rowgroup:
+                - row [ref=e1319]:
+                  - columnheader "Exercício caret-up caret-down filter" [ref=e1320] [cursor=pointer]:
+                    - generic [ref=e1321]:
+                      - generic [ref=e1323]:
+                        - generic [ref=e1324]: Exercício
+                        - generic [ref=e1326]:
+                          - img "caret-up" [ref=e1327]:
+                            - img [ref=e1328]
+                          - img "caret-down" [ref=e1330]:
+                            - img [ref=e1331]
+                      - button "filter" [ref=e1333]:
+                        - img "filter" [ref=e1334]:
+                          - img [ref=e1335]
+                  - columnheader "Descrição Orçamentaria caret-up caret-down filter" [ref=e1337] [cursor=pointer]:
+                    - generic [ref=e1338]:
+                      - generic [ref=e1340]:
+                        - generic [ref=e1341]: Descrição Orçamentaria
+                        - generic [ref=e1343]:
+                          - img "caret-up" [ref=e1344]:
+                            - img [ref=e1345]
+                          - img "caret-down" [ref=e1347]:
+                            - img [ref=e1348]
+                      - button "filter" [ref=e1350]:
+                        - img "filter" [ref=e1351]:
+                          - img [ref=e1352]
+                  - columnheader "Classificação Funcional caret-up caret-down filter" [ref=e1354] [cursor=pointer]:
+                    - generic [ref=e1355]:
+                      - generic [ref=e1357]:
+                        - generic [ref=e1358]: Classificação Funcional
+                        - generic [ref=e1360]:
+                          - img "caret-up" [ref=e1361]:
+                            - img [ref=e1362]
+                          - img "caret-down" [ref=e1364]:
+                            - img [ref=e1365]
+                      - button "filter" [ref=e1367]:
+                        - img "filter" [ref=e1368]:
+                          - img [ref=e1369]
+                  - columnheader "Descrição Classificação Funcional caret-up caret-down filter" [ref=e1371] [cursor=pointer]:
+                    - generic [ref=e1372]:
+                      - generic [ref=e1374]:
+                        - generic [ref=e1375]: Descrição Classificação Funcional
+                        - generic [ref=e1377]:
+                          - img "caret-up" [ref=e1378]:
+                            - img [ref=e1379]
+                          - img "caret-down" [ref=e1381]:
+                            - img [ref=e1382]
+                      - button "filter" [ref=e1384]:
+                        - img "filter" [ref=e1385]:
+                          - img [ref=e1386]
+                  - columnheader "Dotação caret-up caret-down filter" [ref=e1388] [cursor=pointer]:
+                    - generic [ref=e1389]:
+                      - generic [ref=e1391]:
+                        - generic [ref=e1392]: Dotação
+                        - generic [ref=e1394]:
+                          - img "caret-up" [ref=e1395]:
+                            - img [ref=e1396]
+                          - img "caret-down" [ref=e1398]:
+                            - img [ref=e1399]
+                      - button "filter" [ref=e1401]:
+                        - img "filter" [ref=e1402]:
+                          - img [ref=e1403]
+                  - columnheader "Natureza da Despesa caret-up caret-down filter" [ref=e1405] [cursor=pointer]:
+                    - generic [ref=e1406]:
+                      - generic [ref=e1408]:
+                        - generic [ref=e1409]: Natureza da Despesa
+                        - generic [ref=e1411]:
+                          - img "caret-up" [ref=e1412]:
+                            - img [ref=e1413]
+                          - img "caret-down" [ref=e1415]:
+                            - img [ref=e1416]
+                      - button "filter" [ref=e1418]:
+                        - img "filter" [ref=e1419]:
+                          - img [ref=e1420]
+                  - columnheader "Descrição Natureza Despesa caret-up caret-down filter" [ref=e1422] [cursor=pointer]:
+                    - generic [ref=e1423]:
+                      - generic [ref=e1425]:
+                        - generic [ref=e1426]: Descrição Natureza Despesa
+                        - generic [ref=e1428]:
+                          - img "caret-up" [ref=e1429]:
+                            - img [ref=e1430]
+                          - img "caret-down" [ref=e1432]:
+                            - img [ref=e1433]
+                      - button "filter" [ref=e1435]:
+                        - img "filter" [ref=e1436]:
+                          - img [ref=e1437]
+                  - columnheader "Vinculo caret-up caret-down filter" [ref=e1439] [cursor=pointer]:
+                    - generic [ref=e1440]:
+                      - generic [ref=e1442]:
+                        - generic [ref=e1443]: Vinculo
+                        - generic [ref=e1445]:
+                          - img "caret-up" [ref=e1446]:
+                            - img [ref=e1447]
+                          - img "caret-down" [ref=e1449]:
+                            - img [ref=e1450]
+                      - button "filter" [ref=e1452]:
+                        - img "filter" [ref=e1453]:
+                          - img [ref=e1454]
+                  - columnheader "Descrição Vinculo caret-up caret-down filter" [ref=e1456] [cursor=pointer]:
+                    - generic [ref=e1457]:
+                      - generic [ref=e1459]:
+                        - generic [ref=e1460]: Descrição Vinculo
+                        - generic [ref=e1462]:
+                          - img "caret-up" [ref=e1463]:
+                            - img [ref=e1464]
+                          - img "caret-down" [ref=e1466]:
+                            - img [ref=e1467]
+                      - button "filter" [ref=e1469]:
+                        - img "filter" [ref=e1470]:
+                          - img [ref=e1471]
+                  - columnheader "Emenda caret-up caret-down filter" [ref=e1473] [cursor=pointer]:
+                    - generic [ref=e1474]:
+                      - generic [ref=e1476]:
+                        - generic [ref=e1477]: Emenda
+                        - generic [ref=e1479]:
+                          - img "caret-up" [ref=e1480]:
+                            - img [ref=e1481]
+                          - img "caret-down" [ref=e1483]:
+                            - img [ref=e1484]
+                      - button "filter" [ref=e1486]:
+                        - img "filter" [ref=e1487]:
+                          - img [ref=e1488]
+                  - columnheader "Ano Emenda caret-up caret-down filter" [ref=e1490] [cursor=pointer]:
+                    - generic [ref=e1491]:
+                      - generic [ref=e1493]:
+                        - generic [ref=e1494]: Ano Emenda
+                        - generic [ref=e1496]:
+                          - img "caret-up" [ref=e1497]:
+                            - img [ref=e1498]
+                          - img "caret-down" [ref=e1500]:
+                            - img [ref=e1501]
+                      - button "filter" [ref=e1503]:
+                        - img "filter" [ref=e1504]:
+                          - img [ref=e1505]
+                  - columnheader "Autor Emenda caret-up caret-down filter" [ref=e1507] [cursor=pointer]:
+                    - generic [ref=e1508]:
+                      - generic [ref=e1510]:
+                        - generic [ref=e1511]: Autor Emenda
+                        - generic [ref=e1513]:
+                          - img "caret-up" [ref=e1514]:
+                            - img [ref=e1515]
+                          - img "caret-down" [ref=e1517]:
+                            - img [ref=e1518]
+                      - button "filter" [ref=e1520]:
+                        - img "filter" [ref=e1521]:
+                          - img [ref=e1522]
+                  - columnheader "Justificativa caret-up caret-down filter" [ref=e1524] [cursor=pointer]:
+                    - generic [ref=e1525]:
+                      - generic [ref=e1527]:
+                        - generic [ref=e1528]: Justificativa
+                        - generic [ref=e1530]:
+                          - img "caret-up" [ref=e1531]:
+                            - img [ref=e1532]
+                          - img "caret-down" [ref=e1534]:
+                            - img [ref=e1535]
+                      - button "filter" [ref=e1537]:
+                        - img "filter" [ref=e1538]:
+                          - img [ref=e1539]
+                  - columnheader "Objeto caret-up caret-down filter" [ref=e1541] [cursor=pointer]:
+                    - generic [ref=e1542]:
+                      - generic [ref=e1544]:
+                        - generic [ref=e1545]: Objeto
+                        - generic [ref=e1547]:
+                          - img "caret-up" [ref=e1548]:
+                            - img [ref=e1549]
+                          - img "caret-down" [ref=e1551]:
+                            - img [ref=e1552]
+                      - button "filter" [ref=e1554]:
+                        - img "filter" [ref=e1555]:
+                          - img [ref=e1556]
+                  - columnheader "Txt Jurídico caret-up caret-down filter" [ref=e1558] [cursor=pointer]:
+                    - generic [ref=e1559]:
+                      - generic [ref=e1561]:
+                        - generic [ref=e1562]: Txt Jurídico
+                        - generic [ref=e1564]:
+                          - img "caret-up" [ref=e1565]:
+                            - img [ref=e1566]
+                          - img "caret-down" [ref=e1568]:
+                            - img [ref=e1569]
+                      - button "filter" [ref=e1571]:
+                        - img "filter" [ref=e1572]:
+                          - img [ref=e1573]
+                  - columnheader "Saldo Atual caret-up caret-down filter" [ref=e1575] [cursor=pointer]:
+                    - generic [ref=e1576]:
+                      - generic [ref=e1578]:
+                        - generic [ref=e1579]: Saldo Atual
+                        - generic [ref=e1581]:
+                          - img "caret-up" [ref=e1582]:
+                            - img [ref=e1583]
+                          - img "caret-down" [ref=e1585]:
+                            - img [ref=e1586]
+                      - button "filter" [ref=e1588]:
+                        - img "filter" [ref=e1589]:
+                          - img [ref=e1590]
+                  - columnheader "Valor Orçamentárias Suplementação caret-up caret-down filter" [ref=e1592] [cursor=pointer]:
+                    - generic [ref=e1593]:
+                      - generic [ref=e1595]:
+                        - generic [ref=e1596]: Valor Orçamentárias Suplementação
+                        - generic [ref=e1598]:
+                          - img "caret-up" [ref=e1599]:
+                            - img [ref=e1600]
+                          - img "caret-down" [ref=e1602]:
+                            - img [ref=e1603]
+                      - button "filter" [ref=e1605]:
+                        - img "filter" [ref=e1606]:
+                          - img [ref=e1607]
+                  - columnheader "Reservado caret-up caret-down filter" [ref=e1609] [cursor=pointer]:
+                    - generic [ref=e1610]:
+                      - generic [ref=e1612]:
+                        - generic [ref=e1613]: Reservado
+                        - generic [ref=e1615]:
+                          - img "caret-up" [ref=e1616]:
+                            - img [ref=e1617]
+                          - img "caret-down" [ref=e1619]:
+                            - img [ref=e1620]
+                      - button "filter" [ref=e1622]:
+                        - img "filter" [ref=e1623]:
+                          - img [ref=e1624]
+                  - columnheader "A Reservar caret-up caret-down filter" [ref=e1626] [cursor=pointer]:
+                    - generic [ref=e1627]:
+                      - generic [ref=e1629]:
+                        - generic [ref=e1630]: A Reservar
+                        - generic [ref=e1632]:
+                          - img "caret-up" [ref=e1633]:
+                            - img [ref=e1634]
+                          - img "caret-down" [ref=e1636]:
+                            - img [ref=e1637]
+                      - button "filter" [ref=e1639]:
+                        - img "filter" [ref=e1640]:
+                          - img [ref=e1641]
+                  - columnheader "Empenhado caret-up caret-down filter" [ref=e1643] [cursor=pointer]:
+                    - generic [ref=e1644]:
+                      - generic [ref=e1646]:
+                        - generic [ref=e1647]: Empenhado
+                        - generic [ref=e1649]:
+                          - img "caret-up" [ref=e1650]:
+                            - img [ref=e1651]
+                          - img "caret-down" [ref=e1653]:
+                            - img [ref=e1654]
+                      - button "filter" [ref=e1656]:
+                        - img "filter" [ref=e1657]:
+                          - img [ref=e1658]
+                  - columnheader "Empenhado Anulado caret-up caret-down filter" [ref=e1660] [cursor=pointer]:
+                    - generic [ref=e1661]:
+                      - generic [ref=e1663]:
+                        - generic [ref=e1664]: Empenhado Anulado
+                        - generic [ref=e1666]:
+                          - img "caret-up" [ref=e1667]:
+                            - img [ref=e1668]
+                          - img "caret-down" [ref=e1670]:
+                            - img [ref=e1671]
+                      - button "filter" [ref=e1673]:
+                        - img "filter" [ref=e1674]:
+                          - img [ref=e1675]
+                  - columnheader "A Empenhar caret-up caret-down filter" [ref=e1677] [cursor=pointer]:
+                    - generic [ref=e1678]:
+                      - generic [ref=e1680]:
+                        - generic [ref=e1681]: A Empenhar
+                        - generic [ref=e1683]:
+                          - img "caret-up" [ref=e1684]:
+                            - img [ref=e1685]
+                          - img "caret-down" [ref=e1687]:
+                            - img [ref=e1688]
+                      - button "filter" [ref=e1690]:
+                        - img "filter" [ref=e1691]:
+                          - img [ref=e1692]
+                  - columnheader "Liquidado caret-up caret-down filter" [ref=e1694] [cursor=pointer]:
+                    - generic [ref=e1695]:
+                      - generic [ref=e1697]:
+                        - generic [ref=e1698]: Liquidado
+                        - generic [ref=e1700]:
+                          - img "caret-up" [ref=e1701]:
+                            - img [ref=e1702]
+                          - img "caret-down" [ref=e1704]:
+                            - img [ref=e1705]
+                      - button "filter" [ref=e1707]:
+                        - img "filter" [ref=e1708]:
+                          - img [ref=e1709]
+                  - columnheader "Liquidado Anulado caret-up caret-down filter" [ref=e1711] [cursor=pointer]:
+                    - generic [ref=e1712]:
+                      - generic [ref=e1714]:
+                        - generic [ref=e1715]: Liquidado Anulado
+                        - generic [ref=e1717]:
+                          - img "caret-up" [ref=e1718]:
+                            - img [ref=e1719]
+                          - img "caret-down" [ref=e1721]:
+                            - img [ref=e1722]
+                      - button "filter" [ref=e1724]:
+                        - img "filter" [ref=e1725]:
+                          - img [ref=e1726]
+                  - columnheader "Valor Pago caret-up caret-down filter" [ref=e1728] [cursor=pointer]:
+                    - generic [ref=e1729]:
+                      - generic [ref=e1731]:
+                        - generic [ref=e1732]: Valor Pago
+                        - generic [ref=e1734]:
+                          - img "caret-up" [ref=e1735]:
+                            - img [ref=e1736]
+                          - img "caret-down" [ref=e1738]:
+                            - img [ref=e1739]
+                      - button "filter" [ref=e1741]:
+                        - img "filter" [ref=e1742]:
+                          - img [ref=e1743]
+                  - columnheader "A Pagar caret-up caret-down filter" [ref=e1745] [cursor=pointer]:
+                    - generic [ref=e1746]:
+                      - generic [ref=e1748]:
+                        - generic [ref=e1749]: A Pagar
+                        - generic [ref=e1751]:
+                          - img "caret-up" [ref=e1752]:
+                            - img [ref=e1753]
+                          - img "caret-down" [ref=e1755]:
+                            - img [ref=e1756]
+                      - button "filter" [ref=e1758]:
+                        - img "filter" [ref=e1759]:
+                          - img [ref=e1760]
+              - rowgroup [ref=e1762]:
+                - row [ref=e1763]:
+                  - cell [ref=e1764]
+                  - cell [ref=e1765]
+                  - cell [ref=e1766]
+                  - cell [ref=e1767]
+                  - cell [ref=e1768]
+                  - cell [ref=e1769]
+                  - cell [ref=e1770]
+                  - cell [ref=e1771]
+                  - cell [ref=e1772]
+                  - cell [ref=e1773]
+                  - cell [ref=e1774]
+                  - cell [ref=e1775]
+                  - cell [ref=e1776]
+                  - cell [ref=e1777]
+                  - cell [ref=e1778]
+                  - cell [ref=e1779]
+                  - cell [ref=e1780]
+                  - cell [ref=e1781]
+                  - cell [ref=e1782]
+                  - cell [ref=e1783]
+                  - cell [ref=e1784]
+                  - cell [ref=e1785]
+                  - cell [ref=e1786]
+                  - cell [ref=e1787]
+                  - cell [ref=e1788]
+                  - cell [ref=e1789]
+                - row [ref=e1790]:
+                  - cell "Exercício 2026" [ref=e1791]:
+                    - text: Exercício
+                    - generic [ref=e1792]: "2026"
+                  - cell "Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL" [ref=e1793]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e1794]: FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL
+                  - cell "Classificação Funcional 08.245.0018.2.015" [ref=e1795]:
+                    - text: Classificação Funcional
+                    - generic [ref=e1796]: 08.245.0018.2.015
+                  - cell "Descrição Classificação Funcional OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e1797]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e1798]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Dotação 1247" [ref=e1799]:
+                    - text: Dotação
+                    - generic [ref=e1800]: "1247"
+                  - cell "Natureza da Despesa 3.3.50.39.00" [ref=e1801]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e1802]: 3.3.50.39.00
+                  - cell "Descrição Natureza Despesa OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e1803]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e1804]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Vinculo 05.800.0004" [ref=e1805]:
+                    - text: Vinculo
+                    - generic [ref=e1806]: 05.800.0004
+                  - cell "Descrição Vinculo EMENDA FIN - 202515810003 - JEFFERSON CAMPOS" [ref=e1807]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e1808]: EMENDA FIN - 202515810003 - JEFFERSON CAMPOS
+                  - cell "Emenda Emenda parlamentar individual" [ref=e1809]:
+                    - text: Emenda
+                    - generic [ref=e1810]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2025" [ref=e1811]:
+                    - text: Ano Emenda
+                    - generic [ref=e1812]: "2025"
+                  - cell "Autor Emenda JEFFERSON CAMPOS" [ref=e1813]:
+                    - text: Autor Emenda
+                    - generic [ref=e1814]: JEFFERSON CAMPOS
+                  - cell "Justificativa Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS" [ref=e1815]:
+                    - text: Justificativa
+                    - generic [ref=e1816]: Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS
+                  - cell "Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e1817]:
+                    - text: Objeto
+                    - button "219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e1818] [cursor=pointer]:
+                      - generic [ref=e1819]: 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S...
+                  - cell "Txt Jurídico 2025NE404349" [ref=e1820]:
+                    - text: Txt Jurídico
+                    - generic [ref=e1821]: 2025NE404349
+                  - cell "Saldo Atual 150.000,00" [ref=e1822]:
+                    - text: Saldo Atual
+                    - generic [ref=e1823]: 150.000,00
+                  - cell "Valor Orçamentárias Suplementação 150.000,00" [ref=e1824]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e1825]: 150.000,00
+                  - cell "Reservado 0,00" [ref=e1826]:
+                    - text: Reservado
+                    - generic [ref=e1827]: 0,00
+                  - cell "A Reservar 150.000,00" [ref=e1828]:
+                    - text: A Reservar
+                    - generic [ref=e1829]: 150.000,00
+                  - cell "Empenhado 0,00" [ref=e1830]:
+                    - text: Empenhado
+                    - generic [ref=e1831]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e1832]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e1833]: 0,00
+                  - cell "A Empenhar 150.000,00" [ref=e1834]:
+                    - text: A Empenhar
+                    - generic [ref=e1835]: 150.000,00
+                  - cell "Liquidado 0,00" [ref=e1836]:
+                    - text: Liquidado
+                    - generic [ref=e1837]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e1838]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e1839]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e1840]:
+                    - text: Valor Pago
+                    - generic [ref=e1841]: 0,00
+                  - cell "A Pagar 0,00" [ref=e1842]:
+                    - text: A Pagar
+                    - generic [ref=e1843]: 0,00
+                - row "Exercício 2026 Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL Classificação Funcional 08.245.0018.2.015 Descrição Classificação Funcional EQUIPAMENTOS E MATERIAL PERMANENTE Dotação 1455 Natureza da Despesa 4.4.90.52.00 Descrição Natureza Despesa EQUIPAMENTOS E MATERIAL PERMANENTE Vinculo 05.800.0005 Descrição Vinculo EMENDA FIN - 202441550009 - KIM KATAGUIRI Emenda Emenda parlamentar individual Ano Emenda 2024 Autor Emenda KIM KATAGUIRI Justificativa 244 - Assistência comunitária Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S... Txt Jurídico 2024NE402215 Saldo Atual 7.059,15 Valor Orçamentárias Suplementação 351.503,59 Reservado 344.444,44 A Reservar 7.059,15 Empenhado 0,00 Empenhado Anulado 0,00 A Empenhar 351.503,59 Liquidado 0,00 Liquidado Anulado 0,00 Valor Pago 0,00 A Pagar 0,00" [ref=e1844]:
+                  - cell "Exercício 2026" [ref=e1845]:
+                    - text: Exercício
+                    - generic [ref=e1846]: "2026"
+                  - cell "Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL" [ref=e1847]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e1848]: FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL
+                  - cell "Classificação Funcional 08.245.0018.2.015" [ref=e1849]:
+                    - text: Classificação Funcional
+                    - generic [ref=e1850]: 08.245.0018.2.015
+                  - cell "Descrição Classificação Funcional EQUIPAMENTOS E MATERIAL PERMANENTE" [ref=e1851]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e1852]: EQUIPAMENTOS E MATERIAL PERMANENTE
+                  - cell "Dotação 1455" [ref=e1853]:
+                    - text: Dotação
+                    - generic [ref=e1854]: "1455"
+                  - cell "Natureza da Despesa 4.4.90.52.00" [ref=e1855]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e1856]: 4.4.90.52.00
+                  - cell "Descrição Natureza Despesa EQUIPAMENTOS E MATERIAL PERMANENTE" [ref=e1857]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e1858]: EQUIPAMENTOS E MATERIAL PERMANENTE
+                  - cell "Vinculo 05.800.0005" [ref=e1859]:
+                    - text: Vinculo
+                    - generic [ref=e1860]: 05.800.0005
+                  - cell "Descrição Vinculo EMENDA FIN - 202441550009 - KIM KATAGUIRI" [ref=e1861]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e1862]: EMENDA FIN - 202441550009 - KIM KATAGUIRI
+                  - cell "Emenda Emenda parlamentar individual" [ref=e1863]:
+                    - text: Emenda
+                    - generic [ref=e1864]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2024" [ref=e1865]:
+                    - text: Ano Emenda
+                    - generic [ref=e1866]: "2024"
+                  - cell "Autor Emenda KIM KATAGUIRI" [ref=e1867]:
+                    - text: Autor Emenda
+                    - generic [ref=e1868]: KIM KATAGUIRI
+                  - cell "Justificativa 244 - Assistência comunitária" [ref=e1869]:
+                    - text: Justificativa
+                    - generic [ref=e1870]: 244 - Assistência comunitária
+                  - cell "Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e1871]:
+                    - text: Objeto
+                    - button "219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e1872] [cursor=pointer]:
+                      - generic [ref=e1873]: 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S...
+                  - cell "Txt Jurídico 2024NE402215" [ref=e1874]:
+                    - text: Txt Jurídico
+                    - generic [ref=e1875]: 2024NE402215
+                  - cell "Saldo Atual 7.059,15" [ref=e1876]:
+                    - text: Saldo Atual
+                    - generic [ref=e1877]: 7.059,15
+                  - cell "Valor Orçamentárias Suplementação 351.503,59" [ref=e1878]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e1879]: 351.503,59
+                  - cell "Reservado 344.444,44" [ref=e1880]:
+                    - text: Reservado
+                    - generic [ref=e1881]: 344.444,44
+                  - cell "A Reservar 7.059,15" [ref=e1882]:
+                    - text: A Reservar
+                    - generic [ref=e1883]: 7.059,15
+                  - cell "Empenhado 0,00" [ref=e1884]:
+                    - text: Empenhado
+                    - generic [ref=e1885]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e1886]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e1887]: 0,00
+                  - cell "A Empenhar 351.503,59" [ref=e1888]:
+                    - text: A Empenhar
+                    - generic [ref=e1889]: 351.503,59
+                  - cell "Liquidado 0,00" [ref=e1890]:
+                    - text: Liquidado
+                    - generic [ref=e1891]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e1892]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e1893]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e1894]:
+                    - text: Valor Pago
+                    - generic [ref=e1895]: 0,00
+                  - cell "A Pagar 0,00" [ref=e1896]:
+                    - text: A Pagar
+                    - generic [ref=e1897]: 0,00
+                - row [ref=e1898]:
+                  - cell "Exercício 2026" [ref=e1899]:
+                    - text: Exercício
+                    - generic [ref=e1900]: "2026"
+                  - cell "Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL" [ref=e1901]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e1902]: FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL
+                  - cell "Classificação Funcional 08.245.0018.2.016" [ref=e1903]:
+                    - text: Classificação Funcional
+                    - generic [ref=e1904]: 08.245.0018.2.016
+                  - cell "Descrição Classificação Funcional OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e1905]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e1906]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Dotação 1248" [ref=e1907]:
+                    - text: Dotação
+                    - generic [ref=e1908]: "1248"
+                  - cell "Natureza da Despesa 3.3.50.39.00" [ref=e1909]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e1910]: 3.3.50.39.00
+                  - cell "Descrição Natureza Despesa OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e1911]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e1912]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Vinculo 05.800.0004" [ref=e1913]:
+                    - text: Vinculo
+                    - generic [ref=e1914]: 05.800.0004
+                  - cell "Descrição Vinculo EMENDA FIN - 202515810003 - JEFFERSON CAMPOS" [ref=e1915]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e1916]: EMENDA FIN - 202515810003 - JEFFERSON CAMPOS
+                  - cell "Emenda Emenda parlamentar individual" [ref=e1917]:
+                    - text: Emenda
+                    - generic [ref=e1918]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2025" [ref=e1919]:
+                    - text: Ano Emenda
+                    - generic [ref=e1920]: "2025"
+                  - cell "Autor Emenda JEFFERSON CAMPOS" [ref=e1921]:
+                    - text: Autor Emenda
+                    - generic [ref=e1922]: JEFFERSON CAMPOS
+                  - cell "Justificativa Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS" [ref=e1923]:
+                    - text: Justificativa
+                    - generic [ref=e1924]: Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS
+                  - cell "Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e1925]:
+                    - text: Objeto
+                    - button "219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e1926] [cursor=pointer]:
+                      - generic [ref=e1927]: 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S...
+                  - cell "Txt Jurídico 2025NE404349" [ref=e1928]:
+                    - text: Txt Jurídico
+                    - generic [ref=e1929]: 2025NE404349
+                  - cell "Saldo Atual 150.000,00" [ref=e1930]:
+                    - text: Saldo Atual
+                    - generic [ref=e1931]: 150.000,00
+                  - cell "Valor Orçamentárias Suplementação 150.000,00" [ref=e1932]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e1933]: 150.000,00
+                  - cell "Reservado 0,00" [ref=e1934]:
+                    - text: Reservado
+                    - generic [ref=e1935]: 0,00
+                  - cell "A Reservar 150.000,00" [ref=e1936]:
+                    - text: A Reservar
+                    - generic [ref=e1937]: 150.000,00
+                  - cell "Empenhado 0,00" [ref=e1938]:
+                    - text: Empenhado
+                    - generic [ref=e1939]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e1940]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e1941]: 0,00
+                  - cell "A Empenhar 150.000,00" [ref=e1942]:
+                    - text: A Empenhar
+                    - generic [ref=e1943]: 150.000,00
+                  - cell "Liquidado 0,00" [ref=e1944]:
+                    - text: Liquidado
+                    - generic [ref=e1945]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e1946]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e1947]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e1948]:
+                    - text: Valor Pago
+                    - generic [ref=e1949]: 0,00
+                  - cell "A Pagar 0,00" [ref=e1950]:
+                    - text: A Pagar
+                    - generic [ref=e1951]: 0,00
+                - row "Exercício 2026 Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL Classificação Funcional 08.245.0018.2.016 Descrição Classificação Funcional EQUIPAMENTOS E MATERIAL PERMANENTE Dotação 1475 Natureza da Despesa 4.4.90.52.00 Descrição Natureza Despesa EQUIPAMENTOS E MATERIAL PERMANENTE Vinculo 05.800.0025 Descrição Vinculo EMENDA FIN - 202241300012 - SAMIA BOMFIM Emenda Emenda parlamentar individual Ano Emenda 2022 Autor Emenda SAMIA BOMFIM Justificativa Subfunção 244 - Assistência comunitária Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S... Txt Jurídico 2022NE405930 2022NE405931 Saldo Atual 425.030,61 Valor Orçamentárias Suplementação 425.030,61 Reservado 0,00 A Reservar 425.030,61 Empenhado 0,00 Empenhado Anulado 0,00 A Empenhar 425.030,61 Liquidado 0,00 Liquidado Anulado 0,00 Valor Pago 0,00 A Pagar 0,00" [ref=e1952]:
+                  - cell "Exercício 2026" [ref=e1953]:
+                    - text: Exercício
+                    - generic [ref=e1954]: "2026"
+                  - cell "Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL" [ref=e1955]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e1956]: FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL
+                  - cell "Classificação Funcional 08.245.0018.2.016" [ref=e1957]:
+                    - text: Classificação Funcional
+                    - generic [ref=e1958]: 08.245.0018.2.016
+                  - cell "Descrição Classificação Funcional EQUIPAMENTOS E MATERIAL PERMANENTE" [ref=e1959]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e1960]: EQUIPAMENTOS E MATERIAL PERMANENTE
+                  - cell "Dotação 1475" [ref=e1961]:
+                    - text: Dotação
+                    - generic [ref=e1962]: "1475"
+                  - cell "Natureza da Despesa 4.4.90.52.00" [ref=e1963]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e1964]: 4.4.90.52.00
+                  - cell "Descrição Natureza Despesa EQUIPAMENTOS E MATERIAL PERMANENTE" [ref=e1965]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e1966]: EQUIPAMENTOS E MATERIAL PERMANENTE
+                  - cell "Vinculo 05.800.0025" [ref=e1967]:
+                    - text: Vinculo
+                    - generic [ref=e1968]: 05.800.0025
+                  - cell "Descrição Vinculo EMENDA FIN - 202241300012 - SAMIA BOMFIM" [ref=e1969]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e1970]: EMENDA FIN - 202241300012 - SAMIA BOMFIM
+                  - cell "Emenda Emenda parlamentar individual" [ref=e1971]:
+                    - text: Emenda
+                    - generic [ref=e1972]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2022" [ref=e1973]:
+                    - text: Ano Emenda
+                    - generic [ref=e1974]: "2022"
+                  - cell "Autor Emenda SAMIA BOMFIM" [ref=e1975]:
+                    - text: Autor Emenda
+                    - generic [ref=e1976]: SAMIA BOMFIM
+                  - cell "Justificativa Subfunção 244 - Assistência comunitária" [ref=e1977]:
+                    - text: Justificativa
+                    - generic [ref=e1978]: Subfunção 244 - Assistência comunitária
+                  - cell "Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e1979]:
+                    - text: Objeto
+                    - button "219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e1980] [cursor=pointer]:
+                      - generic [ref=e1981]: 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S...
+                  - cell "Txt Jurídico 2022NE405930 2022NE405931" [ref=e1982]:
+                    - text: Txt Jurídico
+                    - generic [ref=e1983]: 2022NE405930 2022NE405931
+                  - cell "Saldo Atual 425.030,61" [ref=e1984]:
+                    - text: Saldo Atual
+                    - generic [ref=e1985]: 425.030,61
+                  - cell "Valor Orçamentárias Suplementação 425.030,61" [ref=e1986]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e1987]: 425.030,61
+                  - cell "Reservado 0,00" [ref=e1988]:
+                    - text: Reservado
+                    - generic [ref=e1989]: 0,00
+                  - cell "A Reservar 425.030,61" [ref=e1990]:
+                    - text: A Reservar
+                    - generic [ref=e1991]: 425.030,61
+                  - cell "Empenhado 0,00" [ref=e1992]:
+                    - text: Empenhado
+                    - generic [ref=e1993]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e1994]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e1995]: 0,00
+                  - cell "A Empenhar 425.030,61" [ref=e1996]:
+                    - text: A Empenhar
+                    - generic [ref=e1997]: 425.030,61
+                  - cell "Liquidado 0,00" [ref=e1998]:
+                    - text: Liquidado
+                    - generic [ref=e1999]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e2000]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e2001]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e2002]:
+                    - text: Valor Pago
+                    - generic [ref=e2003]: 0,00
+                  - cell "A Pagar 0,00" [ref=e2004]:
+                    - text: A Pagar
+                    - generic [ref=e2005]: 0,00
+                - row [ref=e2006]:
+                  - cell "Exercício 2026" [ref=e2007]:
+                    - text: Exercício
+                    - generic [ref=e2008]: "2026"
+                  - cell "Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL" [ref=e2009]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e2010]: FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL
+                  - cell "Classificação Funcional 08.245.0018.2.015" [ref=e2011]:
+                    - text: Classificação Funcional
+                    - generic [ref=e2012]: 08.245.0018.2.015
+                  - cell "Descrição Classificação Funcional OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2013]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e2014]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Dotação 1454" [ref=e2015]:
+                    - text: Dotação
+                    - generic [ref=e2016]: "1454"
+                  - cell "Natureza da Despesa 3.3.50.39.00" [ref=e2017]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e2018]: 3.3.50.39.00
+                  - cell "Descrição Natureza Despesa OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2019]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e2020]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Vinculo 05.800.0004" [ref=e2021]:
+                    - text: Vinculo
+                    - generic [ref=e2022]: 05.800.0004
+                  - cell "Descrição Vinculo EMENDA FIN - 202515810003 - JEFFERSON CAMPOS" [ref=e2023]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e2024]: EMENDA FIN - 202515810003 - JEFFERSON CAMPOS
+                  - cell "Emenda Emenda parlamentar individual" [ref=e2025]:
+                    - text: Emenda
+                    - generic [ref=e2026]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2025" [ref=e2027]:
+                    - text: Ano Emenda
+                    - generic [ref=e2028]: "2025"
+                  - cell "Autor Emenda JEFFERSON CAMPOS" [ref=e2029]:
+                    - text: Autor Emenda
+                    - generic [ref=e2030]: JEFFERSON CAMPOS
+                  - cell "Justificativa Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS" [ref=e2031]:
+                    - text: Justificativa
+                    - generic [ref=e2032]: Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS
+                  - cell "Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e2033]:
+                    - text: Objeto
+                    - button "219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e2034] [cursor=pointer]:
+                      - generic [ref=e2035]: 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S...
+                  - cell "Txt Jurídico 2025NE404349" [ref=e2036]:
+                    - text: Txt Jurídico
+                    - generic [ref=e2037]: 2025NE404349
+                  - cell "Saldo Atual 4.141,46" [ref=e2038]:
+                    - text: Saldo Atual
+                    - generic [ref=e2039]: 4.141,46
+                  - cell "Valor Orçamentárias Suplementação 304.141,46" [ref=e2040]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e2041]: 304.141,46
+                  - cell "Reservado 300.000,00" [ref=e2042]:
+                    - text: Reservado
+                    - generic [ref=e2043]: 300.000,00
+                  - cell "A Reservar 4.141,46" [ref=e2044]:
+                    - text: A Reservar
+                    - generic [ref=e2045]: 4.141,46
+                  - cell "Empenhado 0,00" [ref=e2046]:
+                    - text: Empenhado
+                    - generic [ref=e2047]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e2048]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e2049]: 0,00
+                  - cell "A Empenhar 304.141,46" [ref=e2050]:
+                    - text: A Empenhar
+                    - generic [ref=e2051]: 304.141,46
+                  - cell "Liquidado 0,00" [ref=e2052]:
+                    - text: Liquidado
+                    - generic [ref=e2053]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e2054]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e2055]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e2056]:
+                    - text: Valor Pago
+                    - generic [ref=e2057]: 0,00
+                  - cell "A Pagar 0,00" [ref=e2058]:
+                    - text: A Pagar
+                    - generic [ref=e2059]: 0,00
+                - row "Exercício 2026 Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL Classificação Funcional 08.245.0018.2.015 Descrição Classificação Funcional EQUIPAMENTOS E MATERIAL PERMANENTE Dotação 1249 Natureza da Despesa 4.4.50.52.00 Descrição Natureza Despesa EQUIPAMENTOS E MATERIAL PERMANENTE Vinculo 05.800.0005 Descrição Vinculo EMENDA FIN - 202441550009 - KIM KATAGUIRI Emenda Emenda parlamentar individual Ano Emenda 2024 Autor Emenda KIM KATAGUIRI Justificativa 244 - Assistência comunitária Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S... Txt Jurídico 2024NE402215 Saldo Atual 344.444,44 Valor Orçamentárias Suplementação 344.444,44 Reservado 0,00 A Reservar 344.444,44 Empenhado 0,00 Empenhado Anulado 0,00 A Empenhar 344.444,44 Liquidado 0,00 Liquidado Anulado 0,00 Valor Pago 0,00 A Pagar 0,00" [ref=e2060]:
+                  - cell "Exercício 2026" [ref=e2061]:
+                    - text: Exercício
+                    - generic [ref=e2062]: "2026"
+                  - cell "Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL" [ref=e2063]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e2064]: FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL
+                  - cell "Classificação Funcional 08.245.0018.2.015" [ref=e2065]:
+                    - text: Classificação Funcional
+                    - generic [ref=e2066]: 08.245.0018.2.015
+                  - cell "Descrição Classificação Funcional EQUIPAMENTOS E MATERIAL PERMANENTE" [ref=e2067]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e2068]: EQUIPAMENTOS E MATERIAL PERMANENTE
+                  - cell "Dotação 1249" [ref=e2069]:
+                    - text: Dotação
+                    - generic [ref=e2070]: "1249"
+                  - cell "Natureza da Despesa 4.4.50.52.00" [ref=e2071]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e2072]: 4.4.50.52.00
+                  - cell "Descrição Natureza Despesa EQUIPAMENTOS E MATERIAL PERMANENTE" [ref=e2073]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e2074]: EQUIPAMENTOS E MATERIAL PERMANENTE
+                  - cell "Vinculo 05.800.0005" [ref=e2075]:
+                    - text: Vinculo
+                    - generic [ref=e2076]: 05.800.0005
+                  - cell "Descrição Vinculo EMENDA FIN - 202441550009 - KIM KATAGUIRI" [ref=e2077]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e2078]: EMENDA FIN - 202441550009 - KIM KATAGUIRI
+                  - cell "Emenda Emenda parlamentar individual" [ref=e2079]:
+                    - text: Emenda
+                    - generic [ref=e2080]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2024" [ref=e2081]:
+                    - text: Ano Emenda
+                    - generic [ref=e2082]: "2024"
+                  - cell "Autor Emenda KIM KATAGUIRI" [ref=e2083]:
+                    - text: Autor Emenda
+                    - generic [ref=e2084]: KIM KATAGUIRI
+                  - cell "Justificativa 244 - Assistência comunitária" [ref=e2085]:
+                    - text: Justificativa
+                    - generic [ref=e2086]: 244 - Assistência comunitária
+                  - cell "Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e2087]:
+                    - text: Objeto
+                    - button "219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e2088] [cursor=pointer]:
+                      - generic [ref=e2089]: 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S...
+                  - cell "Txt Jurídico 2024NE402215" [ref=e2090]:
+                    - text: Txt Jurídico
+                    - generic [ref=e2091]: 2024NE402215
+                  - cell "Saldo Atual 344.444,44" [ref=e2092]:
+                    - text: Saldo Atual
+                    - generic [ref=e2093]: 344.444,44
+                  - cell "Valor Orçamentárias Suplementação 344.444,44" [ref=e2094]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e2095]: 344.444,44
+                  - cell "Reservado 0,00" [ref=e2096]:
+                    - text: Reservado
+                    - generic [ref=e2097]: 0,00
+                  - cell "A Reservar 344.444,44" [ref=e2098]:
+                    - text: A Reservar
+                    - generic [ref=e2099]: 344.444,44
+                  - cell "Empenhado 0,00" [ref=e2100]:
+                    - text: Empenhado
+                    - generic [ref=e2101]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e2102]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e2103]: 0,00
+                  - cell "A Empenhar 344.444,44" [ref=e2104]:
+                    - text: A Empenhar
+                    - generic [ref=e2105]: 344.444,44
+                  - cell "Liquidado 0,00" [ref=e2106]:
+                    - text: Liquidado
+                    - generic [ref=e2107]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e2108]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e2109]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e2110]:
+                    - text: Valor Pago
+                    - generic [ref=e2111]: 0,00
+                  - cell "A Pagar 0,00" [ref=e2112]:
+                    - text: A Pagar
+                    - generic [ref=e2113]: 0,00
+                - row [ref=e2114]:
+                  - cell "Exercício 2026" [ref=e2115]:
+                    - text: Exercício
+                    - generic [ref=e2116]: "2026"
+                  - cell "Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL" [ref=e2117]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e2118]: FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL
+                  - cell "Classificação Funcional 08.245.0018.2.015" [ref=e2119]:
+                    - text: Classificação Funcional
+                    - generic [ref=e2120]: 08.245.0018.2.015
+                  - cell "Descrição Classificação Funcional OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2121]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e2122]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Dotação 1246" [ref=e2123]:
+                    - text: Dotação
+                    - generic [ref=e2124]: "1246"
+                  - cell "Natureza da Despesa 3.3.50.39.00" [ref=e2125]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e2126]: 3.3.50.39.00
+                  - cell "Descrição Natureza Despesa OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2127]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e2128]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Vinculo 05.800.0003" [ref=e2129]:
+                    - text: Vinculo
+                    - generic [ref=e2130]: 05.800.0003
+                  - cell "Descrição Vinculo EMENDA FIN - 202515680006 - GILBERTO NASCIMNETO" [ref=e2131]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e2132]: EMENDA FIN - 202515680006 - GILBERTO NASCIMNETO
+                  - cell "Emenda Emenda parlamentar individual" [ref=e2133]:
+                    - text: Emenda
+                    - generic [ref=e2134]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2025" [ref=e2135]:
+                    - text: Ano Emenda
+                    - generic [ref=e2136]: "2025"
+                  - cell "Autor Emenda Gilberto Nascimento" [ref=e2137]:
+                    - text: Autor Emenda
+                    - generic [ref=e2138]: Gilberto Nascimento
+                  - cell "Justificativa Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS" [ref=e2139]:
+                    - text: Justificativa
+                    - generic [ref=e2140]: Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS
+                  - cell "Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e2141]:
+                    - text: Objeto
+                    - button "219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e2142] [cursor=pointer]:
+                      - generic [ref=e2143]: 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S...
+                  - cell "Txt Jurídico 2025NE404406" [ref=e2144]:
+                    - text: Txt Jurídico
+                    - generic [ref=e2145]: 2025NE404406
+                  - cell "Saldo Atual 300.000,00" [ref=e2146]:
+                    - text: Saldo Atual
+                    - generic [ref=e2147]: 300.000,00
+                  - cell "Valor Orçamentárias Suplementação 300.000,00" [ref=e2148]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e2149]: 300.000,00
+                  - cell "Reservado 0,00" [ref=e2150]:
+                    - text: Reservado
+                    - generic [ref=e2151]: 0,00
+                  - cell "A Reservar 300.000,00" [ref=e2152]:
+                    - text: A Reservar
+                    - generic [ref=e2153]: 300.000,00
+                  - cell "Empenhado 0,00" [ref=e2154]:
+                    - text: Empenhado
+                    - generic [ref=e2155]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e2156]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e2157]: 0,00
+                  - cell "A Empenhar 300.000,00" [ref=e2158]:
+                    - text: A Empenhar
+                    - generic [ref=e2159]: 300.000,00
+                  - cell "Liquidado 0,00" [ref=e2160]:
+                    - text: Liquidado
+                    - generic [ref=e2161]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e2162]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e2163]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e2164]:
+                    - text: Valor Pago
+                    - generic [ref=e2165]: 0,00
+                  - cell "A Pagar 0,00" [ref=e2166]:
+                    - text: A Pagar
+                    - generic [ref=e2167]: 0,00
+                - row [ref=e2168]:
+                  - cell "Exercício 2026" [ref=e2169]:
+                    - text: Exercício
+                    - generic [ref=e2170]: "2026"
+                  - cell "Descrição Orçamentaria FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL" [ref=e2171]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e2172]: FUNDO MUNICIPAL DE ASSISTÊNCIA SOCIAL
+                  - cell "Classificação Funcional 08.245.0018.2.015" [ref=e2173]:
+                    - text: Classificação Funcional
+                    - generic [ref=e2174]: 08.245.0018.2.015
+                  - cell "Descrição Classificação Funcional OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2175]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e2176]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Dotação 1452" [ref=e2177]:
+                    - text: Dotação
+                    - generic [ref=e2178]: "1452"
+                  - cell "Natureza da Despesa 3.3.50.39.00" [ref=e2179]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e2180]: 3.3.50.39.00
+                  - cell "Descrição Natureza Despesa OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2181]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e2182]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Vinculo 05.800.0003" [ref=e2183]:
+                    - text: Vinculo
+                    - generic [ref=e2184]: 05.800.0003
+                  - cell "Descrição Vinculo EMENDA FIN - 202515680006 - GILBERTO NASCIMNETO" [ref=e2185]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e2186]: EMENDA FIN - 202515680006 - GILBERTO NASCIMNETO
+                  - cell "Emenda Emenda parlamentar individual" [ref=e2187]:
+                    - text: Emenda
+                    - generic [ref=e2188]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2025" [ref=e2189]:
+                    - text: Ano Emenda
+                    - generic [ref=e2190]: "2025"
+                  - cell "Autor Emenda Gilberto Nascimento" [ref=e2191]:
+                    - text: Autor Emenda
+                    - generic [ref=e2192]: Gilberto Nascimento
+                  - cell "Justificativa Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS" [ref=e2193]:
+                    - text: Justificativa
+                    - generic [ref=e2194]: Subfunção 245 - SERVICOS SOCIOASSISTENCIAIS
+                  - cell "Objeto 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e2195]:
+                    - text: Objeto
+                    - button "219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S..." [ref=e2196] [cursor=pointer]:
+                      - generic [ref=e2197]: 219G - ESTRUTURACAO DA REDE DE SERVICOS E FORTALECIMENTO DA GESTAO DO SISTEMA UNICO DE ASSISTENCIA S...
+                  - cell "Txt Jurídico 2025NE404406" [ref=e2198]:
+                    - text: Txt Jurídico
+                    - generic [ref=e2199]: 2025NE404406
+                  - cell "Saldo Atual 5.320,57" [ref=e2200]:
+                    - text: Saldo Atual
+                    - generic [ref=e2201]: 5.320,57
+                  - cell "Valor Orçamentárias Suplementação 305.320,57" [ref=e2202]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e2203]: 305.320,57
+                  - cell "Reservado 300.000,00" [ref=e2204]:
+                    - text: Reservado
+                    - generic [ref=e2205]: 300.000,00
+                  - cell "A Reservar 5.320,57" [ref=e2206]:
+                    - text: A Reservar
+                    - generic [ref=e2207]: 5.320,57
+                  - cell "Empenhado 0,00" [ref=e2208]:
+                    - text: Empenhado
+                    - generic [ref=e2209]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e2210]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e2211]: 0,00
+                  - cell "A Empenhar 305.320,57" [ref=e2212]:
+                    - text: A Empenhar
+                    - generic [ref=e2213]: 305.320,57
+                  - cell "Liquidado 0,00" [ref=e2214]:
+                    - text: Liquidado
+                    - generic [ref=e2215]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e2216]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e2217]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e2218]:
+                    - text: Valor Pago
+                    - generic [ref=e2219]: 0,00
+                  - cell "A Pagar 0,00" [ref=e2220]:
+                    - text: A Pagar
+                    - generic [ref=e2221]: 0,00
+                - row "Exercício 2026 Descrição Orçamentaria DEPARTAMENTO DE ASSISTÊNCIA FARMACÊUTICA Classificação Funcional 10.303.0014.2.011 Descrição Classificação Funcional OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA Dotação 1488 Natureza da Despesa 3.3.90.39.00 Descrição Natureza Despesa OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA Vinculo 05.800.0016 Descrição Vinculo EMENDA FIN - 202544050003 - KIKO CELEGUIM Emenda Emenda parlamentar individual Ano Emenda 2025 Autor Emenda KIKO CELEGUIM Justificativa Subfunção 301 - Atenção básica Objeto 2E89 - INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE... Txt Jurídico 2025NE464445 Saldo Atual 428.000,00 Valor Orçamentárias Suplementação 428.000,00 Reservado 0,00 A Reservar 428.000,00 Empenhado 0,00 Empenhado Anulado 0,00 A Empenhar 428.000,00 Liquidado 0,00 Liquidado Anulado 0,00 Valor Pago 0,00 A Pagar 0,00" [ref=e2222]:
+                  - cell "Exercício 2026" [ref=e2223]:
+                    - text: Exercício
+                    - generic [ref=e2224]: "2026"
+                  - cell "Descrição Orçamentaria DEPARTAMENTO DE ASSISTÊNCIA FARMACÊUTICA" [ref=e2225]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e2226]: DEPARTAMENTO DE ASSISTÊNCIA FARMACÊUTICA
+                  - cell "Classificação Funcional 10.303.0014.2.011" [ref=e2227]:
+                    - text: Classificação Funcional
+                    - generic [ref=e2228]: 10.303.0014.2.011
+                  - cell "Descrição Classificação Funcional OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2229]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e2230]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Dotação 1488" [ref=e2231]:
+                    - text: Dotação
+                    - generic [ref=e2232]: "1488"
+                  - cell "Natureza da Despesa 3.3.90.39.00" [ref=e2233]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e2234]: 3.3.90.39.00
+                  - cell "Descrição Natureza Despesa OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2235]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e2236]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Vinculo 05.800.0016" [ref=e2237]:
+                    - text: Vinculo
+                    - generic [ref=e2238]: 05.800.0016
+                  - cell "Descrição Vinculo EMENDA FIN - 202544050003 - KIKO CELEGUIM" [ref=e2239]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e2240]: EMENDA FIN - 202544050003 - KIKO CELEGUIM
+                  - cell "Emenda Emenda parlamentar individual" [ref=e2241]:
+                    - text: Emenda
+                    - generic [ref=e2242]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2025" [ref=e2243]:
+                    - text: Ano Emenda
+                    - generic [ref=e2244]: "2025"
+                  - cell "Autor Emenda KIKO CELEGUIM" [ref=e2245]:
+                    - text: Autor Emenda
+                    - generic [ref=e2246]: KIKO CELEGUIM
+                  - cell "Justificativa Subfunção 301 - Atenção básica" [ref=e2247]:
+                    - text: Justificativa
+                    - generic [ref=e2248]: Subfunção 301 - Atenção básica
+                  - cell "Objeto 2E89 - INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE..." [ref=e2249]:
+                    - text: Objeto
+                    - button "2E89 - INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE..." [ref=e2250] [cursor=pointer]:
+                      - generic [ref=e2251]: 2E89 - INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE...
+                  - cell "Txt Jurídico 2025NE464445" [ref=e2252]:
+                    - text: Txt Jurídico
+                    - generic [ref=e2253]: 2025NE464445
+                  - cell "Saldo Atual 428.000,00" [ref=e2254]:
+                    - text: Saldo Atual
+                    - generic [ref=e2255]: 428.000,00
+                  - cell "Valor Orçamentárias Suplementação 428.000,00" [ref=e2256]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e2257]: 428.000,00
+                  - cell "Reservado 0,00" [ref=e2258]:
+                    - text: Reservado
+                    - generic [ref=e2259]: 0,00
+                  - cell "A Reservar 428.000,00" [ref=e2260]:
+                    - text: A Reservar
+                    - generic [ref=e2261]: 428.000,00
+                  - cell "Empenhado 0,00" [ref=e2262]:
+                    - text: Empenhado
+                    - generic [ref=e2263]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e2264]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e2265]: 0,00
+                  - cell "A Empenhar 428.000,00" [ref=e2266]:
+                    - text: A Empenhar
+                    - generic [ref=e2267]: 428.000,00
+                  - cell "Liquidado 0,00" [ref=e2268]:
+                    - text: Liquidado
+                    - generic [ref=e2269]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e2270]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e2271]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e2272]:
+                    - text: Valor Pago
+                    - generic [ref=e2273]: 0,00
+                  - cell "A Pagar 0,00" [ref=e2274]:
+                    - text: A Pagar
+                    - generic [ref=e2275]: 0,00
+                - row [ref=e2276]:
+                  - cell "Exercício 2026" [ref=e2277]:
+                    - text: Exercício
+                    - generic [ref=e2278]: "2026"
+                  - cell "Descrição Orçamentaria DIRETORIA GERAL DE ATENÇÃO PRIMÁRIA EM SAÚDE" [ref=e2279]:
+                    - text: Descrição Orçamentaria
+                    - generic [ref=e2280]: DIRETORIA GERAL DE ATENÇÃO PRIMÁRIA EM SAÚDE
+                  - cell "Classificação Funcional 10.301.0015.2.012" [ref=e2281]:
+                    - text: Classificação Funcional
+                    - generic [ref=e2282]: 10.301.0015.2.012
+                  - cell "Descrição Classificação Funcional OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2283]:
+                    - text: Descrição Classificação Funcional
+                    - generic [ref=e2284]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Dotação 1486" [ref=e2285]:
+                    - text: Dotação
+                    - generic [ref=e2286]: "1486"
+                  - cell "Natureza da Despesa 3.3.90.39.00" [ref=e2287]:
+                    - text: Natureza da Despesa
+                    - generic [ref=e2288]: 3.3.90.39.00
+                  - cell "Descrição Natureza Despesa OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA" [ref=e2289]:
+                    - text: Descrição Natureza Despesa
+                    - generic [ref=e2290]: OUTROS SERVIÇOS DE TERCEIROS - PESSOA JURÍDICA
+                  - cell "Vinculo 05.800.0013" [ref=e2291]:
+                    - text: Vinculo
+                    - generic [ref=e2292]: 05.800.0013
+                  - cell "Descrição Vinculo EMENDA FIN - 202444020020 - JULIANA CARDOSO" [ref=e2293]:
+                    - text: Descrição Vinculo
+                    - generic [ref=e2294]: EMENDA FIN - 202444020020 - JULIANA CARDOSO
+                  - cell "Emenda Emenda parlamentar individual" [ref=e2295]:
+                    - text: Emenda
+                    - generic [ref=e2296]: Emenda parlamentar individual
+                  - cell "Ano Emenda 2024" [ref=e2297]:
+                    - text: Ano Emenda
+                    - generic [ref=e2298]: "2024"
+                  - cell "Autor Emenda JULIANA CARDOSO" [ref=e2299]:
+                    - text: Autor Emenda
+                    - generic [ref=e2300]: JULIANA CARDOSO
+                  - cell "Justificativa Subfunção 301 - Atenção básica" [ref=e2301]:
+                    - text: Justificativa
+                    - generic [ref=e2302]: Subfunção 301 - Atenção básica
+                  - cell "Objeto 2E89 - INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE..." [ref=e2303]:
+                    - text: Objeto
+                    - button "2E89 - INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE..." [ref=e2304] [cursor=pointer]:
+                      - generic [ref=e2305]: 2E89 - INCREMENTO TEMPORARIO AO CUSTEIO DOS SERVICOS DE ATENCAO PRIMARIA A SAUDE PARA CUMPRIMENTO DE...
+                  - cell "Txt Jurídico 2024NE516384" [ref=e2306]:
+                    - text: Txt Jurídico
+                    - generic [ref=e2307]: 2024NE516384
+                  - cell "Saldo Atual 132.152,39" [ref=e2308]:
+                    - text: Saldo Atual
+                    - generic [ref=e2309]: 132.152,39
+                  - cell "Valor Orçamentárias Suplementação 132.152,39" [ref=e2310]:
+                    - text: Valor Orçamentárias Suplementação
+                    - generic [ref=e2311]: 132.152,39
+                  - cell "Reservado 0,00" [ref=e2312]:
+                    - text: Reservado
+                    - generic [ref=e2313]: 0,00
+                  - cell "A Reservar 132.152,39" [ref=e2314]:
+                    - text: A Reservar
+                    - generic [ref=e2315]: 132.152,39
+                  - cell "Empenhado 0,00" [ref=e2316]:
+                    - text: Empenhado
+                    - generic [ref=e2317]: 0,00
+                  - cell "Empenhado Anulado 0,00" [ref=e2318]:
+                    - text: Empenhado Anulado
+                    - generic [ref=e2319]: 0,00
+                  - cell "A Empenhar 132.152,39" [ref=e2320]:
+                    - text: A Empenhar
+                    - generic [ref=e2321]: 132.152,39
+                  - cell "Liquidado 0,00" [ref=e2322]:
+                    - text: Liquidado
+                    - generic [ref=e2323]: 0,00
+                  - cell "Liquidado Anulado 0,00" [ref=e2324]:
+                    - text: Liquidado Anulado
+                    - generic [ref=e2325]: 0,00
+                  - cell "Valor Pago 0,00" [ref=e2326]:
+                    - text: Valor Pago
+                    - generic [ref=e2327]: 0,00
+                  - cell "A Pagar 0,00" [ref=e2328]:
+                    - text: A Pagar
+                    - generic [ref=e2329]: 0,00
+            - generic [ref=e2331]:
+              - generic [ref=e2332]:
+                - list [ref=e2333]:
+                  - listitem [ref=e2334]:
+                    - paragraph [ref=e2335]: "Total: 230 registros"
+                  - listitem "Página anterior" [ref=e2336]:
+                    - button "left" [disabled] [ref=e2337]:
+                      - img "left" [ref=e2338]:
+                        - img [ref=e2339]
+                  - listitem "1" [ref=e2341] [cursor=pointer]:
+                    - generic [ref=e2342]: "1"
+                  - listitem "2" [ref=e2343] [cursor=pointer]:
+                    - generic [ref=e2344]: "2"
+                  - listitem "3" [ref=e2345] [cursor=pointer]:
+                    - generic [ref=e2346]: "3"
+                  - listitem "4" [ref=e2347] [cursor=pointer]:
+                    - generic [ref=e2348]: "4"
+                  - listitem "5 próximas páginas" [ref=e2349] [cursor=pointer]:
+                    - generic [ref=e2351]:
+                      - img "double-right" [ref=e2352]:
+                        - img [ref=e2353]
+                      - generic [ref=e2355]: •••
+                  - listitem "23" [ref=e2356] [cursor=pointer]:
+                    - generic [ref=e2357]: "23"
+                  - listitem "Próxima página" [ref=e2358] [cursor=pointer]:
+                    - button "right" [ref=e2359]:
+                      - img "right" [ref=e2360]:
+                        - img [ref=e2361]
+                - generic [ref=e2363] [cursor=pointer]:
+                  - generic [ref=e2364]:
+                    - combobox [ref=e2366]
+                    - generic [ref=e2367]: 10 registros
+                  - generic:
+                    - img:
+                      - img
+              - generic [ref=e2369]:
+                - generic [ref=e2370]: "Última Atualização:"
+                - generic [ref=e2371]:
+                  - paragraph [ref=e2372]: 22/04/2026
+                  - paragraph [ref=e2373]:
+                    - img "clock-circle" [ref=e2374]:
+                      - img [ref=e2375]
+                    - text: 04:51:46
+              - button "Exportar para down" [ref=e2380] [cursor=pointer]:
+                - generic [ref=e2381]: Exportar para
+                - img "down" [ref=e2382]:
+                  - img [ref=e2383]
+          - button "Voltar" [ref=e2386] [cursor=pointer]:
+            - generic [ref=e2387]: Voltar
+        - generic [ref=e497]:
+          - img "facebook" [ref=e499] [cursor=pointer]:
+            - img [ref=e500]
+          - img "instagram" [ref=e503] [cursor=pointer]:
+            - img [ref=e504]
+          - img "youtube" [ref=e507] [cursor=pointer]:
+            - img [ref=e508]
+        - generic [ref=e511]:
+          - generic [ref=e512]:
+            - generic [ref=e513]: Av Bussocaba , 300 - Centro - Osasco - 06023-901
+            - generic [ref=e514]: "(11) 3652-9000 - Horário de atendimento: Segunda a Sexta das 8h às 17h"
+          - button "environment" [ref=e516] [cursor=pointer]:
+            - img "environment" [ref=e517]:
+              - img [ref=e518]
+  - list [ref=e2389]:
+    - menuitem "file-search Visão 360 - Projetos Prioritários" [ref=e2390] [cursor=pointer]:
+      - img "file-search" [ref=e2391]:
+        - img [ref=e2392]
+      - generic [ref=e2394]: Visão 360 - Projetos Prioritários
+    - menuitem "file-search Banco de Indicadores da Cidade - BIC" [ref=e2395] [cursor=pointer]:
+      - img "file-search" [ref=e2396]:
+        - img [ref=e2397]
+      - generic [ref=e2399]: Banco de Indicadores da Cidade - BIC
+    - menuitem "file-search Planos Municipais Setoriais" [ref=e2400] [cursor=pointer]:
+      - img "file-search" [ref=e2401]:
+        - img [ref=e2402]
+      - generic [ref=e2404]: Planos Municipais Setoriais
+    - listitem [ref=e2405]:
+      - menuitem "file-text Monitoramento da Estratégia arrow-right" [ref=e2406] [cursor=pointer]:
+        - generic [ref=e2408]:
+          - img "file-text" [ref=e2409]:
+            - img [ref=e2410]
+          - generic [ref=e2412]: Monitoramento da Estratégia
+          - img "arrow-right" [ref=e2414]:
+            - img [ref=e2415]

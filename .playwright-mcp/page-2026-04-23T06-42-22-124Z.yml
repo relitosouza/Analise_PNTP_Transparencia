@@ -1,0 +1,488 @@
+- generic [active] [ref=e1]:
+  - img "Prefeitura de Osasco" [ref=e3]
+  - generic [ref=e11]:
+    - banner [ref=e13]:
+      - generic [ref=e14]:
+        - navigation [ref=e18]:
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Feriados Municipais" [ref=e21] [cursor=pointer]:
+                - /url: https://osasco.sp.gov.br/feriados-municipais/
+            - listitem [ref=e22]:
+              - link "Legislação Municipal" [ref=e23] [cursor=pointer]:
+                - /url: https://leismunicipais.com.br/prefeitura/sp/osasco
+            - listitem [ref=e24]:
+              - link "Carta de Serviços" [ref=e25] [cursor=pointer]:
+                - /url: https://osascodigital.osasco.sp.gov.br/#/
+            - listitem [ref=e26]:
+              - link "Imprensa Oficial" [ref=e27] [cursor=pointer]:
+                - /url: https://osasco.sp.gov.br/imprensa-oficial/
+            - listitem [ref=e28]:
+              - link "Transparência" [ref=e29] [cursor=pointer]:
+                - /url: http://transparencia.osasco.sp.gov.br/
+            - listitem [ref=e30]:
+              - link "Acesso à Informação" [ref=e31] [cursor=pointer]:
+                - /url: http://e-sic.osasco.sp.gov.br/
+            - listitem [ref=e32]:
+              - link "Fala Cidadão-OGM" [ref=e33] [cursor=pointer]:
+                - /url: http://falacidadao.osasco.sp.gov.br/#/falaCidadao/home
+            - listitem [ref=e34]:
+              - link "156" [ref=e35] [cursor=pointer]:
+                - /url: https://central156.osasco.sp.gov.br
+            - listitem [ref=e36]:
+              - link "Dados Abertos" [ref=e37] [cursor=pointer]:
+                - /url: https://transparencia.osasco.sp.gov.br/#/dados_abertos
+        - generic [ref=e40]:
+          - text:   
+          - generic [ref=e46]:
+            - link "Prefeitura de Osasco":
+              - /url: https://osasco.sp.gov.br/
+              - img "Prefeitura de Osasco" [ref=e47] [cursor=pointer]
+        - text:   
+    - list [ref=e54]:
+      - listitem [ref=e55]:
+        - link "Cidadão Cidadão" [ref=e56] [cursor=pointer]:
+          - /url: "#"
+          - img "Cidadão" [ref=e57]
+          - generic [ref=e58]: Cidadão
+      - listitem [ref=e59]:
+        - link "Servidor Servidor" [ref=e60] [cursor=pointer]:
+          - /url: "#"
+          - img "Servidor" [ref=e61]
+          - generic [ref=e62]: Servidor
+      - listitem [ref=e63]:
+        - link "Empresa Empresa" [ref=e64] [cursor=pointer]:
+          - /url: "#"
+          - img "Empresa" [ref=e65]
+          - generic [ref=e66]: Empresa
+    - generic [ref=e67]:
+      - list [ref=e74]:
+        - listitem [ref=e75]
+      - generic [ref=e107]:
+        - link "slider image" [ref=e109] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/galeria-de-prefeitos/
+          - img "slider image" [ref=e110]
+        - link "slider image" [ref=e112] [cursor=pointer]:
+          - /url: https://sissportal.osasco.sp.gov.br/login
+          - img "slider image" [ref=e113]
+        - link "slider image" [ref=e115] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/fundo-social-de-solidariedade-de-osasco/
+          - img "slider image" [ref=e116]
+        - link "slider image" [ref=e118] [cursor=pointer]:
+          - /url: https://falacidadao.osasco.sp.gov.br/#/
+          - img "slider image" [ref=e119]
+        - link "slider image" [ref=e121] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/gabinete-do-prefeito/#1755683440195-76268e71-7479
+          - img "slider image" [ref=e122]
+        - link "slider image" [ref=e124] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/egds/
+          - img "slider image" [ref=e125]
+        - link "slider image" [ref=e127] [cursor=pointer]:
+          - /url: http://gestaourbana.osasco.sp.gov.br/
+          - img "slider image" [ref=e128]
+        - link "slider image" [ref=e130] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/secretaria-de-emprego-trabalho-e-renda/#1733320961769-51861a78-69f2
+          - img "slider image" [ref=e131]
+        - link "slider image" [ref=e133] [cursor=pointer]:
+          - /url: https://visao360.osasco.sp.gov.br/
+          - img "slider image" [ref=e134]
+        - link "slider image" [ref=e136] [cursor=pointer]:
+          - /url: /programas-e-acoes/#ciclofaixa
+          - img "slider image" [ref=e137]
+        - link "slider image" [ref=e139] [cursor=pointer]:
+          - /url: /programas-e-acoes/#servicosdesaude
+          - img "slider image" [ref=e140]
+        - link "slider image" [ref=e142] [cursor=pointer]:
+          - /url: /programas-e-acoes/#pcds-osasco
+          - img "slider image" [ref=e143]
+        - link "slider image" [ref=e145] [cursor=pointer]:
+          - /url: /programas-e-acoes/#portal-trabalhador
+          - img "slider image" [ref=e146]
+        - link "slider image" [ref=e148] [cursor=pointer]:
+          - /url: /programas-e-acoes/#desaparecidos
+          - img "slider image" [ref=e149]
+        - link "slider image" [ref=e151] [cursor=pointer]:
+          - /url: /programas-e-acoes/#osasco-recicla/
+          - img "slider image" [ref=e152]
+        - link "slider image" [ref=e154] [cursor=pointer]:
+          - /url: https://osascodigital.osasco.sp.gov.br/#/
+          - img "slider image" [ref=e155]
+        - link "slider image" [ref=e157] [cursor=pointer]:
+          - /url: http://e-sic.osasco.sp.gov.br/
+          - img "slider image" [ref=e158]
+        - link "slider image" [ref=e160] [cursor=pointer]:
+          - /url: http://casaempreendedor.osasco.sp.gov.br/
+          - img "slider image" [ref=e161]
+        - link "slider image" [ref=e163] [cursor=pointer]:
+          - /url: https://participa.osasco.sp.gov.br/
+          - img "slider image" [ref=e164]
+        - link "slider image" [ref=e166] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/secretaria-de-planejamento/#1640093689352-03d8d957-7106
+          - img "slider image" [ref=e167]
+        - link "slider image" [ref=e169] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/secretaria-de-planejamento/#1644850746791-5c3f4857-ccdc
+          - img "slider image" [ref=e170]
+        - link "slider image" [ref=e172] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/coleta-de-residuos-domiciliar/
+          - img "slider image" [ref=e173]
+        - link "slider image" [ref=e175] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/coleta-seletiva-de-residuos
+          - img "slider image" [ref=e176]
+        - link "slider image" [ref=e178] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/faq/
+          - img "slider image" [ref=e179]
+        - link "slider image" [ref=e181] [cursor=pointer]:
+          - /url: https://conectaoz.osasco.sp.gov.br/
+          - img "slider image" [ref=e182]
+        - link "slider image" [ref=e184] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/digres/
+          - img "slider image" [ref=e185]
+        - link "slider image" [ref=e187] [cursor=pointer]:
+          - /url: https://cioeste.sp.gov.br/
+          - img "slider image" [ref=e188]
+        - link "slider image" [ref=e190] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/cipa
+          - img "slider image" [ref=e191]
+        - link "slider image" [ref=e193] [cursor=pointer]:
+          - /url: https://radardatransparencia.atricon.org.br/
+          - img "slider image" [ref=e194]
+        - link "slider image" [ref=e196] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/galeria-de-prefeitos/
+          - img "slider image" [ref=e197]
+        - link "slider image" [ref=e199] [cursor=pointer]:
+          - /url: https://sissportal.osasco.sp.gov.br/login
+          - img "slider image" [ref=e200]
+        - link "slider image" [ref=e202] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/fundo-social-de-solidariedade-de-osasco/
+          - img "slider image" [ref=e203]
+        - link "slider image" [ref=e205] [cursor=pointer]:
+          - /url: https://falacidadao.osasco.sp.gov.br/#/
+          - img "slider image" [ref=e206]
+        - link "slider image" [ref=e208] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/gabinete-do-prefeito/#1755683440195-76268e71-7479
+          - img "slider image" [ref=e209]
+        - link "slider image" [ref=e211] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/egds/
+          - img "slider image" [ref=e212]
+        - link "slider image" [ref=e214] [cursor=pointer]:
+          - /url: http://gestaourbana.osasco.sp.gov.br/
+          - img "slider image" [ref=e215]
+        - link "slider image" [ref=e217] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/secretaria-de-emprego-trabalho-e-renda/#1733320961769-51861a78-69f2
+          - img "slider image" [ref=e218]
+        - link "slider image" [ref=e220] [cursor=pointer]:
+          - /url: https://visao360.osasco.sp.gov.br/
+          - img "slider image" [ref=e221]
+        - link "slider image" [ref=e223] [cursor=pointer]:
+          - /url: /programas-e-acoes/#ciclofaixa
+          - img "slider image" [ref=e224]
+        - link "slider image" [ref=e226] [cursor=pointer]:
+          - /url: /programas-e-acoes/#servicosdesaude
+          - img "slider image" [ref=e227]
+        - link "slider image" [ref=e229] [cursor=pointer]:
+          - /url: /programas-e-acoes/#pcds-osasco
+          - img "slider image" [ref=e230]
+        - link "slider image" [ref=e232] [cursor=pointer]:
+          - /url: /programas-e-acoes/#portal-trabalhador
+          - img "slider image" [ref=e233]
+        - link "slider image" [ref=e235] [cursor=pointer]:
+          - /url: /programas-e-acoes/#desaparecidos
+          - img "slider image" [ref=e236]
+        - link "slider image" [ref=e238] [cursor=pointer]:
+          - /url: /programas-e-acoes/#osasco-recicla/
+          - img "slider image" [ref=e239]
+        - link "slider image" [ref=e241] [cursor=pointer]:
+          - /url: https://osascodigital.osasco.sp.gov.br/#/
+          - img "slider image" [ref=e242]
+      - generic [ref=e250]:
+        - heading "Notícias" [level=2] [ref=e255]:
+          - generic [ref=e256]: Notícias
+        - generic [ref=e262]:
+          - article [ref=e263]:
+            - generic [ref=e264]:
+              - link "CEU das Artes 1º de Maio celebra 10 anos com festa gratuita e inauguração da Arena CEU" [ref=e266] [cursor=pointer]:
+                - /url: https://osasco.sp.gov.br/ceu-das-artes-1o-de-maio-celebra-10-anos-com-festa-gratuita-e-inauguracao-da-arena-ceu/
+                - img "CEU das Artes 1º de Maio celebra 10 anos com festa gratuita e inauguração da Arena CEU" [ref=e267]
+              - generic [ref=e268]:
+                - heading "CEU das Artes 1º de Maio celebra 10 anos com festa gratuita e inauguração da Arena CEU" [level=3] [ref=e269]:
+                  - link "CEU das Artes 1º de Maio celebra 10 anos com festa gratuita e inauguração da Arena CEU" [ref=e270] [cursor=pointer]:
+                    - /url: https://osasco.sp.gov.br/ceu-das-artes-1o-de-maio-celebra-10-anos-com-festa-gratuita-e-inauguracao-da-arena-ceu/
+                - complementary [ref=e271]:
+                  - list [ref=e273]:
+                    - listitem [ref=e274]:
+                      - time [ref=e275]: 22 de abril de 2026
+          - article [ref=e276]:
+            - generic [ref=e277]:
+              - link "Osasco conquista 3º lugar no Campeonato Paulista de Basquete 3×3 – Série Ouro" [ref=e279] [cursor=pointer]:
+                - /url: https://osasco.sp.gov.br/osasco-conquista-3o-lugar-no-campeonato-paulista-de-basquete-3x3-serie-ouro/
+                - img "Osasco conquista 3º lugar no Campeonato Paulista de Basquete 3×3 – Série Ouro" [ref=e280]
+              - generic [ref=e281]:
+                - heading "Osasco conquista 3º lugar no Campeonato Paulista de Basquete 3×3 – Série Ouro" [level=3] [ref=e282]:
+                  - link "Osasco conquista 3º lugar no Campeonato Paulista de Basquete 3×3 – Série Ouro" [ref=e283] [cursor=pointer]:
+                    - /url: https://osasco.sp.gov.br/osasco-conquista-3o-lugar-no-campeonato-paulista-de-basquete-3x3-serie-ouro/
+                - complementary [ref=e284]:
+                  - list [ref=e286]:
+                    - listitem [ref=e287]:
+                      - time [ref=e288]: 22 de abril de 2026
+          - article [ref=e289]:
+            - generic [ref=e290]:
+              - link "Saúde forma técnicos em agente comunitário e em vigilância no combate a endemias" [ref=e292] [cursor=pointer]:
+                - /url: https://osasco.sp.gov.br/saude-forma-tecnicos-em-agente-comunitario-e-em-vigilancia-no-combate-a-endemias/
+                - img "Saúde forma técnicos em agente comunitário e em vigilância no combate a endemias" [ref=e293]
+              - generic [ref=e294]:
+                - heading "Saúde forma técnicos em agente comunitário e em vigilância no combate a endemias" [level=3] [ref=e295]:
+                  - link "Saúde forma técnicos em agente comunitário e em vigilância no combate a endemias" [ref=e296] [cursor=pointer]:
+                    - /url: https://osasco.sp.gov.br/saude-forma-tecnicos-em-agente-comunitario-e-em-vigilancia-no-combate-a-endemias/
+                - complementary [ref=e297]:
+                  - list [ref=e299]:
+                    - listitem [ref=e300]:
+                      - time [ref=e301]: 16 de abril de 2026
+          - article [ref=e302]:
+            - generic [ref=e303]:
+              - link "Confira o que abre e fecha no feriado de Tiradentes" [ref=e305] [cursor=pointer]:
+                - /url: https://osasco.sp.gov.br/confira-o-que-abre-e-fecha-no-feriado-de-tiradentes-3/
+                - img "Confira o que abre e fecha no feriado de Tiradentes" [ref=e306]
+              - generic [ref=e307]:
+                - heading "Confira o que abre e fecha no feriado de Tiradentes" [level=3] [ref=e308]:
+                  - link "Confira o que abre e fecha no feriado de Tiradentes" [ref=e309] [cursor=pointer]:
+                    - /url: https://osasco.sp.gov.br/confira-o-que-abre-e-fecha-no-feriado-de-tiradentes-3/
+                - complementary [ref=e310]:
+                  - list [ref=e312]:
+                    - listitem [ref=e313]:
+                      - time [ref=e314]: 15 de abril de 2026
+        - link "LER TODAS AS NOTÍCIAS" [ref=e319] [cursor=pointer]:
+          - /url: /noticias
+      - generic [ref=e324]:
+        - heading "SERVIÇOS EM DESTAQUE" [level=3] [ref=e330]
+        - generic [ref=e331]:
+          - link "bloco-iomo-1-scaled-300×295-x" [ref=e336] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/imprensa-oficial/
+            - img "bloco-iomo-1-scaled-300×295-x" [ref=e337]
+          - link "bloco-nosso-futuro" [ref=e342] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/nossofuturo-2/
+            - img "bloco-nosso-futuro" [ref=e343]
+          - link "bloco-nfe-1-scaled-300×295.jpg" [ref=e348] [cursor=pointer]:
+            - /url: https://nfe.osasco.sp.gov.br/EissnfeWebApp/Portal/Default.aspx?ReturnUrl=%2fEissnfeWebApp%2fSistema%2fGeral%2fLogin.aspx
+            - img "bloco-nfe-1-scaled-300×295.jpg" [ref=e349]
+          - link "casa-do-empreendedor" [ref=e354] [cursor=pointer]:
+            - /url: https://casaempreendedor.osasco.sp.gov.br/
+            - img "casa-do-empreendedor" [ref=e355]
+          - link "bloco-iptu" [ref=e360] [cursor=pointer]:
+            - /url: http://sf.osasco.sp.gov.br/pages/servicos/iptu
+            - img "bloco-iptu" [ref=e361]
+          - link "logo-156-azul" [ref=e366] [cursor=pointer]:
+            - /url: https://central156.osasco.sp.gov.br/#/
+            - img "logo-156-azul" [ref=e367]
+        - generic [ref=e368]:
+          - link "bloco-defesa-civil" [ref=e373] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/defesa-civil/
+            - img "bloco-defesa-civil" [ref=e374]
+          - link "bloco-hospital-veterinario-novo" [ref=e379] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/programas-e-acoes/#hospitais-veterinarios
+            - img "bloco-hospital-veterinario-novo" [ref=e380]
+          - link "bloco-fala-cidado-novo" [ref=e385] [cursor=pointer]:
+            - /url: https://falacidadao.osasco.sp.gov.br/#/
+            - img "bloco-fala-cidado-novo" [ref=e386]
+          - link "bloco-ecopontos" [ref=e391] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/programas-e-acoes/#ecopontos
+            - img "bloco-ecopontos" [ref=e392]
+          - link "bloco-feiras-livres" [ref=e397] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/feiras-livres/
+            - img "bloco-feiras-livres" [ref=e398]
+          - link "bloco-secretarias" [ref=e403] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/secretarias/
+            - img "bloco-secretarias" [ref=e404]
+      - generic [ref=e409]:
+        - generic:
+          - generic [ref=e412]:
+            - generic [ref=e415]:
+              - heading "Canal Oficial" [level=4] [ref=e419]
+              - figure [ref=e423]:
+                - link [ref=e424] [cursor=pointer]:
+                  - /url: https://www.youtube.com/@governodeosasco
+            - generic [ref=e427]:
+              - heading "Fundo Social" [level=4] [ref=e431]
+              - figure [ref=e435]:
+                - link [ref=e436] [cursor=pointer]:
+                  - /url: https://osasco.sp.gov.br/fundo-social-de-solidariedade-de-osasco/
+          - generic [ref=e444]:
+            - list [ref=e446]:
+              - listitem [ref=e447]:
+                - link [ref=e448] [cursor=pointer]:
+                  - /url: https://desaparecidos.osasco.sp.gov.br/#/portal
+              - listitem [ref=e449]:
+                - link [ref=e450] [cursor=pointer]:
+                  - /url: https://osascodigital.osasco.sp.gov.br/#/
+              - listitem [ref=e451]:
+                - link [ref=e452] [cursor=pointer]:
+                  - /url: https://internet.osasco.sp.gov.br/map/wifi-location.html
+              - listitem [ref=e453]:
+                - link [ref=e454] [cursor=pointer]:
+                  - /url: http://transparencia.osasco.sp.gov.br/?cod=320
+              - listitem [ref=e455]:
+                - link [ref=e456] [cursor=pointer]:
+                  - /url: https://osasco.sp.gov.br/secretaria-de-saude/
+              - listitem [ref=e457]:
+                - link [ref=e458] [cursor=pointer]:
+                  - /url: https://protocolo.osasco.sp.gov.br/#/login
+              - listitem [ref=e459]:
+                - link [ref=e460] [cursor=pointer]:
+                  - /url: https://desaparecidos.osasco.sp.gov.br/#/portal
+              - listitem [ref=e461]:
+                - link [ref=e462] [cursor=pointer]:
+                  - /url: https://osascodigital.osasco.sp.gov.br/#/
+            - list [ref=e463]:
+              - listitem [ref=e464]:
+                - generic [ref=e465]: "1"
+              - listitem [ref=e466]:
+                - generic [ref=e467] [cursor=pointer]: "2"
+              - listitem [ref=e468]:
+                - generic [ref=e469] [cursor=pointer]: "3"
+              - listitem [ref=e470]:
+                - generic [ref=e471] [cursor=pointer]: "4"
+              - listitem [ref=e472]:
+                - generic [ref=e473] [cursor=pointer]: "5"
+              - listitem [ref=e474]:
+                - generic [ref=e475] [cursor=pointer]: "6"
+            - list:
+              - listitem:
+                - link " Previous" [ref=e476] [cursor=pointer]:
+                  - /url: "#"
+              - listitem:
+                - link " Next" [ref=e477] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=e489]:
+        - generic [ref=e492]:
+          - heading "Mapa" [level=2] [ref=e493]:
+            - heading "Mapa" [level=2] [ref=e495]
+          - iframe [ref=e499]:
+            - link "Abrir no Maps (abre em uma nova guia)" [ref=f5e4] [cursor=pointer]:
+              - /url: about:invalid#zClosurez
+              - text: Abrir no Maps
+              - img [ref=f5e6]
+        - generic [ref=e502]:
+          - heading "Contato" [level=2] [ref=e503]:
+            - heading "Contato" [level=2] [ref=e505]
+          - generic [ref=e507]:
+            - paragraph [ref=e508]:
+              - generic [ref=e509]: 
+              - text: Infomações
+            - paragraph [ref=e510]:
+              - text: Avenida Lázaro de Mello Brandão, nº 300
+              - text: Osasco – SP
+              - text: 06023-020
+            - paragraph [ref=e511]:
+              - generic [ref=e512]: 
+              - text: (11) 3652-9000
+            - paragraph [ref=e513]:
+              - text: "Horário de atendimento:"
+              - text: Segunda a Sexta, das 8h às 17h.
+            - paragraph [ref=e514]:
+              - generic [ref=e515]: 
+              - text: prefeitura@osasco.sp.gov.br
+    - contentinfo [ref=e516]:
+      - list [ref=e523]:
+        - listitem [ref=e524]:
+          - link "Mapa do site" [ref=e525] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/mapa-do-site/
+            - img [ref=e526]
+            - text: Mapa do site
+        - listitem [ref=e528]:
+          - link "Comunicar Erros" [ref=e529] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/comunicar-erros/
+            - img [ref=e530]
+            - text: Comunicar Erros
+        - listitem [ref=e532]:
+          - link "Logos oficiais e Manual da Marca" [ref=e533] [cursor=pointer]:
+            - /url: https://drive.google.com/drive/folders/1dB9XhTndxH6olmi1MoUaMGdwp6J9b_fD?usp=drive_link
+            - img [ref=e534]
+            - text: Logos oficiais e Manual da Marca
+  - generic [ref=e536]:
+    - navigation [ref=e538]:
+      - list [ref=e539]:
+        - listitem [ref=e540]:
+          - link "Cidade de Osasco" [ref=e541] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/sobre-osasco/
+        - listitem [ref=e542]:
+          - link "Gabinete do Prefeito" [ref=e543] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/gabinete-do-prefeito/
+        - listitem [ref=e544]:
+          - link "Notícias" [ref=e545] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/noticias/
+        - listitem [ref=e546]:
+          - link "Imprensa Oficial" [ref=e547] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/imprensa-oficial/
+        - listitem [ref=e548]:
+          - link "Secretarias" [ref=e549] [cursor=pointer]:
+            - /url: /secretarias
+          - img [ref=e551] [cursor=pointer]
+        - listitem [ref=e553]:
+          - link "Serviços Online de Finanças" [ref=e554] [cursor=pointer]:
+            - /url: http://sf.osasco.sp.gov.br/financas/
+        - listitem [ref=e555]:
+          - link "Carta de Serviços" [ref=e556] [cursor=pointer]:
+            - /url: https://osascodigital.osasco.sp.gov.br/#/
+        - listitem [ref=e557]:
+          - link "Legislação Municipal" [ref=e558] [cursor=pointer]:
+            - /url: https://leismunicipais.com.br/prefeitura/sp/osasco
+        - listitem [ref=e559]:
+          - link "Galeria de Prefeitos" [ref=e560] [cursor=pointer]:
+            - /url: https://osasco.sp.gov.br/galeria-de-prefeitos/
+    - list [ref=e565]:
+      - listitem [ref=e566]:
+        - link "Cidade de Osasco" [ref=e567] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/sobre-osasco/
+          - img [ref=e568]
+          - text: Cidade de Osasco
+      - listitem [ref=e570]:
+        - link "Gabinete do Prefeito" [ref=e571] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/gabinete-do-prefeito/
+          - img [ref=e572]
+          - text: Gabinete do Prefeito
+      - listitem [ref=e574]:
+        - link "Notícias" [ref=e575] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/noticias/
+          - img [ref=e576]
+          - text: Notícias
+      - listitem [ref=e578]:
+        - link "Imprensa Oficial" [ref=e579] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/imprensa-oficial/
+          - img [ref=e580]
+          - text: Imprensa Oficial
+      - listitem [ref=e582]:
+        - text: +
+        - link "Secretarias" [ref=e583] [cursor=pointer]:
+          - /url: /secretarias
+      - listitem [ref=e584]:
+        - link "Serviços Online de Finanças" [ref=e585] [cursor=pointer]:
+          - /url: http://sf.osasco.sp.gov.br/financas/
+          - img [ref=e586]
+          - text: Serviços Online de Finanças
+      - listitem [ref=e588]:
+        - link "Carta de Serviços" [ref=e589] [cursor=pointer]:
+          - /url: https://osascodigital.osasco.sp.gov.br/#/
+          - img [ref=e590]
+          - text: Carta de Serviços
+      - listitem [ref=e592]:
+        - link "Legislação Municipal" [ref=e593] [cursor=pointer]:
+          - /url: https://leismunicipais.com.br/prefeitura/sp/osasco
+          - img [ref=e594]
+          - text: Legislação Municipal
+      - listitem [ref=e596]:
+        - link "Galeria de Prefeitos" [ref=e597] [cursor=pointer]:
+          - /url: https://osasco.sp.gov.br/galeria-de-prefeitos/
+          - img [ref=e598]
+          - text: Galeria de Prefeitos
+  - link [ref=e600] [cursor=pointer]:
+    - /url: "#top-of-page"
+    - img [ref=e601]
+  - generic [ref=e604] [cursor=pointer]:
+    - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e605]
+    - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e606]
+  - dialog "cookieconsent" [ref=e607]:
+    - generic [ref=e608]:
+      - text: O portal osasco.sp.gov.br utiliza cookies próprios (primários), ou seja, do domínio osasco.sp.gov.br, para registrar as configurações e preferências de navegação dos usuários e gerar relatórios estatísticos através do Google Analytics, e também cookies de terceiros para complementar essas estatísticas. Os dados do Google Analytics e de terceiros são anonimizados antes de serem usados para análises e processamento de desempenho da web.
+      - button "cookies - Leia mais" [ref=e609] [cursor=pointer]: Leia mais
+    - generic [ref=e610]:
+      - button "Recusar cookies" [ref=e611] [cursor=pointer]: Recusar
+      - button "Permitir cookies" [ref=e612] [cursor=pointer]: Permitir

@@ -1,0 +1,367 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e6] [cursor=pointer]:
+      - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e7]
+      - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e8]
+    - generic [ref=e9]:
+      - complementary [ref=e10]:
+        - generic [ref=e11]:
+          - img "Brasão" [ref=e12] [cursor=pointer]
+          - generic [ref=e14]:
+            - textbox "Pesquisar" [ref=e15]
+            - button "search" [ref=e17] [cursor=pointer]:
+              - img "search" [ref=e18]:
+                - img [ref=e19]
+          - menu [ref=e21]:
+            - menuitem "home Sobre o Portal" [ref=e22] [cursor=pointer]:
+              - img "home" [ref=e23]:
+                - img [ref=e24]
+              - generic [ref=e26]: Sobre o Portal
+            - listitem [ref=e27]:
+              - menuitem "message Saiba mais arrow-right" [ref=e28] [cursor=pointer]:
+                - generic [ref=e30]:
+                  - img "message" [ref=e31]:
+                    - img [ref=e32]
+                  - generic [ref=e34]: Saiba mais
+                  - img "arrow-right" [ref=e36]:
+                    - img [ref=e37]
+            - menuitem "folder-open Dados Abertos" [ref=e39] [cursor=pointer]:
+              - img "folder-open" [ref=e40]:
+                - img [ref=e41]
+              - generic [ref=e43]: Dados Abertos
+            - listitem [ref=e44]:
+              - menuitem "setting Informações COVID-19 arrow-right" [ref=e45] [cursor=pointer]:
+                - generic [ref=e47]:
+                  - img "setting" [ref=e48]:
+                    - img [ref=e49]
+                  - generic [ref=e51]: Informações COVID-19
+                  - img "arrow-right" [ref=e53]:
+                    - img [ref=e54]
+            - menuitem "file-text Audiências Públicas" [ref=e56] [cursor=pointer]:
+              - img "file-text" [ref=e57]:
+                - img [ref=e58]
+              - generic [ref=e60]: Audiências Públicas
+            - menuitem "idcard Administração Pública" [ref=e61] [cursor=pointer]:
+              - img "idcard" [ref=e62]:
+                - img [ref=e63]
+              - generic [ref=e65]: Administração Pública
+            - listitem [ref=e66]:
+              - menuitem "message Canais de participação arrow-right" [ref=e67] [cursor=pointer]:
+                - generic [ref=e69]:
+                  - img "message" [ref=e70]:
+                    - img [ref=e71]
+                  - generic [ref=e73]: Canais de participação
+                  - img "arrow-right" [ref=e75]:
+                    - img [ref=e76]
+            - listitem [ref=e78]:
+              - menuitem "safety Concursos e Processos Seletivos arrow-right" [ref=e79] [cursor=pointer]:
+                - generic [ref=e81]:
+                  - img "safety" [ref=e82]:
+                    - img [ref=e83]
+                  - generic [ref=e86]: Concursos e Processos Seletivos
+                  - img "arrow-right" [ref=e88]:
+                    - img [ref=e89]
+            - listitem [ref=e91]:
+              - menuitem "profile Concessões arrow-right" [ref=e92] [cursor=pointer]:
+                - generic [ref=e94]:
+                  - img "profile" [ref=e95]:
+                    - img [ref=e96]
+                  - generic [ref=e98]: Concessões
+                  - img "arrow-right" [ref=e100]:
+                    - img [ref=e101]
+            - listitem [ref=e103]:
+              - menuitem "snippets Contas Públicas arrow-right" [ref=e104] [cursor=pointer]:
+                - generic [ref=e106]:
+                  - img "snippets" [ref=e107]:
+                    - img [ref=e108]
+                  - generic [ref=e110]: Contas Públicas
+                  - img "arrow-right" [ref=e112]:
+                    - img [ref=e113]
+            - listitem [ref=e115]:
+              - menuitem "file-pdf Controladoria Geral do Município de Osasco arrow-right" [ref=e116] [cursor=pointer]:
+                - generic [ref=e118]:
+                  - img "file-pdf" [ref=e119]:
+                    - img [ref=e120]
+                  - generic [ref=e122]: Controladoria Geral do Município de Osasco
+                  - img "arrow-right" [ref=e124]:
+                    - img [ref=e125]
+            - listitem [ref=e127]:
+              - menuitem "safety Gestão de Pessoas arrow-right" [ref=e128] [cursor=pointer]:
+                - generic [ref=e130]:
+                  - img "safety" [ref=e131]:
+                    - img [ref=e132]
+                  - generic [ref=e135]: Gestão de Pessoas
+                  - img "arrow-right" [ref=e137]:
+                    - img [ref=e138]
+            - listitem [ref=e140]:
+              - menuitem "snippets Legislação e Imprensa Oficial do Município arrow-right" [ref=e141] [cursor=pointer]:
+                - generic [ref=e143]:
+                  - img "snippets" [ref=e144]:
+                    - img [ref=e145]
+                  - generic [ref=e147]: Legislação e Imprensa Oficial do Município
+                  - img "arrow-right" [ref=e149]:
+                    - img [ref=e150]
+            - listitem [ref=e152]:
+              - menuitem "profile Licitações e Contratos arrow-right" [ref=e153] [cursor=pointer]:
+                - generic [ref=e155]:
+                  - img "profile" [ref=e156]:
+                    - img [ref=e157]
+                  - generic [ref=e159]: Licitações e Contratos
+                  - img "arrow-right" [ref=e161]:
+                    - img [ref=e162]
+            - menuitem "dollar Repasses Mundo da Criança" [ref=e164] [cursor=pointer]:
+              - img "dollar" [ref=e165]:
+                - img [ref=e166]
+              - generic [ref=e168]: Repasses Mundo da Criança
+            - listitem [ref=e169]:
+              - menuitem "message Ouvidoria Geral arrow-right" [ref=e170] [cursor=pointer]:
+                - generic [ref=e172]:
+                  - img "message" [ref=e173]:
+                    - img [ref=e174]
+                  - generic [ref=e176]: Ouvidoria Geral
+                  - img "arrow-right" [ref=e178]:
+                    - img [ref=e179]
+            - menuitem "file-search Fala Cidadão" [ref=e181] [cursor=pointer]:
+              - img "file-search" [ref=e182]:
+                - img [ref=e183]
+              - generic [ref=e185]: Fala Cidadão
+            - listitem [ref=e186]:
+              - menuitem "bank Patrimônio arrow-right" [ref=e187] [cursor=pointer]:
+                - generic [ref=e189]:
+                  - img "bank" [ref=e190]:
+                    - img [ref=e191]
+                  - generic [ref=e193]: Patrimônio
+                  - img "arrow-right" [ref=e195]:
+                    - img [ref=e196]
+            - listitem [ref=e198]:
+              - menuitem "file-search Políticas, Planos Municipais, Ind. e Inf. Temática arrow-right" [ref=e199] [cursor=pointer]:
+                - generic [ref=e201]:
+                  - img "file-search" [ref=e202]:
+                    - img [ref=e203]
+                  - generic [ref=e205]: Políticas, Planos Municipais, Ind. e Inf. Temática
+                  - img "arrow-right" [ref=e207]:
+                    - img [ref=e208]
+            - listitem [ref=e210]:
+              - menuitem "environment Projetos e Obras arrow-right" [ref=e211] [cursor=pointer]:
+                - generic [ref=e213]:
+                  - img "environment" [ref=e214]:
+                    - img [ref=e215]
+                  - generic [ref=e217]: Projetos e Obras
+                  - img "arrow-right" [ref=e219]:
+                    - img [ref=e220]
+            - listitem [ref=e222]:
+              - menuitem "setting Serviços arrow-right" [ref=e223] [cursor=pointer]:
+                - generic [ref=e225]:
+                  - img "setting" [ref=e226]:
+                    - img [ref=e227]
+                  - generic [ref=e229]: Serviços
+                  - img "arrow-right" [ref=e231]:
+                    - img [ref=e232]
+            - listitem [ref=e234]:
+              - menuitem "file-search Terceiro Setor arrow-right" [ref=e235] [cursor=pointer]:
+                - generic [ref=e237]:
+                  - img "file-search" [ref=e238]:
+                    - img [ref=e239]
+                  - generic [ref=e241]: Terceiro Setor
+                  - img "arrow-right" [ref=e243]:
+                    - img [ref=e244]
+            - listitem [ref=e246]:
+              - menuitem "idcard Convênios arrow-right" [ref=e247] [cursor=pointer]:
+                - generic [ref=e249]:
+                  - img "idcard" [ref=e250]:
+                    - img [ref=e251]
+                  - generic [ref=e253]: Convênios
+                  - img "arrow-right" [ref=e255]:
+                    - img [ref=e256]
+            - listitem [ref=e258]:
+              - menuitem "flag Convênios de Cooperação arrow-right" [ref=e259] [cursor=pointer]:
+                - generic [ref=e261]:
+                  - img "flag" [ref=e262]:
+                    - img [ref=e263]
+                  - generic [ref=e265]: Convênios de Cooperação
+                  - img "arrow-right" [ref=e267]:
+                    - img [ref=e268]
+            - listitem [ref=e270]:
+              - menuitem "team Peças Orçamentárias arrow-right" [expanded] [active] [ref=e271] [cursor=pointer]:
+                - generic [ref=e273]:
+                  - img "team" [ref=e274]:
+                    - img [ref=e275]
+                  - generic [ref=e277]: Peças Orçamentárias
+                  - img "arrow-right" [ref=e279]:
+                    - img [ref=e280]
+            - menuitem "profile Peças Contábeis" [ref=e282] [cursor=pointer]:
+              - img "profile" [ref=e283]:
+                - img [ref=e284]
+              - generic [ref=e286]: Peças Contábeis
+            - menuitem "line-chart Estatísticas" [ref=e287] [cursor=pointer]:
+              - img "line-chart" [ref=e288]:
+                - img [ref=e289]
+              - generic [ref=e291]: Estatísticas
+            - menuitem "info-circle Concessões" [ref=e292] [cursor=pointer]:
+              - img "info-circle" [ref=e293]:
+                - img [ref=e294]
+              - generic [ref=e297]: Concessões
+            - menuitem "dollar Emendas Parlamentares" [ref=e298] [cursor=pointer]:
+              - img "dollar" [ref=e299]:
+                - img [ref=e300]
+              - generic [ref=e302]: Emendas Parlamentares
+            - listitem [ref=e303]:
+              - menuitem "flag Relações Internacionais arrow-right" [ref=e304] [cursor=pointer]:
+                - generic [ref=e306]:
+                  - img "flag" [ref=e307]:
+                    - img [ref=e308]
+                  - generic [ref=e310]: Relações Internacionais
+                  - img "arrow-right" [ref=e312]:
+                    - img [ref=e313]
+          - img "menu-fold" [ref=e317] [cursor=pointer]:
+            - img [ref=e318]
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - heading "." [level=1] [ref=e323]
+          - button "bulb" [ref=e325] [cursor=pointer]:
+            - img "bulb" [ref=e326]:
+              - img [ref=e327]
+        - main [ref=e329]:
+          - generic [ref=e724]:
+            - generic [ref=e725]:
+              - link "home" [ref=e727] [cursor=pointer]:
+                - /url: "#/"
+                - img "home" [ref=e728]:
+                  - img [ref=e729]
+              - text: /
+            - generic [ref=e731]: Home
+          - generic [ref=e733]:
+            - generic [ref=e736]:
+              - paragraph [ref=e737]:
+                - strong [ref=e738]: Emendas
+              - separator [ref=e739]
+              - paragraph
+            - generic [ref=e743]:
+              - generic [ref=e744]: Estadual e Federal
+              - generic [ref=e745]:
+                - generic [ref=e746] [cursor=pointer]:
+                  - generic [ref=e747]:
+                    - combobox [ref=e749]
+                    - generic "2026" [ref=e750]
+                  - generic:
+                    - img:
+                      - img
+                - link "eye" [ref=e752] [cursor=pointer]:
+                  - /url: "#/dinamico/66/EmendasParlamentares"
+                  - img "eye" [ref=e753]:
+                    - img [ref=e754]
+            - img "Imagem Card" [ref=e763] [cursor=pointer]
+            - generic [ref=e766]:
+              - paragraph [ref=e767]:
+                - strong [ref=e768]: Licitações e Contratos
+              - separator [ref=e769]
+              - paragraph
+            - img "Imagem Card" [ref=e772] [cursor=pointer]
+            - img "Imagem Card" [ref=e775] [cursor=pointer]
+            - img "Imagem Card" [ref=e778] [cursor=pointer]
+            - img "Imagem Card" [ref=e781] [cursor=pointer]
+            - img "Imagem Card" [ref=e784] [cursor=pointer]
+            - img "Imagem Card" [ref=e787] [cursor=pointer]
+            - generic [ref=e790]:
+              - paragraph [ref=e791]:
+                - strong [ref=e793]: Páginas Mais Acessados
+              - separator [ref=e794]
+            - img "Imagem Card" [ref=e797] [cursor=pointer]
+            - img "Imagem Card" [ref=e800] [cursor=pointer]
+            - img "Imagem Card" [ref=e803] [cursor=pointer]
+            - img "Imagem Card" [ref=e806] [cursor=pointer]
+            - generic [ref=e809]:
+              - paragraph [ref=e810]:
+                - strong [ref=e811]: Terceiro Setor
+              - separator [ref=e812]
+              - paragraph
+              - paragraph
+            - img "Imagem Card" [ref=e815] [cursor=pointer]
+            - img "Imagem Card" [ref=e818] [cursor=pointer]
+            - img "Imagem Card" [ref=e821] [cursor=pointer]
+            - img "Imagem Card" [ref=e824] [cursor=pointer]
+            - generic [ref=e827]:
+              - paragraph [ref=e828]:
+                - strong [ref=e829]: Canais de Participação
+              - separator [ref=e830]
+              - paragraph
+            - img "Imagem Card" [ref=e833] [cursor=pointer]
+            - img "Imagem Card" [ref=e836] [cursor=pointer]
+            - img "Imagem Card" [ref=e839] [cursor=pointer]
+            - img "Imagem Card" [ref=e842] [cursor=pointer]
+            - img "Imagem Card" [ref=e845] [cursor=pointer]
+            - generic [ref=e848]:
+              - paragraph [ref=e849]:
+                - strong [ref=e850]: Serviços Digitais
+              - separator [ref=e851]
+              - paragraph
+            - img "Imagem Card" [ref=e854] [cursor=pointer]
+            - img "Imagem Card" [ref=e857] [cursor=pointer]
+            - generic [ref=e860]:
+              - heading "Informações Institucionais" [level=1] [ref=e861]:
+                - strong [ref=e862]: Informações Institucionais
+              - paragraph
+              - separator [ref=e863]
+              - paragraph
+              - paragraph
+              - paragraph
+              - paragraph
+              - paragraph
+              - paragraph
+            - img "Imagem Card" [ref=e866] [cursor=pointer]
+            - img "Imagem Card" [ref=e869] [cursor=pointer]
+            - img "Imagem Card" [ref=e872] [cursor=pointer]
+            - img "Imagem Card" [ref=e875] [cursor=pointer]
+            - img "Imagem Card" [ref=e878] [cursor=pointer]
+            - img "Imagem Card" [ref=e881] [cursor=pointer]
+            - paragraph [ref=e885]:
+              - strong [ref=e886]:
+                - superscript [ref=e888]:
+                  - generic [ref=e889]:
+                    - generic [ref=e890]: "Número total de acessos :"
+                    - text: "965839"
+        - generic [ref=e497]:
+          - img "facebook" [ref=e499] [cursor=pointer]:
+            - img [ref=e500]
+          - img "instagram" [ref=e503] [cursor=pointer]:
+            - img [ref=e504]
+          - img "youtube" [ref=e507] [cursor=pointer]:
+            - img [ref=e508]
+        - generic [ref=e511]:
+          - generic [ref=e512]:
+            - generic [ref=e513]: Av Bussocaba , 300 - Centro - Osasco - 06023-901
+            - generic [ref=e514]: "(11) 3652-9000 - Horário de atendimento: Segunda a Sexta das 8h às 17h"
+          - button "environment" [ref=e516] [cursor=pointer]:
+            - img "environment" [ref=e517]:
+              - img [ref=e518]
+  - generic:
+    - generic:
+      - generic:
+        - list:
+          - menuitem "idcard Convêniosㅤ":
+            - img "idcard":
+              - img
+            - generic: Convêniosㅤ
+  - generic:
+    - generic:
+      - generic:
+        - list:
+          - menuitem "container PPA":
+            - img "container"
+            - generic: PPA
+          - listitem:
+            - menuitem "container LDO arrow-right":
+              - generic:
+                - generic:
+                  - img "container"
+                  - generic: LDO
+                  - generic:
+                    - img "arrow-right"
+          - listitem:
+            - menuitem "container LOA arrow-right":
+              - generic:
+                - generic:
+                  - img "container"
+                  - generic: LOA
+                  - generic:
+                    - img "arrow-right"

@@ -1,1006 +1,1011 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>PNTP 2026 x Transparencia Osasco — URLs</title>
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Segoe UI',Arial,sans-serif;background:#eef1f5;color:#2c3e50}
-    header{background:linear-gradient(135deg,#0a2340 0%,#1a6fbf 100%);color:#fff;
-            padding:26px 36px;border-bottom:3px solid #f39c12}
-    header h1{font-size:21px;margin-bottom:5px}
-    header p{font-size:12px;opacity:.8;margin-top:3px}
-    header a{color:#7ecbff}
-    .wrap{max-width:1500px;margin:0 auto;padding:22px 14px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-            gap:12px;margin-bottom:22px}
-    .card{background:#fff;border-radius:10px;padding:16px;text-align:center;
-           box-shadow:0 1px 5px rgba(0,0,0,.08)}
-    .card .n{font-size:34px;font-weight:800;line-height:1}
-    .card .l{font-size:11px;color:#7f8c8d;margin-top:5px}
-    .box{background:#fff;border-radius:10px;padding:20px 22px;margin-bottom:20px;
-          box-shadow:0 1px 5px rgba(0,0,0,.07)}
-    .box h2{font-size:15px;font-weight:700;color:#0a2340;margin-bottom:15px;
-             padding-bottom:9px;border-bottom:2px solid #eee}
-    table{width:100%;border-collapse:collapse}
-    thead th{background:#0a2340;color:#fff;padding:10px 10px;font-size:11px;
-              text-align:left;white-space:nowrap}
-    tbody tr:hover{filter:brightness(.98)}
-    footer{text-align:center;padding:18px;color:#aaa;font-size:11px;margin-top:10px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PNTP 2026 × Transparência Osasco</title>
+<style>
+:root {
+  --navy:#0a2340; --blue:#1a6fbf; --green:#27ae60; --red:#e74c3c;
+  --orange:#e67e22; --amber:#f39c12; --grey:#95a5a6;
+  --bg:#f0f2f5; --card:#fff; --border:#e8ecf0;
+  --sidebar-w:240px; --header-h:60px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:#2c3e50;font-size:14px;
+      display:flex;flex-direction:column;min-height:100vh}
+
+/* ── Header ── */
+.top-header{position:sticky;top:0;z-index:200;
+  background:linear-gradient(135deg,var(--navy) 0%,#1a5fa0 100%);
+  color:#fff;display:flex;align-items:center;gap:16px;
+  padding:0 20px;height:var(--header-h);border-bottom:3px solid var(--amber);
+  box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.top-header h1{font-size:16px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top-header .meta{font-size:11px;opacity:.7;white-space:nowrap}
+.top-header a{color:#7ecbff;text-decoration:none}
+.top-header a:hover{text-decoration:underline}
+.spacer{flex:1}
+.score-pill{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);
+  border-radius:20px;padding:4px 14px;font-size:13px;font-weight:700;white-space:nowrap}
+
+/* ── Layout ── */
+.layout{display:flex;flex:1;min-height:0}
+
+/* ── Sidebar ── */
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--card);
+  border-right:1px solid var(--border);position:sticky;top:var(--header-h);
+  height:calc(100vh - var(--header-h));overflow-y:auto;padding:12px 0;
+  box-shadow:2px 0 8px rgba(0,0,0,.04)}
+.sidebar-title{font-size:10px;font-weight:700;color:#aaa;letter-spacing:.8px;
+  text-transform:uppercase;padding:0 14px 8px}
+.nav-item{display:block;padding:8px 14px;text-decoration:none;color:inherit;
+  border-left:3px solid transparent;transition:all .15s;cursor:pointer}
+.nav-item:hover,.nav-item.active{background:#f0f4ff;border-left-color:var(--blue)}
+.nav-label{font-size:12px;font-weight:600;color:#2c3e50;line-height:1.3;margin-bottom:4px}
+.nav-bar{background:#ecf0f1;border-radius:3px;height:4px;margin-bottom:3px;overflow:hidden}
+.nav-fill{height:4px;border-radius:3px;transition:width .3s}
+.nav-meta{display:flex;align-items:center;justify-content:space-between}
+.nav-badges{display:flex;gap:3px}
+.nb{font-size:10px;font-weight:700;padding:1px 5px;border-radius:8px}
+.nb.ok  {background:#d5f5e3;color:#1e8449}
+.nb.aus {background:#fde8e4;color:#c0392b}
+.nb.pend{background:#eaf2ff;color:#1a5276}
+
+/* ── Main ── */
+.main{flex:1;min-width:0;padding:20px 24px;overflow-x:hidden}
+
+/* ── Filtros ── */
+.filter-bar{background:var(--card);border-radius:12px;padding:14px 18px;
+  margin-bottom:20px;box-shadow:0 1px 6px rgba(0,0,0,.07);
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.filter-bar input{border:1px solid var(--border);border-radius:8px;padding:7px 12px;
+  font-size:13px;outline:none;width:220px;transition:border .15s}
+.filter-bar input:focus{border-color:var(--blue)}
+.filter-bar label{font-size:12px;font-weight:600;color:#666}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1.5px solid var(--border);border-radius:20px;padding:4px 12px;
+  font-size:11px;font-weight:600;cursor:pointer;background:#fff;transition:all .15s;
+  user-select:none}
+.chip:hover{background:#f0f4ff;border-color:var(--blue)}
+.chip.active{color:#fff;border-color:transparent}
+.chip.c-ok{background:#27ae60;border-color:#27ae60;color:#fff}
+.chip.c-aus{background:#e74c3c;border-color:#e74c3c;color:#fff}
+.chip.c-pend{background:#95a5a6;border-color:#95a5a6;color:#fff}
+.chip.c-ess{background:#c0392b;border-color:#c0392b;color:#fff}
+.chip.c-obr{background:#b7770d;border-color:#b7770d;color:#fff}
+.chip.c-rec{background:#1a5276;border-color:#1a5276;color:#fff}
+#result-count{font-size:12px;color:#95a5a6;margin-left:auto}
+
+/* ── KPI cards ── */
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:12px;margin-bottom:20px}
+.kpi{background:var(--card);border-radius:12px;padding:16px;text-align:center;
+  box-shadow:0 1px 6px rgba(0,0,0,.06);border-top:3px solid transparent}
+.kpi .val{font-size:32px;font-weight:800;line-height:1.1}
+.kpi .lbl{font-size:11px;color:#7f8c8d;margin-top:4px;line-height:1.4}
+.kpi.k-score{border-top-color:var(--blue)}
+.kpi.k-ok   {border-top-color:var(--green)}
+.kpi.k-aus  {border-top-color:var(--red)}
+.kpi.k-pend {border-top-color:var(--grey)}
+.kpi.k-ess  {border-top-color:var(--amber)}
+
+/* ── Alert ── */
+.alert-box{background:#fff8e1;border-left:4px solid var(--amber);padding:14px 18px;
+  border-radius:0 10px 10px 0;margin-bottom:20px}
+.alert-box h3{color:#856404;font-size:13px;margin-bottom:8px}
+.alert-box ul{padding-left:18px}
+.alert-box li{font-size:12px;color:#444;margin-bottom:5px;padding-bottom:5px;
+  border-bottom:1px dashed #eee}
+.alert-box li:last-child{border:none;margin:0;padding:0}
+
+/* ── Resumo tabela ── */
+.box{background:var(--card);border-radius:12px;padding:18px 20px;
+  margin-bottom:20px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.box h2{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:14px;
+  padding-bottom:10px;border-bottom:2px solid var(--border);display:flex;align-items:center;gap:8px}
+.box h2 .badge-count{background:#eaf2ff;color:var(--blue);font-size:11px;font-weight:700;
+  padding:2px 8px;border-radius:10px}
+table.summary{width:100%;border-collapse:collapse}
+table.summary thead th{background:var(--navy);color:#fff;padding:9px 12px;
+  font-size:11px;text-align:left;white-space:nowrap}
+table.summary tbody tr:hover{background:#f6f8fb}
+table.summary tbody tr:nth-child(even){background:#fafbfc}
+
+/* ── Secoes de dimensao ── */
+.dim-section{background:var(--card);border-radius:12px;margin-bottom:14px;
+  box-shadow:0 1px 6px rgba(0,0,0,.06);overflow:hidden;
+  transition:box-shadow .2s}
+.dim-section:hover{box-shadow:0 3px 12px rgba(0,0,0,.1)}
+.dim-header{display:flex;align-items:center;gap:12px;padding:14px 18px;
+  cursor:pointer;border-bottom:1px solid var(--border);
+  background:linear-gradient(to right,#f8fafc,#fff);user-select:none}
+.dim-header:hover{background:#f0f4ff}
+.dim-title{font-size:14px;font-weight:700;color:var(--navy);flex:1}
+.dim-prog{display:flex;align-items:center;gap:8px}
+.dim-prog .bar{width:80px;height:8px;background:#ecf0f1;border-radius:4px;overflow:hidden}
+.dim-prog .fill{height:8px;border-radius:4px;transition:width .3s}
+.dim-prog .pct{font-size:12px;font-weight:700;min-width:36px;text-align:right}
+.dim-badges{display:flex;gap:5px}
+.db{font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px}
+.db.ok  {background:#d5f5e3;color:#1e8449}
+.db.aus {background:#fde8e4;color:#c0392b}
+.db.pend{background:#eaf2ff;color:#1a5276}
+.chevron{font-size:12px;color:#aaa;transition:transform .2s}
+.dim-section.collapsed .chevron{transform:rotate(-90deg)}
+.dim-body{overflow:hidden;transition:max-height .3s ease}
+.dim-section.collapsed .dim-body{max-height:0!important}
+
+/* ── Linhas de criterio ── */
+.c-row{display:grid;grid-template-columns:40px 52px 1fr 110px;align-items:start;
+  padding:12px 16px;border-bottom:1px solid var(--border);gap:8px;
+  transition:background .12s}
+.c-row:last-child{border-bottom:none}
+.c-row:hover{background:#f8f9fb}
+.c-row.st-ok   {border-left:4px solid #a9dfbf;background:#f0fff4}
+.c-row.st-aus  {border-left:4px solid #f1948a;background:#fff8f8}
+.c-row.st-pend {border-left:4px solid #ced4da;background:#f8f9fa}
+.c-row:hover.st-ok   {background:#e8f8ef}
+.c-row:hover.st-aus  {background:#fff0ee}
+.c-row:hover.st-pend {background:#f2f3f5}
+.icon{font-size:18px;font-weight:700;text-align:center;padding-top:2px}
+.icon.ok  {color:var(--green)}
+.icon.aus {color:var(--red)}
+.icon.pend{color:var(--grey);font-size:14px}
+.c-id{font-size:12px;font-weight:800;color:var(--navy);white-space:nowrap;padding-top:2px}
+.c-body{min-width:0}
+.c-item{font-size:13px;font-weight:600;color:#2c3e50;line-height:1.4;margin-bottom:4px}
+.c-obs{font-size:11px;color:#7f8c8d;margin-bottom:3px}
+.c-url a{font-size:11px;color:#1a5276;word-break:break-all;font-family:'Courier New',monospace;
+  text-decoration:none}
+.c-url a:hover{text-decoration:underline}
+.c-menu{font-size:10px;color:#aaa;margin-top:2px}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;
+  border:1px solid;white-space:nowrap}
+.b-ess{background:#fdecea;color:#c0392b;border-color:#c0392b}
+.b-obr{background:#fef9e7;color:#b7770d;border-color:#b7770d}
+.b-rec{background:#eaf2ff;color:#1a5276;border-color:#1a5276}
+
+/* ── Hidden ── */
+.hidden{display:none!important}
+
+/* ── Sem resultados ── */
+.no-results{text-align:center;padding:40px;color:#aaa;font-size:13px}
+
+/* ── Footer ── */
+footer{text-align:center;padding:16px;color:#bbb;font-size:11px;background:#fff;
+  border-top:1px solid var(--border)}
+
+/* ── Scrollbar sidebar ── */
+.sidebar::-webkit-scrollbar{width:4px}
+.sidebar::-webkit-scrollbar-thumb{background:#ddd;border-radius:2px}
+
+@media(max-width:768px){
+  .sidebar{display:none}
+  .main{padding:12px}
+  .c-row{grid-template-columns:32px 44px 1fr}
+  .c-row > :last-child{grid-column:2/-1;padding-top:4px}
+}
+</style>
 </head>
 <body>
-<header>
-  <h1>Analise PNTP 2026 x Portal da Transparencia de Osasco</h1>
-  <p>Comparativo entre a <a href="https://radardatransparencia.atricon.org.br/pdf/Cartilha-PNTP-2026.pdf" target="_blank">Cartilha PNTP 2026 (Atricon)</a>
-     e as informacoes em <a href="https://transparencia-osasco.smarapd.com.br" target="_blank">https://transparencia-osasco.smarapd.com.br</a></p>
-  <p>Gerado em: 22/04/2026 as 18:35:00 &nbsp;|&nbsp;
-     50 criterios avaliados</p>
+
+<header class="top-header">
+  <h1>&#128203; PNTP 2026 &times; Portal de Transparência de Osasco</h1>
+  <div class="meta">
+    <a href="https://radardatransparencia.atricon.org.br/pdf/Cartilha-PNTP-2026.pdf" target="_blank">Cartilha PNTP 2026</a>
+    &nbsp;|&nbsp;
+    <a href="https://transparencia-osasco.smarapd.com.br" target="_blank">transparencia-osasco</a>
+    &nbsp;|&nbsp; 22/04/2026
+  </div>
+  <div class="spacer"></div>
+  <div class="score-pill">53.6% (30/56 avaliados)</div>
 </header>
 
-<div class="wrap">
+<div class="layout">
 
-  <div class="cards">
-    <div class="card">
-      <div class="n" style="color:#27ae60">60.0%</div>
-      <div class="l">Score PNTP 2026</div>
-    </div>
-    <div class="card">
-      <div class="n" style="color:#2c3e50">50</div>
-      <div class="l">Criterios avaliados</div>
-    </div>
-    <div class="card">
-      <div class="n" style="color:#27ae60">30</div>
-      <div class="l">Encontrados</div>
-    </div>
-    <div class="card">
-      <div class="n" style="color:#e74c3c">20</div>
-      <div class="l">Ausentes</div>
-    </div>
-    <div class="card">
-      <div class="n" style="color:#e74c3c">9</div>
-      <div class="l">Essenciais em falta</div>
-    </div>
-  </div>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-title">Dimensões PNTP 2026</div>
+    
+    <a href="#dim-1" class="nav-item" data-dim="dim-1">
+      <div class="nav-label">1. Informações Prioritárias</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:25%;background:#e74c3c"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e74c3c">25%</span>
+        <span class="nav-badges">
+          <span class="nb ok">1</span>
+          <span class="nb aus">3</span>
+          
+        </span>
+      </div>
+    </a>
+    <a href="#dim-2" class="nav-item" data-dim="dim-2">
+      <div class="nav-label">2. Informações Institucionais</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:57%;background:#e67e22"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e67e22">57%</span>
+        <span class="nav-badges">
+          <span class="nb ok">4</span>
+          <span class="nb aus">3</span>
+          <span class="nb pend">2</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-3" class="nav-item" data-dim="dim-3">
+      <div class="nav-label">3. Receita</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:100%;background:#27ae60"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#27ae60">100%</span>
+        <span class="nav-badges">
+          <span class="nb ok">2</span>
+          
+          <span class="nb pend">1</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-4" class="nav-item" data-dim="dim-4">
+      <div class="nav-label">4. Despesa</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:67%;background:#e67e22"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e67e22">67%</span>
+        <span class="nav-badges">
+          <span class="nb ok">2</span>
+          <span class="nb aus">1</span>
+          <span class="nb pend">3</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-5" class="nav-item" data-dim="dim-5">
+      <div class="nav-label">5. Convênios e Transferências</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:100%;background:#27ae60"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#27ae60">100%</span>
+        <span class="nav-badges">
+          <span class="nb ok">2</span>
+          
+          <span class="nb pend">1</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-6" class="nav-item" data-dim="dim-6">
+      <div class="nav-label">6. Recursos Humanos</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:50%;background:#e67e22"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e67e22">50%</span>
+        <span class="nav-badges">
+          <span class="nb ok">3</span>
+          <span class="nb aus">3</span>
+          <span class="nb pend">1</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-7" class="nav-item" data-dim="dim-7">
+      <div class="nav-label">7. Diárias</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:0%;background:#e74c3c"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e74c3c">0%</span>
+        <span class="nav-badges">
+          
+          <span class="nb aus">1</span>
+          <span class="nb pend">1</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-8" class="nav-item" data-dim="dim-8">
+      <div class="nav-label">8. Licitações</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:0%;background:#e74c3c"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e74c3c">0%</span>
+        <span class="nav-badges">
+          
+          <span class="nb aus">5</span>
+          <span class="nb pend">3</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-9" class="nav-item" data-dim="dim-9">
+      <div class="nav-label">9. Contratos</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:50%;background:#e67e22"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e67e22">50%</span>
+        <span class="nav-badges">
+          <span class="nb ok">1</span>
+          <span class="nb aus">1</span>
+          <span class="nb pend">2</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-10" class="nav-item" data-dim="dim-10">
+      <div class="nav-label">10. Obras</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:50%;background:#e67e22"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e67e22">50%</span>
+        <span class="nav-badges">
+          <span class="nb ok">1</span>
+          <span class="nb aus">1</span>
+          <span class="nb pend">2</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-11" class="nav-item" data-dim="dim-11">
+      <div class="nav-label">11. Planejamento e Prestação de Contas</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:86%;background:#27ae60"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#27ae60">86%</span>
+        <span class="nav-badges">
+          <span class="nb ok">6</span>
+          <span class="nb aus">1</span>
+          <span class="nb pend">12</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-12" class="nav-item" data-dim="dim-12">
+      <div class="nav-label">12. Serviço de Informação ao Cidadão — SIC</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:20%;background:#e74c3c"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e74c3c">20%</span>
+        <span class="nav-badges">
+          <span class="nb ok">1</span>
+          <span class="nb aus">4</span>
+          <span class="nb pend">4</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-13" class="nav-item" data-dim="dim-13">
+      <div class="nav-label">13. Acessibilidade</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:75%;background:#27ae60"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#27ae60">75%</span>
+        <span class="nav-badges">
+          <span class="nb ok">3</span>
+          <span class="nb aus">1</span>
+          <span class="nb pend">1</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-14" class="nav-item" data-dim="dim-14">
+      <div class="nav-label">14. Ouvidorias</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:33%;background:#e74c3c"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#e74c3c">33%</span>
+        <span class="nav-badges">
+          <span class="nb ok">1</span>
+          <span class="nb aus">2</span>
+          
+        </span>
+      </div>
+    </a>
+    <a href="#dim-15" class="nav-item" data-dim="dim-15">
+      <div class="nav-label">15. LGPD e Governo Digital</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:100%;background:#27ae60"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#27ae60">100%</span>
+        <span class="nav-badges">
+          <span class="nb ok">1</span>
+          
+          <span class="nb pend">5</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-16" class="nav-item" data-dim="dim-16">
+      <div class="nav-label">16. Renúncias de Receitas</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:0%;background:#95a5a6"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#95a5a6">0%</span>
+        <span class="nav-badges">
+          
+          
+          <span class="nb pend">4</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-17" class="nav-item" data-dim="dim-17">
+      <div class="nav-label">17. Emendas Parlamentares</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:100%;background:#27ae60"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#27ae60">100%</span>
+        <span class="nav-badges">
+          <span class="nb ok">2</span>
+          
+          <span class="nb pend">1</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-18" class="nav-item" data-dim="dim-18">
+      <div class="nav-label">18. Saúde</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:0%;background:#95a5a6"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#95a5a6">0%</span>
+        <span class="nav-badges">
+          
+          
+          <span class="nb pend">6</span>
+        </span>
+      </div>
+    </a>
+    <a href="#dim-19" class="nav-item" data-dim="dim-19">
+      <div class="nav-label">19. Educação e Assistência Social</div>
+      <div class="nav-bar">
+        <div class="nav-fill" style="width:0%;background:#95a5a6"></div>
+      </div>
+      <div class="nav-meta">
+        <span style="color:#95a5a6">0%</span>
+        <span class="nav-badges">
+          
+          
+          <span class="nb pend">4</span>
+        </span>
+      </div>
+    </a>
+  </nav>
 
-  
-        <div style="background:#fff3cd;border-left:4px solid #ffc107;padding:16px 20px;
-          border-radius:0 8px 8px 0;margin-bottom:22px">
-          <strong style="color:#856404">Itens ESSENCIAIS ausentes (9) —
-          maior risco de penalizacao no PNTP 2026:</strong>
-          <ul style="margin-top:10px;padding-left:20px"><li style="margin-bottom:5px"><strong>[1.1]</strong> Estrutura organizacional / Organograma <span style="color:#888">(Informacoes Institucionais)</span></li><li style="margin-bottom:5px"><strong>[1.2]</strong> Competencias e atribuicoes do orgao <span style="color:#888">(Informacoes Institucionais)</span></li><li style="margin-bottom:5px"><strong>[3.3]</strong> Serie historica de despesas (minimo 3 anos) <span style="color:#888">(Despesas)</span></li><li style="margin-bottom:5px"><strong>[3.4]</strong> Diarias e passagens <span style="color:#888">(Despesas)</span></li><li style="margin-bottom:5px"><strong>[4.1]</strong> Editais de licitacao <span style="color:#888">(Licitacoes e Contratos)</span></li><li style="margin-bottom:5px"><strong>[4.2]</strong> Resultado de licitacoes <span style="color:#888">(Licitacoes e Contratos)</span></li><li style="margin-bottom:5px"><strong>[4.4]</strong> Dispensas e inexigibilidades <span style="color:#888">(Licitacoes e Contratos)</span></li><li style="margin-bottom:5px"><strong>[5.2]</strong> Quadro de servidores efetivos e comissionados <span style="color:#888">(Recursos Humanos)</span></li><li style="margin-bottom:5px"><strong>[7.2]</strong> Contratos de obras com localizacao <span style="color:#888">(Obras)</span></li></ul>
+  <!-- Conteúdo principal -->
+  <main class="main">
+
+    <!-- KPIs -->
+    <div class="kpi-grid">
+      <div class="kpi k-score">
+        <div class="val" style="color:#e67e22">53.6%</div>
+        <div class="lbl">Score<br><small>(itens avaliados)</small></div>
+      </div>
+      <div class="kpi">
+        <div class="val" style="color:#2c3e50">109</div>
+        <div class="lbl">Total critérios<br>PNTP 2026</div>
+      </div>
+      <div class="kpi k-ok">
+        <div class="val" style="color:#27ae60">30</div>
+        <div class="lbl">Encontrados<br>no portal</div>
+      </div>
+      <div class="kpi k-aus">
+        <div class="val" style="color:#e74c3c">26</div>
+        <div class="lbl">Ausentes<br>no portal</div>
+      </div>
+      <div class="kpi k-pend">
+        <div class="val" style="color:#95a5a6">53</div>
+        <div class="lbl">Pendentes<br>de análise</div>
+      </div>
+      <div class="kpi k-ess">
+        <div class="val" style="color:#e74c3c">18</div>
+        <div class="lbl">Essenciais<br>ausentes</div>
+      </div>
+    </div>
+
+    <!-- Alerta essenciais -->
+    
+    <div class="alert-box">
+      <h3>&#9888; Itens ESSENCIAIS ausentes (31) — maior risco de penalização:</h3>
+      <ul><li><strong>[1.1]</strong> Possui sítio oficial próprio na internet? <em style="color:#888">(1. Informações Prioritárias)</em></li><li><strong>[1.2]</strong> Possui portal da transparência próprio ou compartilhado na internet? <em style="color:#888">(1. Informações Prioritárias)</em></li><li><strong>[1.3]</strong> O acesso ao portal transparência está visível na capa do site? <em style="color:#888">(1. Informações Prioritárias)</em></li><li><strong>[2.1]</strong> Divulga a sua estrutura organizacional e a norma que a institui/altera? <em style="color:#888">(2. Informações Institucionais)</em></li><li><strong>[2.2]</strong> Divulga competências e/ou atribuições? <em style="color:#888">(2. Informações Institucionais)</em></li><li><strong>[2.5]</strong> Divulga o horário de atendimento? <em style="color:#888">(2. Informações Institucionais)</em></li><li><strong>[4.3]</strong> Possibilita a consulta de empenhos com detalhes do beneficiário, valor, bem/serviço e procedimento licitatório? <em style="color:#888">(4. Despesa)</em></li><li><strong>[6.1]</strong> Divulga a relação nominal dos servidores/autoridades, cargos/funções, lotações e datas de admissão/exoneração? <em style="color:#888">(6. Recursos Humanos)</em></li><li><strong>[7.1]</strong> Divulga o nome e cargo do beneficiário, valor total, número de diárias, período, motivo e local de destino? <em style="color:#888">(7. Diárias)</em></li><li><strong>[8.1]</strong> Divulga a relação das licitações em ordem sequencial (número, modalidade, objeto, data, valor, situação)? <em style="color:#888">(8. Licitações)</em></li><li><strong>[8.2]</strong> Divulga a íntegra dos editais de licitação? <em style="color:#888">(8. Licitações)</em></li><li><strong>[8.4]</strong> Divulga a íntegra dos principais documentos dos processos de dispensa e inexigibilidade de licitação? <em style="color:#888">(8. Licitações)</em></li><li><strong>[9.2]</strong> Divulga o inteiro teor dos contratos e dos respectivos termos aditivos? <em style="color:#888">(9. Contratos)</em></li><li><strong>[11.6]</strong> Divulga o Relatório Resumido da Execução Orçamentária (RREO)? <em style="color:#888">(11. Planejamento e Prestação de Contas)</em></li><li><strong>[12.1]</strong> Existe o SIC no site ou no portal de transparência e indica a unidade/setor responsável? <em style="color:#888">(12. Serviço de Informação ao Cidadão — SIC)</em></li><li><strong>[12.2]</strong> Indica o endereço físico, o telefone e o e-mail da unidade responsável pelo SIC, além do horário de funcionamento? <em style="color:#888">(12. Serviço de Informação ao Cidadão — SIC)</em></li><li><strong>[14.2]</strong> Há canal eletrônico de acesso/interação com a ouvidoria? <em style="color:#888">(14. Ouvidorias)</em></li><li><strong>[14.3]</strong> Divulga Carta de Serviços ao Usuário? <em style="color:#888">(14. Ouvidorias)</em></li></ul>
+    </div>
+
+    <!-- Resumo por dimensao -->
+    <div class="box">
+      <h2>Resultado por Dimensão <span class="badge-count">19 grupos</span></h2>
+      <div style="overflow-x:auto">
+      <table class="summary">
+        <thead><tr>
+          <th>Dimensão</th><th>Total</th>
+          <th style="color:#a9dfbf">&#10003; Disp.</th>
+          <th style="color:#f1948a">&#10007; Aus.</th>
+          <th style="color:#ced4da">&#9679; Pend.</th>
+          <th>Score (avaliados)</th>
+        </tr></thead>
+        <tbody>
+    <tr onclick="scrollToDim('dim-1')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">1. Informações Prioritárias</td>
+      <td style="padding:9px 8px;text-align:center">4</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">3</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">0</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e74c3c;width:25%;height:10px"></div>
         </div>
-
-  <div class="box">
-    <h2>Resultado por Dimensao</h2>
-    <table>
-      <thead><tr>
-        <th>Dimensao</th><th>Total</th><th>Encontrados</th><th>Ausentes</th><th>Score</th>
-      </tr></thead>
-      <tbody>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Informacoes Institucionais</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">9</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">5</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">4</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#e67e22;width:56%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#e67e22;font-weight:700">56%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Receitas</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">5</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">4</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">1</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#27ae60;width:80%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#27ae60;font-weight:700">80%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Despesas</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">6</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">3</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">3</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#e67e22;width:50%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#e67e22;font-weight:700">50%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Licitacoes e Contratos</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">6</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">1</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">5</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#e74c3c;width:17%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#e74c3c;font-weight:700">17%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Recursos Humanos</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">5</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">2</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">3</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#e74c3c;width:40%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#e74c3c;font-weight:700">40%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Convenios e Repasses</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">4</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">4</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">0</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#27ae60;width:100%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#27ae60;font-weight:700">100%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Obras</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">2</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">1</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">1</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#e67e22;width:50%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#e67e22;font-weight:700">50%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Saude</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">2</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">1</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">1</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#e67e22;width:50%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#e67e22;font-weight:700">50%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Educacao</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">2</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">1</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">1</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#e67e22;width:50%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#e67e22;font-weight:700">50%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Ouvidoria e LAI</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">4</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">2</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">2</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#e67e22;width:50%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#e67e22;font-weight:700">50%</span>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding:9px 14px;font-weight:600">Acessibilidade e Usabilidade</td>
-          <td style="padding:9px 14px;text-align:center;color:#555">5</td>
-          <td style="padding:9px 14px;text-align:center;color:#27ae60;font-weight:700">3</td>
-          <td style="padding:9px 14px;text-align:center;color:#e74c3c;font-weight:700">2</td>
-          <td style="padding:9px 14px;min-width:140px">
-            <div style="background:#ecf0f1;border-radius:4px;height:12px;margin-bottom:2px">
-              <div style="background:#e67e22;width:60%;height:12px;border-radius:4px"></div>
-            </div>
-            <span style="font-size:11px;color:#e67e22;font-weight:700">60%</span>
-          </td>
-        </tr></tbody>
-    </table>
-  </div>
-
-  <div class="box">
-    <h2>Detalhamento Completo — ID | Item | Cartilha | Resposta no Portal | URL Completa</h2>
-    <div style="overflow-x:auto">
-    <table>
-      <thead><tr>
-        <th style="width:38px">OK</th>
-        <th style="width:46px">ID</th>
-        <th style="min-width:180px">Item PNTP 2026</th>
-        <th style="width:110px">Tipo</th>
-        <th style="min-width:200px">Secao na Cartilha PNTP 2026</th>
-        <th style="min-width:200px">Resposta no Portal</th>
-        <th style="min-width:260px">Caminho no Portal / URL</th>
-      </tr></thead>
-      <tbody><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Informacoes Institucionais</td></tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">1.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Estrutura organizacional / Organograma</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 1 — Informacoes Institucionais</div>
-            <div style="color:#666">Criterio 1.1 — Organograma da entidade</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Organograma nao localizado no portal. Verificar em Administracao Publica.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Administracao Publica > Organograma</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">1.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Competencias e atribuicoes do orgao</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 1 — Informacoes Institucionais</div>
-            <div style="color:#666">Criterio 1.2 — Competencias e estrutura organizacional</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Nao localizado. Verificar em Administracao Publica.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Administracao Publica > Competencias</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">1.3</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Endereco e horarios de atendimento</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 1 — Informacoes Institucionais</div>
-            <div style="color:#666">Criterio 1.3 — Endereco e horarios de funcionamento</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[horário]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Pagina inicial do portal</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">1.4</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Legislacao aplicavel</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 1 — Informacoes Institucionais</div>
-            <div style="color:#666">Criterio 1.4 — Normas e legislacao do orgao</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[legislação]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Legislacao e Imprensa Oficial do Municipio</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">1.5</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Agenda do gestor</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#eaf2ff;color:#1a5276;border:1px solid #1a5276;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">RECOMENDADO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 1 — Informacoes Institucionais</div>
-            <div style="color:#666">Criterio 1.5 — Agenda da autoridade maxima</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Agenda do gestor nao identificada no portal.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Administracao Publica > Agenda do Prefeito</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">1.6</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Link para o Radar da Transparencia (PNTP)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 1 — Informacoes Institucionais</div>
-            <div style="color:#666">Criterio 1.6 — Link direto ao Radar da Transparencia Publica</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado via card/banner na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[Radar]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Pagina inicial do portal</div>
-            <a href="https://radardatransparencia.atricon.org.br/" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://radardatransparencia.atricon.org.br/</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">1.7</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Plano Plurianual (PPA)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 1 — Informacoes Institucionais</div>
-            <div style="color:#666">Criterio 1.7 — Instrumento de planejamento: PPA</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: PPA <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[ppa]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Pecas Orcamentarias > PPA</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">1.8</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Lei de Diretrizes Orcamentarias (LDO)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 1 — Informacoes Institucionais</div>
-            <div style="color:#666">Criterio 1.8 — Instrumento de planejamento: LDO</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: LDO <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[ldo]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Pecas Orcamentarias > LDO</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">1.9</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Lei Orcamentaria Anual (LOA)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 1 — Informacoes Institucionais</div>
-            <div style="color:#666">Criterio 1.9 — Instrumento de planejamento: LOA</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: LOA <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[loa]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Pecas Orcamentarias > LOA | Pecas Contabeis</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/loa/pecascontabeis" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/loa/pecascontabeis</a>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Receitas</td></tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">2.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Previsao e arrecadacao de receitas</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 2 — Receitas</div>
-            <div style="color:#666">Criterio 2.1 — Receitas previstas e arrecadadas</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Receitas / Recursos decorrentes da COVID-19 <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[receita]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Receitas > Receita Analitica</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">2.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Receitas por categoria economica</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 2 — Receitas</div>
-            <div style="color:#666">Criterio 2.2 — Classificacao por categoria economica</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Receita Correnteㅤ <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[receita corrente]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Receitas > Receita Corrente / Receita Capital</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">2.3</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Serie historica de receitas (minimo 3 anos)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 2 — Receitas</div>
-            <div style="color:#666">Criterio 2.3 — Serie historica de receitas (&ge;3 anos)</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Historico disponivel de 2020 a 2026. <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[exercicio]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Receitas > Receita Analitica</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/dinamico/receitas/receitaanalitica" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/dinamico/receitas/receitaanalitica</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">2.4</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Transferencias recebidas (FPM, FUNDEB etc.)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 2 — Receitas</div>
-            <div style="color:#666">Criterio 2.4 — Transferencias intergovernamentais recebidas</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Repasses e Transferênciasㅤ <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[transferências]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Repasses e Transferencias | Receita Arrecadada Transf. Constitucionais</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">2.5</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Receita por fonte de recursos</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 2 — Receitas</div>
-            <div style="color:#666">Criterio 2.5 — Receitas por fonte de recursos</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Despesa Por Fonte de Recurso <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[fonte de recurso]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Despesa Por Fonte de Recurso</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Despesas</td></tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">3.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Despesas por categoria / elemento / funcao</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 3 — Despesas</div>
-            <div style="color:#666">Criterio 3.1 — Despesas por classificacao orcamentaria</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Despesas decorrentes da COVID-19 <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[despesa]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Despesas > Despesas Filtradas / Sinteticas</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">3.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Empenhos, liquidacoes e pagamentos</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 3 — Despesas</div>
-            <div style="color:#666">Criterio 3.2 — Estagios da despesa (empenho/liquidacao/pagamento)</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Pagamentos a Servidores decorrentes da COVID-19 <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[pagamento]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Empenhos / Financeiro</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">3.3</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Serie historica de despesas (minimo 3 anos)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 3 — Despesas</div>
-            <div style="color:#666">Criterio 3.3 — Serie historica de despesas (>=3 anos)</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Serie historica de despesas por exercicio nao localizada.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Despesas (filtro de exercicio)</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">3.4</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Diarias e passagens</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 3 — Despesas</div>
-            <div style="color:#666">Criterio 3.4 — Gastos com diarias e passagens</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Diarias e passagens nao encontradas. A secao 'Despesas com Viagens' existe no menu mas nao retornou resultados na busca.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Despesas > Despesas com Viagens</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">3.5</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Despesas com cartao corporativo</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 3 — Despesas</div>
-            <div style="color:#666">Criterio 3.5 — Gastos com cartao corporativo</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Secao de cartao corporativo nao encontrada no portal.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Nao identificado no portal</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">3.6</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Execucao orcamentaria e financeira</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 3 — Despesas</div>
-            <div style="color:#666">Criterio 3.6 — Execucao orcamentaria consolidada</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Decretos de Execução Orçamentária <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[execução orçamentária]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Decretos de Execucao Orcamentaria | Relatorios LRF</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/loa/pecascontabeis" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/loa/pecascontabeis</a>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Licitacoes e Contratos</td></tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">4.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Editais de licitacao</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 4 — Licitacoes e Contratos</div>
-            <div style="color:#666">Criterio 4.1 — Editais de licitacao publicados</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Editais nao localizados via busca. O menu 'Licitacoes e Contratos' existe mas nao respondeu ao termo 'edital'.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Licitacoes e Contratos > Editais / Avisos</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">4.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Resultado de licitacoes</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 4 — Licitacoes e Contratos</div>
-            <div style="color:#666">Criterio 4.2 — Resultados e homologacoes de licitacao</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Resultados de licitacoes nao localizados via busca.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Licitacoes e Contratos > Resultados / Homologacoes</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">4.3</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Contratos e aditivos</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 4 — Licitacoes e Contratos</div>
-            <div style="color:#666">Criterio 4.3 — Contratos firmados e termos aditivos</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[contrato]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Licitacoes e Contratos > Contratos / Termos Aditivos</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">4.4</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Dispensas e inexigibilidades</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 4 — Licitacoes e Contratos</div>
-            <div style="color:#666">Criterio 4.4 — Contratacoes diretas (dispensa/inexigibilidade)</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Dispensas e inexigibilidades nao localizadas. Verificar submenu de Licitacoes.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Licitacoes e Contratos > Dispensas / Inexigibilidades</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">4.5</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Plano de Contratacoes Anual (PCA)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 4 — Licitacoes e Contratos</div>
-            <div style="color:#666">Criterio 4.5 — Plano de Contratacoes Anual (PCA)</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">PCA nao localizado. O portal tem secao de Concessoes mas nao de PCA especifico.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Nao identificado no portal (possivel: Licitacoes > PCA)</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">4.6</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Atas de registro de precos</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 4 — Licitacoes e Contratos</div>
-            <div style="color:#666">Criterio 4.6 — Atas de registro de precos publicadas</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Atas de registro de precos nao localizadas via busca.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Licitacoes e Contratos > Atas de Registro de Precos</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Recursos Humanos</td></tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">5.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Remuneracao nominal dos servidores</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 5 — Recursos Humanos</div>
-            <div style="color:#666">Criterio 5.1 — Remuneracao nominal individualizada</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Pagamentos a Servidores decorrentes da COVID-19 <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[servidor]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Gestao de Pessoas > Remuneracao / Servidores</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">5.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Quadro de servidores efetivos e comissionados</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 5 — Recursos Humanos</div>
-            <div style="color:#666">Criterio 5.2 — Quadro de pessoal por vinculo</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Quadro de servidores por vinculo (efetivo/comissionado) nao localizado.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Gestao de Pessoas > Quadro de Servidores</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">5.3</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Concursos publicos e processos seletivos</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 5 — Recursos Humanos</div>
-            <div style="color:#666">Criterio 5.3 — Concursos e processos seletivos vigentes</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[concurso]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Concursos e Processos Seletivos > Proximos ou Abertos</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">5.4</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Estagiarios</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#eaf2ff;color:#1a5276;border:1px solid #1a5276;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">RECOMENDADO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 5 — Recursos Humanos</div>
-            <div style="color:#666">Criterio 5.4 — Relacao de estagiarios contratados</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Estagiarios nao identificados no portal.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Gestao de Pessoas > Estagiarios</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">5.5</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Terceirizados / Contratos de mao de obra</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 5 — Recursos Humanos</div>
-            <div style="color:#666">Criterio 5.5 — Trabalhadores terceirizados</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Secao de terceirizados nao encontrada.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Nao identificado no portal</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Convenios e Repasses</td></tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">6.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Convenios celebrados</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 6 — Convenios e Repasses</div>
-            <div style="color:#666">Criterio 6.1 — Convenios firmados com detalhamento</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[convênio]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Terceiro Setor > Convenios / Convenios de Cooperacao</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">6.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Repasses a entidades privadas / OSC</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 6 — Convenios e Repasses</div>
-            <div style="color:#666">Criterio 6.2 — Repasses e subvencoes a OSC/entidades</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[repasse]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Terceiro Setor | Repasses Mundo da Crianca</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/dinamico/despesa_educacao/Repasses" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/dinamico/despesa_educacao/Repasses</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">6.3</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Prestacao de contas de convenios</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 6 — Convenios e Repasses</div>
-            <div style="color:#666">Criterio 6.3 — Prestacao de contas dos convenios</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Prestação de Contas <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[prestação de contas]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Prestacao de Contas</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">6.4</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Emendas parlamentares recebidas</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 6 — Convenios e Repasses</div>
-            <div style="color:#666">Criterio 6.4 — Emendas parlamentares recebidas e aplicadas</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[emenda]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Emendas Parlamentares > Emendas Estadual e Federal</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/dinamico/66/EmendasParlamentares" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/dinamico/66/EmendasParlamentares</a>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Obras</td></tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">7.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Obras em execucao</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 7 — Obras Publicas</div>
-            <div style="color:#666">Criterio 7.1 — Obras em andamento com informacoes basicas</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[obra]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Projetos e Obras</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">7.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Contratos de obras com localizacao</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 7 — Obras Publicas</div>
-            <div style="color:#666">Criterio 7.2 — Localizacao e andamento percentual das obras</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Localizacao geografica das obras (mapa/endereco) nao localizada.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Projetos e Obras > Mapa/Localizacao</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Saude</td></tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">8.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Gastos com saude</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 8 — Saude</div>
-            <div style="color:#666">Criterio 8.1 — Despesas com a funcao saude</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Saúde - Medidas e Orientações Gerais <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[saúde]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Despesas (filtro: funcao Saude)</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">8.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Repasses fundo a fundo saude</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 8 — Saude</div>
-            <div style="color:#666">Criterio 8.2 — Transferencias fundo a fundo (Saude)</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Repasses fundo a fundo de saude nao localizados especificamente.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Receitas > Receitas Arrecadadas de Fundos Municipais</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Educacao</td></tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">9.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Gastos com educacao / FUNDEB</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 9 — Educacao</div>
-            <div style="color:#666">Criterio 9.1 — Despesas com educacao e FUNDEB</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Cacs - Fundeb <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[fundeb]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Contas Publicas > Despesas (FUNDEB) | Cacs-Fundeb</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">9.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Merenda escolar / alimentacao (PNAE)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 9 — Educacao</div>
-            <div style="color:#666">Criterio 9.2 — Programa Nacional de Alimentacao Escolar (PNAE)</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Informacoes sobre merenda/alimentacao escolar nao encontradas.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Nao identificado no portal</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Ouvidoria e LAI</td></tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">10.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Canal de atendimento LAI / e-SIC online</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 10 — Transparencia Passiva (LAI)</div>
-            <div style="color:#666">Criterio 10.1 — Servico de Informacao ao Cidadao (e-SIC)</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Acesso ao e-SIC <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[e-sic]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Ouvidoria Geral / Fala Cidadao > Acesso ao e-SIC</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">10.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Ouvidoria municipal</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 10 — Transparencia Passiva (LAI)</div>
-            <div style="color:#666">Criterio 10.2 — Canal de ouvidoria ativa</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[ouvidoria]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Ouvidoria Geral | Fala Cidadao | Central 156</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">10.3</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Estatisticas de pedidos de informacao</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 10 — Transparencia Passiva (LAI)</div>
-            <div style="color:#666">Criterio 10.3 — Relatorio estatistico de atendimentos LAI</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Estatisticas especificas de pedidos LAI nao localizadas.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Estatisticas (verificar se inclui dados LAI)</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">10.4</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Rol de informacoes sigilosas</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 10 — Transparencia Passiva (LAI)</div>
-            <div style="color:#666">Criterio 10.4 — Rol de informacoes classificadas como sigilosas</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Rol de informacoes sigilosas nao encontrado.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Nao identificado no portal</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr><tr><td colspan="7" style="background:#1a3c5e;color:#fff;padding:9px 16px;font-weight:700;font-size:13px;letter-spacing:.5px">Acessibilidade e Usabilidade</td></tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">11.1</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Barra de acessibilidade (contraste, fonte, VLibras)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 11 — Acessibilidade</div>
-            <div style="color:#666">Criterio 11.1 — Recursos de acessibilidade digital</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: Acessibilidadeㅤ <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[acessibilidade]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Barra superior do portal (AA+ A-)</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">11.2</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Campo de busca / pesquisa no portal</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 11 — Acessibilidade</div>
-            <div style="color:#666">Criterio 11.2 — Ferramenta de busca funcional e indexada</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Campo de busca visível na barra lateral e no topo do portal <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[Pesquisar]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Barra lateral esquerda (input[type=search])</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/</a>
-          </td>
-        </tr>
-        <tr style="background:#fff8f8;border-left:4px solid #f1948a">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#e74c3c;font-size:20px;font-weight:700">&#10007;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">11.3</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Mapa do site (Sumario)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 11 — Acessibilidade</div>
-            <div style="color:#666">Criterio 11.3 — Mapa do site (sitemap navegavel)</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#c0392b;font-weight:600;font-size:12px">Ausente / Nao verificado</div><div style="color:#888;font-size:11px;margin-top:2px">Sumario/mapa do site existe no menu mas nao foi localizado via busca.</div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Sobre o Portal > Sumario</div>
-            <span style="color:#bbb;font-size:11px;font-style:italic">ausente no portal</span>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">11.4</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Dados em formato aberto (CSV / JSON / XML)</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 11 — Acessibilidade</div>
-            <div style="color:#666">Criterio 11.4 — Dados em formato aberto e reutilizavel</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Encontrado na página inicial <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[dados abertos]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Dados Abertos</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/dados_abertos" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/dados_abertos</a>
-          </td>
-        </tr>
-        <tr style="background:#f0fff4;border-left:4px solid #a9dfbf">
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="color:#27ae60;font-size:20px;font-weight:700">&#10003;</span></td>
-          <td style="padding:11px 10px;font-weight:800;color:#1a3c5e;vertical-align:top;white-space:nowrap">11.5</td>
-          <td style="padding:11px 10px;font-weight:600;font-size:13px;vertical-align:top">Perguntas frequentes / FAQ</td>
-          <td style="padding:11px 10px;text-align:center;vertical-align:top"><span style="background:#eaf2ff;color:#1a5276;border:1px solid #1a5276;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">RECOMENDADO</span></td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top">
-            <div style="font-weight:700;color:#1a3c5e;margin-bottom:3px">Grupo 11 — Acessibilidade</div>
-            <div style="color:#666">Criterio 11.5 — Perguntas frequentes e glossario</div>
-          </td>
-          <td style="padding:11px 10px;font-size:11px;vertical-align:top"><div style="color:#1e8449;font-weight:600;font-size:12px">Disponivel</div><div style="color:#555;font-size:11px;margin-top:2px">Link: FAQ <code style="background:#eafaf1;padding:1px 4px;border-radius:3px">[faq]</code></div></td>
-          <td style="padding:11px 10px;vertical-align:top">
-            <div style="font-size:11px;color:#555;margin-bottom:4px">Menu: Sobre o Portal > FAQ / Glossario</div>
-            <a href="https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio" target="_blank" style="color:#1a5276;font-size:11px;word-break:break-all;font-family:monospace">https://transparencia-osasco.smarapd.com.br/#/fixo/portal/inicio</a>
-          </td>
-        </tr></tbody>
-    </table>
+        <span style="font-size:11px;color:#e74c3c;font-weight:700">25%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-2')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">2. Informações Institucionais</td>
+      <td style="padding:9px 8px;text-align:center">9</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">4</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">3</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">2</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e67e22;width:57%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#e67e22;font-weight:700">57%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-3')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">3. Receita</td>
+      <td style="padding:9px 8px;text-align:center">3</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">2</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">1</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#27ae60;width:100%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#27ae60;font-weight:700">100%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-4')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">4. Despesa</td>
+      <td style="padding:9px 8px;text-align:center">6</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">2</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">3</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e67e22;width:67%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#e67e22;font-weight:700">67%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-5')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">5. Convênios e Transferências</td>
+      <td style="padding:9px 8px;text-align:center">3</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">2</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">1</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#27ae60;width:100%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#27ae60;font-weight:700">100%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-6')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">6. Recursos Humanos</td>
+      <td style="padding:9px 8px;text-align:center">7</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">3</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">3</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">1</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e67e22;width:50%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#e67e22;font-weight:700">50%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-7')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">7. Diárias</td>
+      <td style="padding:9px 8px;text-align:center">2</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">1</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e74c3c;width:0%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#e74c3c;font-weight:700">0%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-8')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">8. Licitações</td>
+      <td style="padding:9px 8px;text-align:center">8</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">5</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">3</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e74c3c;width:0%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#e74c3c;font-weight:700">0%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-9')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">9. Contratos</td>
+      <td style="padding:9px 8px;text-align:center">4</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">2</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e67e22;width:50%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#e67e22;font-weight:700">50%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-10')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">10. Obras</td>
+      <td style="padding:9px 8px;text-align:center">4</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">2</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e67e22;width:50%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#e67e22;font-weight:700">50%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-11')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">11. Planejamento e Prestação de Contas</td>
+      <td style="padding:9px 8px;text-align:center">19</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">6</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">12</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#27ae60;width:86%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#27ae60;font-weight:700">86%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-12')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">12. Serviço de Informação ao Cidadão — SIC</td>
+      <td style="padding:9px 8px;text-align:center">9</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">4</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">4</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e74c3c;width:20%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#e74c3c;font-weight:700">20%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-13')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">13. Acessibilidade</td>
+      <td style="padding:9px 8px;text-align:center">5</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">3</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">1</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#27ae60;width:75%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#27ae60;font-weight:700">75%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-14')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">14. Ouvidorias</td>
+      <td style="padding:9px 8px;text-align:center">3</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">2</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">0</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#e74c3c;width:33%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#e74c3c;font-weight:700">33%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-15')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">15. LGPD e Governo Digital</td>
+      <td style="padding:9px 8px;text-align:center">6</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">1</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">5</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#27ae60;width:100%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#27ae60;font-weight:700">100%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-16')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">16. Renúncias de Receitas</td>
+      <td style="padding:9px 8px;text-align:center">4</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">4</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#95a5a6;width:0%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#95a5a6;font-weight:700">0%</span>
+        <span style="font-size:10px;color:#aaa"> (pendente)</span>
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-17')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">17. Emendas Parlamentares</td>
+      <td style="padding:9px 8px;text-align:center">3</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">2</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">1</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#27ae60;width:100%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#27ae60;font-weight:700">100%</span>
+        
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-18')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">18. Saúde</td>
+      <td style="padding:9px 8px;text-align:center">6</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">6</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#95a5a6;width:0%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#95a5a6;font-weight:700">0%</span>
+        <span style="font-size:10px;color:#aaa"> (pendente)</span>
+      </td>
+    </tr>
+    <tr onclick="scrollToDim('dim-19')" style="cursor:pointer">
+      <td style="padding:9px 14px;font-weight:600;color:#0a2340">19. Educação e Assistência Social</td>
+      <td style="padding:9px 8px;text-align:center">4</td>
+      <td style="padding:9px 8px;text-align:center;color:#27ae60;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#e74c3c;font-weight:700">0</td>
+      <td style="padding:9px 8px;text-align:center;color:#95a5a6">4</td>
+      <td style="padding:9px 14px;min-width:140px">
+        <div style="background:#ecf0f1;border-radius:6px;height:10px;margin-bottom:3px;overflow:hidden">
+          <div style="background:#95a5a6;width:0%;height:10px"></div>
+        </div>
+        <span style="font-size:11px;color:#95a5a6;font-weight:700">0%</span>
+        <span style="font-size:10px;color:#aaa"> (pendente)</span>
+      </td>
+    </tr></tbody>
+      </table>
+      </div>
     </div>
-  </div>
 
-  <div class="box">
-    <h2>Legenda</h2>
-    <p style="font-size:13px;line-height:1.8">
-      <span style="background:#fdecea;color:#a93226;border:1px solid #a93226;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">ESSENCIAL</span> Ausencia penaliza severamente o score PNTP.<br>
-      <span style="background:#fef9e7;color:#b7770d;border:1px solid #b7770d;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">OBRIGATORIO</span> Exigido pela LAI — impacta nivel do selo (Ouro/Prata/Bronze).<br>
-      <span style="background:#eaf2ff;color:#1a5276;border:1px solid #1a5276;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700">RECOMENDADO</span> Boa pratica — contribui positivamente sem ser eliminatorio.<br><br>
-      <strong>Pesos PNTP 2026:</strong> Atualidade 40% &bull; Integralidade 40% &bull;
-      Serie Historica 20%<br>
-      <strong>Selo Ouro:</strong> >=90% &bull; <strong>Prata:</strong> 70-89% &bull;
-      <strong>Bronze:</strong> 50-69% &bull; <strong>Sem selo:</strong> &lt;50%<br><br>
-      <strong>Portal avaliado:</strong> <a href="https://transparencia-osasco.smarapd.com.br" target="_blank">https://transparencia-osasco.smarapd.com.br</a><br>
-      <strong>Cartilha:</strong> <a href="https://radardatransparencia.atricon.org.br/pdf/Cartilha-PNTP-2026.pdf" target="_blank">Cartilha-PNTP-2026.pdf (Atricon)</a>
-    </p>
-  </div>
+    <!-- Filtros -->
+    <div class="filter-bar">
+      <label>Filtrar:</label>
+      <input type="search" id="q" placeholder="&#128269; Buscar critério, ID ou dimensão…" oninput="applyFilters()">
+      <div class="chips" id="chips-status">
+        <span class="chip active" data-val="" onclick="setChip(this,'status')">Todos status</span>
+        <span class="chip c-ok"  data-val="ok"      onclick="setChip(this,'status')">&#10003; Disponível</span>
+        <span class="chip c-aus" data-val="ausente"  onclick="setChip(this,'status')">&#10007; Ausente</span>
+        <span class="chip c-pend" data-val="pendente" onclick="setChip(this,'status')">&#9679; Pendente</span>
+      </div>
+      <div class="chips" id="chips-peso">
+        <span class="chip active" data-val="" onclick="setChip(this,'peso')">Todos tipos</span>
+        <span class="chip c-ess"  data-val="essencial"   onclick="setChip(this,'peso')">Essencial</span>
+        <span class="chip c-obr"  data-val="obrigatorio" onclick="setChip(this,'peso')">Obrigatório</span>
+        <span class="chip c-rec"  data-val="recomendado" onclick="setChip(this,'peso')">Recomendado</span>
+      </div>
+      <span id="result-count"></span>
+    </div>
 
+    <!-- Secoes por dimensao (geradas por JS) -->
+    <div id="dims-container"></div>
+    <div id="no-results" class="no-results hidden">
+      &#128269; Nenhum critério encontrado com os filtros selecionados.
+    </div>
+
+  </main>
 </div>
+
 <footer>
-  Gerado por Claude Code &nbsp;|&nbsp; 22/04/2026 &nbsp;|&nbsp;
-  https://transparencia-osasco.smarapd.com.br
+  Relatório PNTP 2026 × Portal de Transparência de Osasco &nbsp;|&nbsp;
+  Grupos 1–19 (Administração Municipal / Poder Executivo) &nbsp;|&nbsp;
+  100 critérios &nbsp;|&nbsp; Gerado em 23/04/2026 às 04:12
 </footer>
+
+<script>
+const ROWS = [{"id": "1.1", "dim": "1. Informações Prioritárias", "did": "dim-1", "peso": "essencial", "status": "ausente", "item": "Possui sítio oficial próprio na internet?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "1.2", "dim": "1. Informações Prioritárias", "did": "dim-1", "peso": "essencial", "status": "ausente", "item": "Possui portal da transparência próprio ou compartilhado na internet?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "1.3", "dim": "1. Informações Prioritárias", "did": "dim-1", "peso": "essencial", "status": "ausente", "item": "O acesso ao portal transparência está visível na capa do site?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "1.4", "dim": "1. Informações Prioritárias", "did": "dim-1", "peso": "obrigatorio", "status": "ausente", "item": "O site e o portal de transparência contêm ferramenta de pesquisa de conteúdo que permita o acesso à informação?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "2.1", "dim": "2. Informações Institucionais", "did": "dim-2", "peso": "essencial", "status": "ausente", "item": "Divulga a sua estrutura organizacional e a norma que a institui/altera?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "2.2", "dim": "2. Informações Institucionais", "did": "dim-2", "peso": "essencial", "status": "ausente", "item": "Divulga competências e/ou atribuições?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "2.3", "dim": "2. Informações Institucionais", "did": "dim-2", "peso": "obrigatorio", "status": "ausente", "item": "Identifica o nome dos atuais responsáveis pela gestão do Poder/Órgão?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "2.4", "dim": "2. Informações Institucionais", "did": "dim-2", "peso": "essencial", "status": "ausente", "item": "Divulga os endereços e telefones atuais do Poder ou órgão e e-mails institucionais?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "2.5", "dim": "2. Informações Institucionais", "did": "dim-2", "peso": "essencial", "status": "ausente", "item": "Divulga o horário de atendimento?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "2.6", "dim": "2. Informações Institucionais", "did": "dim-2", "peso": "obrigatorio", "status": "ausente", "item": "Divulga os atos normativos próprios?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "2.7", "dim": "2. Informações Institucionais", "did": "dim-2", "peso": "recomendado", "status": "ausente", "item": "Divulga as perguntas e respostas mais frequentes relacionadas às atividades desenvolvidas pelo Poder/Órgão?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "2.8", "dim": "2. Informações Institucionais", "did": "dim-2", "peso": "recomendado", "status": "ausente", "item": "Participa em redes sociais e apresenta, no seu sítio institucional, link de acesso ao seu perfil?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "2.9", "dim": "2. Informações Institucionais", "did": "dim-2", "peso": "obrigatorio", "status": "ausente", "item": "Inclui botão do Radar da Transparência Pública no site institucional ou portal transparência?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "3.1", "dim": "3. Receita", "did": "dim-3", "peso": "essencial", "status": "ausente", "item": "Divulga as receitas do Poder ou órgão, evidenciando sua previsão e realização?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "3.2", "dim": "3. Receita", "did": "dim-3", "peso": "essencial", "status": "ausente", "item": "Divulga a classificação orçamentária por natureza da receita (categoria econômica, origem, espécie, desdobramento)?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "3.3", "dim": "3. Receita", "did": "dim-3", "peso": "obrigatorio", "status": "ausente", "item": "Divulga a lista dos inscritos em dívida ativa, contendo, no mínimo, dados referentes ao nome do inscrito e o valor total da dívida?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "4.1", "dim": "4. Despesa", "did": "dim-4", "peso": "essencial", "status": "ausente", "item": "Divulga o total das despesas empenhadas, liquidadas e pagas?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "4.2", "dim": "4. Despesa", "did": "dim-4", "peso": "essencial", "status": "ausente", "item": "Divulga as despesas por classificação orçamentária?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "4.3", "dim": "4. Despesa", "did": "dim-4", "peso": "essencial", "status": "ausente", "item": "Possibilita a consulta de empenhos com os detalhes do beneficiário do pagamento ou credor, o valor, o bem fornecido ou serviço prestado e a identificação do procedimento licitatório originário da despesa?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "4.4", "dim": "4. Despesa", "did": "dim-4", "peso": "obrigatorio", "status": "ausente", "item": "Publica relação das despesas com aquisições de bens efetuadas pela instituição contendo: identificação do bem, preço unitário, quantidade, nome do fornecedor e valor total de cada aquisição?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "4.5", "dim": "4. Despesa", "did": "dim-4", "peso": "recomendado", "status": "ausente", "item": "Publica informações sobre despesas de patrocínio?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "4.6", "dim": "4. Despesa", "did": "dim-4", "peso": "recomendado", "status": "ausente", "item": "Publica informações detalhadas sobre a execução dos contratos de publicidade?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "5.1", "dim": "5. Convênios e Transferências", "did": "dim-5", "peso": "essencial", "status": "ausente", "item": "Divulga as transferências recebidas a partir da celebração de convênios/acordos?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "5.2", "dim": "5. Convênios e Transferências", "did": "dim-5", "peso": "essencial", "status": "ausente", "item": "Divulga as transferências realizadas a partir da celebração de convênios/acordos/ajustes?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "5.3", "dim": "5. Convênios e Transferências", "did": "dim-5", "peso": "obrigatorio", "status": "ausente", "item": "Divulga os acordos firmados que não envolvam transferência de recursos financeiros?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "6.1", "dim": "6. Recursos Humanos", "did": "dim-6", "peso": "essencial", "status": "ausente", "item": "Divulga a relação nominal dos servidores/autoridades/membros, seus cargos/funções, lotações e datas de admissão/exoneração?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "6.2", "dim": "6. Recursos Humanos", "did": "dim-6", "peso": "essencial", "status": "ausente", "item": "Divulga a remuneração nominal de cada servidor/autoridade/Membro?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "6.3", "dim": "6. Recursos Humanos", "did": "dim-6", "peso": "obrigatorio", "status": "ausente", "item": "Divulga a tabela com o padrão remuneratório dos cargos e funções?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "6.4", "dim": "6. Recursos Humanos", "did": "dim-6", "peso": "recomendado", "status": "ausente", "item": "Divulga a lista de seus estagiários?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "6.5", "dim": "6. Recursos Humanos", "did": "dim-6", "peso": "obrigatorio", "status": "ausente", "item": "Publica lista dos terceirizados?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "6.6", "dim": "6. Recursos Humanos", "did": "dim-6", "peso": "obrigatorio", "status": "ausente", "item": "Divulga a íntegra dos editais de concursos e seleções públicas?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "6.7", "dim": "6. Recursos Humanos", "did": "dim-6", "peso": "obrigatorio", "status": "ausente", "item": "Divulga informações sobre os demais atos dos concursos públicos?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "7.1", "dim": "7. Diárias", "did": "dim-7", "peso": "essencial", "status": "ausente", "item": "Divulga o nome e o cargo/função do beneficiário, valor total, período e motivo?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "7.2", "dim": "7. Diárias", "did": "dim-7", "peso": "obrigatorio", "status": "ausente", "item": "Divulga tabela ou relação que explicite os valores das diárias?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "8.1", "dim": "8. Licitações", "did": "dim-8", "peso": "essencial", "status": "ok", "item": "Divulga a relação das licitações em ordem sequencial?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "8.2", "dim": "8. Licitações", "did": "dim-8", "peso": "essencial", "status": "ok", "item": "Divulga a íntegra dos editais de licitação?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "8.3", "dim": "8. Licitações", "did": "dim-8", "peso": "obrigatorio", "status": "ok", "item": "Divulga a íntegra dos demais documentos das fases interna e externa?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "8.4", "dim": "8. Licitações", "did": "dim-8", "peso": "essencial", "status": "ok", "item": "Divulga a íntegra dos principais documentos dos processos de dispensa e inexigibilidade?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "8.5", "dim": "8. Licitações", "did": "dim-8", "peso": "obrigatorio", "status": "ok", "item": "Divulga a íntegra das Atas de Adesão – SRP?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "8.6", "dim": "8. Licitações", "did": "dim-8", "peso": "obrigatorio", "status": "ok", "item": "Divulga o plano de contratações anual?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "8.7", "dim": "8. Licitações", "did": "dim-8", "peso": "obrigatorio", "status": "ok", "item": "Divulga a relação dos licitantes e/ou contratados sancionados administrativamente?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "8.8", "dim": "8. Licitações", "did": "dim-8", "peso": "recomendado", "status": "ok", "item": "Divulga regulamento interno de licitações e contratos?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "9.1", "dim": "9. Contratos", "did": "dim-9", "peso": "essencial", "status": "ok", "item": "Divulga a relação dos contratos celebrados em ordem sequencial?", "obs": "Contratos listados com detalhes de vigência e valores.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/compras_contratos_contratos/Contratos", "menu": "Menu: Licitações e Contratos > Contratos"}, {"id": "9.2", "dim": "9. Contratos", "did": "dim-9", "peso": "essencial", "status": "ok", "item": "Divulga o inteiro teor dos contratos e dos respectivos termos aditivos?", "obs": "Contratos listados com detalhes de vigência e valores.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/compras_contratos_contratos/Contratos", "menu": "Menu: Licitações e Contratos > Contratos"}, {"id": "9.3", "dim": "9. Contratos", "did": "dim-9", "peso": "obrigatorio", "status": "ok", "item": "Divulga a relação/lista dos fiscais de cada contrato?", "obs": "Contratos listados com detalhes de vigência e valores.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/compras_contratos_contratos/Contratos", "menu": "Menu: Licitações e Contratos > Contratos"}, {"id": "9.4", "dim": "9. Contratos", "did": "dim-9", "peso": "obrigatorio", "status": "ok", "item": "Divulga a ordem cronológica de seus pagamentos?", "obs": "Contratos listados com detalhes de vigência e valores.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/compras_contratos_contratos/Contratos", "menu": "Menu: Licitações e Contratos > Contratos"}, {"id": "10.1", "dim": "10. Obras", "did": "dim-10", "peso": "essencial", "status": "ausente", "item": "Divulga informações sobre as obras (objeto, situação, datas, percentual)?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "10.2", "dim": "10. Obras", "did": "dim-10", "peso": "obrigatorio", "status": "ausente", "item": "Divulga os quantitativos, os preços unitários e totais contratados?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "10.3", "dim": "10. Obras", "did": "dim-10", "peso": "obrigatorio", "status": "ausente", "item": "Divulga os quantitativos executados e os preços efetivamente pagos?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "10.4", "dim": "10. Obras", "did": "dim-10", "peso": "recomendado", "status": "ausente", "item": "Divulga relação das obras paralisadas?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.1", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "essencial", "status": "ausente", "item": "Publica a Prestação de Contas do Ano Anterior (Balanço Geral)?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.2", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "essencial", "status": "ausente", "item": "Divulga o Relatório de Gestão ou Atividades?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.3", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "obrigatorio", "status": "ausente", "item": "Divulga a íntegra da decisão da apreciação ou julgamento das contas?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.4", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "obrigatorio", "status": "ausente", "item": "Divulga o resultado do julgamento das Contas do Chefe do Poder Executivo?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.5", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "essencial", "status": "ausente", "item": "Divulga o Relatório de Gestão Fiscal (RGF)?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.6", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "essencial", "status": "ausente", "item": "Divulga o Relatório Resumido da Execução Orçamentária (RREO)?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.7", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "obrigatorio", "status": "ausente", "item": "Divulga o plano estratégico institucional?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.8", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "essencial", "status": "ausente", "item": "Divulga a Lei do Plano Plurianual (PPA)?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.9", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "essencial", "status": "ausente", "item": "Divulga a Lei de Diretrizes Orçamentárias (LDO)?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "11.10", "dim": "11. Planejamento e Prestação de Contas", "did": "dim-11", "peso": "essencial", "status": "ausente", "item": "Divulga a Lei Orçamentária (LOA)?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "12.1", "dim": "12. Serviço de Informação ao Cidadão - SIC", "did": "dim-12", "peso": "essencial", "status": "ausente", "item": "Existe o SIC e indica a unidade/setor responsável?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "12.2", "dim": "12. Serviço de Informação ao Cidadão - SIC", "did": "dim-12", "peso": "essencial", "status": "ausente", "item": "Indica o endereço físico, telefone e e-mail do SIC?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "12.3", "dim": "12. Serviço de Informação ao Cidadão - SIC", "did": "dim-12", "peso": "essencial", "status": "ausente", "item": "Há possibilidade de envio de pedidos eletrônicos (e-SIC)?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "12.4", "dim": "12. Serviço de Informação ao Cidadão - SIC", "did": "dim-12", "peso": "obrigatorio", "status": "ausente", "item": "A solicitação por meio de eSic é simples?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "12.5", "dim": "12. Serviço de Informação ao Cidadão - SIC", "did": "dim-12", "peso": "obrigatorio", "status": "ausente", "item": "Divulga instrumento normativo local da LAI?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "12.6", "dim": "12. Serviço de Informação ao Cidadão - SIC", "did": "dim-12", "peso": "obrigatorio", "status": "ausente", "item": "Divulga prazos de resposta e procedimentos?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "12.7", "dim": "12. Serviço de Informação ao Cidadão - SIC", "did": "dim-12", "peso": "obrigatorio", "status": "ausente", "item": "Divulga relatório anual estatístico do SIC?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "12.8", "dim": "12. Serviço de Informação ao Cidadão - SIC", "did": "dim-12", "peso": "obrigatorio", "status": "ausente", "item": "Divulga lista de documentos classificados?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "12.9", "dim": "12. Serviço de Informação ao Cidadão - SIC", "did": "dim-12", "peso": "obrigatorio", "status": "ausente", "item": "Divulga lista das informações desclassificadas?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "13.1", "dim": "13. Acessibilidade", "did": "dim-13", "peso": "obrigatorio", "status": "ausente", "item": "Contém símbolo de acessibilidade em destaque?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "13.2", "dim": "13. Acessibilidade", "did": "dim-13", "peso": "recomendado", "status": "ausente", "item": "Contém exibição do \"caminho\" de páginas?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "13.3", "dim": "13. Acessibilidade", "did": "dim-13", "peso": "recomendado", "status": "ausente", "item": "Contém opção de alto contraste?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "13.4", "dim": "13. Acessibilidade", "did": "dim-13", "peso": "recomendado", "status": "ausente", "item": "Contém ferramenta de redimensionamento de texto?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "13.5", "dim": "13. Acessibilidade", "did": "dim-13", "peso": "recomendado", "status": "ausente", "item": "Contém mapa do site institucional?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "14.1", "dim": "14. Ouvidorias", "did": "dim-14", "peso": "essencial", "status": "ausente", "item": "Informações sobre o atendimento presencial pela Ouvidoria?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "14.2", "dim": "14. Ouvidorias", "did": "dim-14", "peso": "essencial", "status": "ausente", "item": "Há canal eletrônico de acesso/interação com a ouvidoria?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "14.3", "dim": "14. Ouvidorias", "did": "dim-14", "peso": "essencial", "status": "ausente", "item": "Divulga Carta de Serviços ao Usuário?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "15.1", "dim": "15. LGPD e Governo Digital", "did": "dim-15", "peso": "obrigatorio", "status": "ausente", "item": "Identifica o encarregado pelo tratamento de dados?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "15.2", "dim": "15. LGPD e Governo Digital", "did": "dim-15", "peso": "obrigatorio", "status": "ausente", "item": "Publica a sua Política de Privacidade e Proteção de Dados?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "15.3", "dim": "15. LGPD e Governo Digital", "did": "dim-15", "peso": "obrigatorio", "status": "ausente", "item": "Possibilita a demanda e o acesso a serviços públicos por meio digital?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "15.4", "dim": "15. LGPD e Governo Digital", "did": "dim-15", "peso": "recomendado", "status": "ausente", "item": "Possibilita o acesso automatizado em dados abertos?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "15.5", "dim": "15. LGPD e Governo Digital", "did": "dim-15", "peso": "recomendado", "status": "ausente", "item": "Regulamenta a Lei do Governo Digital?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "15.6", "dim": "15. LGPD e Governo Digital", "did": "dim-15", "peso": "recomendado", "status": "ausente", "item": "Realiza e divulga pesquisas de satisfação?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "16.1", "dim": "16. Renúncias de Receitas", "did": "dim-16", "peso": "obrigatorio", "status": "ausente", "item": "Divulga as desonerações tributárias concedidas?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "16.2", "dim": "16. Renúncias de Receitas", "did": "dim-16", "peso": "obrigatorio", "status": "ausente", "item": "Divulga os valores da renúncia fiscal prevista e realizada?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "16.3", "dim": "16. Renúncias de Receitas", "did": "dim-16", "peso": "obrigatorio", "status": "ausente", "item": "Identifica os beneficiários das desonerações tributárias?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "16.4", "dim": "16. Renúncias de Receitas", "did": "dim-16", "peso": "recomendado", "status": "ausente", "item": "Divulga informações sobre projetos de incentivo à cultura?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "17.1", "dim": "17. Emendas Parlamentares", "did": "dim-17", "peso": "obrigatorio", "status": "ausente", "item": "Identifica as emendas parlamentares federais recebidas?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "17.2", "dim": "17. Emendas Parlamentares", "did": "dim-17", "peso": "obrigatorio", "status": "ausente", "item": "Identifica as emendas parlamentares estaduais e municipais?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "17.3", "dim": "17. Emendas Parlamentares", "did": "dim-17", "peso": "obrigatorio", "status": "ausente", "item": "Demonstra a execução orçamentária e financeira oriunda das emendas?", "obs": "Nao localizado no portal.", "url": "", "menu": "Nao identificado no portal"}, {"id": "18.1", "dim": "18. Saúde", "did": "dim-18", "peso": "obrigatorio", "status": "ok", "item": "Divulga o plano de saúde, programação anual e relatório de gestão?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "18.2", "dim": "18. Saúde", "did": "dim-18", "peso": "obrigatorio", "status": "ok", "item": "Divulga informações relacionadas aos serviços de saúde (horários, profissionais)?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "18.3", "dim": "18. Saúde", "did": "dim-18", "peso": "obrigatorio", "status": "ok", "item": "Divulga a lista de espera de regulação?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "18.4", "dim": "18. Saúde", "did": "dim-18", "peso": "obrigatorio", "status": "ok", "item": "Divulga lista dos medicamentos SUS?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "18.5", "dim": "18. Saúde", "did": "dim-18", "peso": "recomendado", "status": "ok", "item": "Divulga os estoques de medicamentos das farmácias públicas?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "18.6", "dim": "18. Saúde", "did": "dim-18", "peso": "recomendado", "status": "ok", "item": "Divulga informações sobre o Conselho de Saúde?", "obs": "Página identificada. Verifique presença de anexos via ícone de arquivo na tabela.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/licitacoes_em_andamento/Licitacoes", "menu": "Menu: Licitações e Contratos > Licitações"}, {"id": "19.1", "dim": "19. Educação e Assistência Social", "did": "dim-19", "peso": "obrigatorio", "status": "ok", "item": "Divulga o plano de educação e relatório de resultados?", "obs": "Contratos listados com detalhes de vigência e valores.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/compras_contratos_contratos/Contratos", "menu": "Menu: Licitações e Contratos > Contratos"}, {"id": "19.2", "dim": "19. Educação e Assistência Social", "did": "dim-19", "peso": "obrigatorio", "status": "ok", "item": "Divulga a lista de espera em creches públicas?", "obs": "Contratos listados com detalhes de vigência e valores.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/compras_contratos_contratos/Contratos", "menu": "Menu: Licitações e Contratos > Contratos"}, {"id": "19.3", "dim": "19. Educação e Assistência Social", "did": "dim-19", "peso": "recomendado", "status": "ok", "item": "Divulga informações sobre o Conselho do Fundeb?", "obs": "Contratos listados com detalhes de vigência e valores.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/compras_contratos_contratos/Contratos", "menu": "Menu: Licitações e Contratos > Contratos"}, {"id": "19.4", "dim": "19. Educação e Assistência Social", "did": "dim-19", "peso": "recomendado", "status": "ok", "item": "Divulga informações sobre o Conselho de Assistência Social?", "obs": "Contratos listados com detalhes de vigência e valores.", "url": "https://transparencia-osasco.smarapd.com.br/#/dinamico/compras_contratos_contratos/Contratos", "menu": "Menu: Licitações e Contratos > Contratos"}];
+
+const DIMS = [...new Set(ROWS.map(r=>r.dim))];
+const DIM_IDS = {};
+DIMS.forEach(d=>{ DIM_IDS[d] = 'dim-' + d.split('.')[0].trim().replace(/\s+/g,'-'); });
+
+let fStatus='', fPeso='', fQ='';
+
+function badgeClass(peso){
+  return {essencial:'b-ess',obrigatorio:'b-obr',recomendado:'b-rec'}[peso]||'b-obr';
+}
+function badgeLabel(peso){
+  return {essencial:'ESSENCIAL',obrigatorio:'OBRIGATÓRIO',recomendado:'RECOMENDADO'}[peso]||peso.toUpperCase();
+}
+function iconHtml(st){
+  if(st==='ok')    return '<span class="icon ok">&#10003;</span>';
+  if(st==='ausente') return '<span class="icon aus">&#10007;</span>';
+  return '<span class="icon pend">&#9679;</span>';
+}
+function urlHtml(row){
+  if(row.url) return `<div class="c-url"><a href="${row.url}" target="_blank">${row.url}</a></div>`
+    +(row.menu?`<div class="c-menu">&#128193; ${row.menu}</div>`:'');
+  if(row.menu) return `<div class="c-menu" style="color:#bbb">&#128193; ${row.menu}</div>`;
+  return '<div class="c-menu" style="color:#ccc">— a avaliar —</div>';
+}
+
+function buildDims(){
+  const container = document.getElementById('dims-container');
+  container.innerHTML='';
+  DIMS.forEach(dim=>{
+    const id = DIM_IDS[dim];
+    const sec = document.createElement('div');
+    sec.className='dim-section';
+    sec.id=id;
+    // calc stats
+    const lst = ROWS.filter(r=>r.dim===dim);
+    const av  = lst.filter(r=>r.status!=='pendente');
+    const enc = av.filter(r=>r.status==='ok');
+    const aus = av.filter(r=>r.status==='ausente');
+    const pend= lst.filter(r=>r.status==='pendente');
+    const pct = av.length ? Math.round(enc.length/av.length*100) : 0;
+    const color = av.length===0 ? '#95a5a6' : pct>=75?'#27ae60':pct>=40?'#e67e22':'#e74c3c';
+    const dbOk   = enc.length  ? `<span class="db ok">${enc.length} &#10003;</span>` : '';
+    const dbAus  = aus.length  ? `<span class="db aus">${aus.length} &#10007;</span>` : '';
+    const dbPend = pend.length ? `<span class="db pend">${pend.length} &#9679;</span>` : '';
+    sec.innerHTML=`
+      <div class="dim-header" onclick="toggleSection(this.parentElement)">
+        <div class="dim-title">${dim}</div>
+        <div class="dim-prog">
+          <div class="bar"><div class="fill" style="width:${pct}%;background:${color}"></div></div>
+          <div class="pct" style="color:${color}">${av.length?pct+'%':'—'}</div>
+        </div>
+        <div class="dim-badges">${dbOk}${dbAus}${dbPend}</div>
+        <span class="chevron">&#9660;</span>
+      </div>
+      <div class="dim-body" id="body-${id}">
+        <div class="rows-wrap" id="rows-${id}"></div>
+      </div>`;
+    container.appendChild(sec);
+  });
+}
+
+function renderRows(){
+  const q = fQ.toLowerCase();
+  let total=0, shown=0;
+  DIMS.forEach(dim=>{
+    const id=DIM_IDS[dim];
+    const wrap=document.getElementById('rows-'+id);
+    if(!wrap) return;
+    wrap.innerHTML='';
+    const lst=ROWS.filter(r=>r.dim===dim);
+    let dimShown=0;
+    lst.forEach(r=>{
+      total++;
+      if(fStatus && r.status!==fStatus) return;
+      if(fPeso   && r.peso!==fPeso)     return;
+      if(q && !(r.id.includes(q)||r.item.toLowerCase().includes(q)||r.dim.toLowerCase().includes(q)||r.obs.toLowerCase().includes(q))) return;
+      shown++;
+      dimShown++;
+      const div=document.createElement('div');
+      div.className=`c-row st-${r.status}`;
+      div.dataset.status=r.status;
+      div.dataset.peso=r.peso;
+      div.dataset.dim=r.dim;
+      div.innerHTML=`
+        ${iconHtml(r.status)}
+        <div class="c-id">${r.id}</div>
+        <div class="c-body">
+          <div class="c-item">${r.item}</div>
+          ${r.obs?`<div class="c-obs">${r.obs}</div>`:''}
+          ${urlHtml(r)}
+        </div>
+        <div style="padding-top:2px"><span class="badge ${badgeClass(r.peso)}">${badgeLabel(r.peso)}</span></div>`;
+      wrap.appendChild(div);
+    });
+    // show/hide section based on filter
+    const sec=document.getElementById(id);
+    if(sec){
+      if(dimShown===0 && (fStatus||fPeso||q)){
+        sec.classList.add('hidden');
+      } else {
+        sec.classList.remove('hidden');
+        // auto-expand if filtering
+        if((fStatus||fPeso||q) && dimShown>0){
+          sec.classList.remove('collapsed');
+          const body=document.getElementById('body-'+id);
+          if(body) body.style.maxHeight='';
+        }
+      }
+    }
+  });
+  document.getElementById('result-count').textContent =
+    q||fStatus||fPeso ? `${shown} critério${shown!==1?'s':''} exibido${shown!==1?'s':''}` : '';
+  document.getElementById('no-results').classList.toggle('hidden', shown>0||(!(q||fStatus||fPeso)));
+}
+
+function toggleSection(sec){
+  sec.classList.toggle('collapsed');
+  const body=sec.querySelector('.dim-body');
+  if(sec.classList.contains('collapsed')){
+    body.style.maxHeight=body.scrollHeight+'px';
+    requestAnimationFrame(()=>{ body.style.maxHeight='0'; });
+  } else {
+    body.style.maxHeight='0';
+    requestAnimationFrame(()=>{ body.style.maxHeight=body.scrollHeight+'px'; });
+    setTimeout(()=>{ body.style.maxHeight=''; },300);
+  }
+}
+
+function setChip(el,group){
+  document.querySelectorAll('#chips-'+group+' .chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  if(group==='status') fStatus=el.dataset.val;
+  else fPeso=el.dataset.val;
+  applyFilters();
+}
+
+function applyFilters(){
+  fQ=document.getElementById('q').value;
+  renderRows();
+}
+
+function scrollToDim(id){
+  const el=document.getElementById(id);
+  if(el){
+    el.scrollIntoView({behavior:'smooth',block:'start'});
+    el.classList.remove('collapsed');
+    const body=el.querySelector('.dim-body');
+    if(body) body.style.maxHeight='';
+  }
+}
+
+// Sidebar active link on scroll
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      document.querySelectorAll('.nav-item').forEach(a=>a.classList.remove('active'));
+      const link=document.querySelector(`.nav-item[data-dim="${e.target.id}"]`);
+      if(link){
+        link.classList.add('active');
+        link.scrollIntoView({block:'nearest'});
+      }
+    }
+  });
+},{rootMargin:'-10% 0px -80% 0px'});
+
+window.addEventListener('load',()=>{
+  buildDims();
+  renderRows();
+  DIMS.forEach(dim=>{
+    const el=document.getElementById(DIM_IDS[dim]);
+    if(el) observer.observe(el);
+  });
+});
+</script>
 </body>
 </html>

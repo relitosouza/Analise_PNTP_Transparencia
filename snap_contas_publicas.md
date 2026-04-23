@@ -1,0 +1,45 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e6] [cursor=pointer]:
+      - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e7]
+      - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e8]
+    - generic [ref=e9]:
+      - complementary [ref=e10]:
+        - generic [ref=e11]:
+          - img "Brasão" [ref=e12] [cursor=pointer]
+          - generic [ref=e14]
+          - menu [ref=e21]
+          - img "menu-fold" [ref=e317] [cursor=pointer]
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - heading "." [level=1] [ref=e323]
+          - button "bulb" [ref=e325] [cursor=pointer]
+        - main [ref=e329]:
+          - generic [ref=e330]
+          - generic [ref=e339]
+        - generic [ref=e497]:
+          - img "facebook" [ref=e499] [cursor=pointer]
+          - img "instagram" [ref=e503] [cursor=pointer]
+          - img "youtube" [ref=e507] [cursor=pointer]
+        - generic [ref=e511]:
+          - generic [ref=e512]
+          - button "environment" [ref=e516] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - list:
+          - listitem
+          - listitem
+          - listitem
+          - listitem
+          - listitem
+          - listitem
+          - menuitem "alert Fornecimentosㅤ"
+          - menuitem "dollar Repasses e Transferênciasㅤ"
+          - menuitem "ordered-list Decretos de Execução Orçamentária"
+          - menuitem "snippets Relatórios LRF - Lei de Responsabilidade Fiscal"
+          - listitem
+          - menuitem "control Situação de Regularidade Municipal"
+          - menuitem "file-text Decretos e Leis de Alterações Orçamentáriasㅤ"
+          - menuitem "dollar Ordem Cronológica de Pagamentos"
+          - menuitem "dollar Restos a Pagar"
