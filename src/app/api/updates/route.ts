@@ -1,14 +1,32 @@
 import { NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+import prisma from '@/lib/prisma';
 
-const DATA_FILE = path.join(process.cwd(), 'data', 'relatorio_pntp_manual.json');
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
-    const raw = await fs.readFile(DATA_FILE, 'utf-8');
-    return NextResponse.json(JSON.parse(raw));
-  } catch {
-    return NextResponse.json({ manual_updates: {} });
+    // Get the latest audit for each criterion
+    const latestAudits = await prisma.audit.findMany({
+      orderBy: {
+        updatedAt: 'desc',
+      },
+      distinct: ['criterionId'],
+    });
+
+    // Format to match the expected manual_updates structure
+    const manual_updates: Record<string, any> = {};
+    latestAudits.forEach((audit) => {
+      manual_updates[audit.criterionId] = {
+        status: audit.status,
+        url: audit.url,
+        obs: audit.observation,
+        updated_at: audit.updatedAt.toISOString(),
+      };
+    });
+
+    return NextResponse.json({ manual_updates });
+  } catch (error) {
+    console.error('Database fetch error:', error);
+    return NextResponse.json({ manual_updates: {}, error: String(error) }, { status: 500 });
   }
 }
