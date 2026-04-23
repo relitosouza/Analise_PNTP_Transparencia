@@ -8,6 +8,23 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
+model Criterion {
+  id          String   @id // e.g., "1.1", "1.2"
+  description String?
+  group       String?
+  audits      Audit[]
+}
+
+model Audit {
+  id          Int      @id @default(autoincrement())
+  criterionId String
+  criterion   Criterion @relation(fields: [criterionId], references: [id])
+  status      String    // "ok", "fail", "incomplete"
+  url         String?
+  observation String?
+  updatedAt   DateTime @default(now())
+}
+
 model TransparencyScore {
   id        Int      @id @default(autoincrement())
   date      DateTime @default(now())
