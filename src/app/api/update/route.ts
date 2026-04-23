@@ -1,53 +1,38 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
-
-const DATA_FILE = path.join(process.cwd(), 'data', 'relatorio_pntp_manual.json');
-
-async function ensureDataDir() {
-  const dir = path.dirname(DATA_FILE);
-  await fs.mkdir(dir, { recursive: true });
-}
-
-async function loadData(): Promise<Record<string, unknown>> {
-  try {
-    const raw = await fs.readFile(DATA_FILE, 'utf-8');
-    return JSON.parse(raw);
-  } catch {
-    return { manual_updates: {} };
-  }
-}
-
-async function saveData(data: Record<string, unknown>) {
-  await ensureDataDir();
-  await fs.writeFile(DATA_FILE, JSON.stringify(data, null, 2), 'utf-8');
-}
+import prisma from '@/lib/prisma';
 
 export async function POST(request: NextRequest) {
-  const body = await request.json();
-  const { id, status, url = '', obs = '' } = body;
-
-  if (!id || !status) {
-    return NextResponse.json({ error: 'ID e status são obrigatórios' }, { status: 400 });
-  }
-
   try {
-    const data = await loadData();
-    const updates = (data.manual_updates || {}) as Record<string, unknown>;
-    updates[id] = {
-      status,
-      url,
-      obs,
-      updated_at: new Date().toISOString(),
-    };
-    data.manual_updates = updates;
-    await saveData(data);
-    return NextResponse.json({ message: 'Item atualizado com sucesso', persisted: true });
-  } catch {
-    // On Vercel (read-only filesystem), we can't persist but still acknowledge
-    return NextResponse.json({
-      message: 'Item atualizado na sessão (persistência não disponível no ambiente serverless)',
-      persisted: false,
+    const body = await request.json();
+    const { id, status, url = '', obs = '' } = body;
+
+    if (!id || !status) {
+      return NextResponse.json({ error: 'ID e status são obrigatórios' }, { status: 400 });
+    }
+
+    // Save update to database
+    // Note: We create a new audit entry to keep history, 
+    // or we could update the latest one. Let's create a new one.
+    await prisma.audit.create({
+      data: {
+        criterionId: id,
+        status,
+        url: url || null,
+        observation: obs || null,
+        updatedAt: new Date(),
+      },
     });
+
+    return NextResponse.json({ 
+      message: 'Item atualizado com sucesso no banco de dados', 
+      persisted: true 
+    });
+  } catch (error) {
+    console.error('Database update error:', error);
+    return NextResponse.json({
+      message: 'Erro ao salvar no banco de dados',
+      persisted: false,
+      error: String(error)
+    }, { status: 500 });
   }
 }
