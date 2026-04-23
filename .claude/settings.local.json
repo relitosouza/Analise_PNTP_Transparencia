@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:transparencia-osasco.smarapd.com.br)",
+      "WebSearch",
+      "WebFetch(domain:radardatransparencia.atricon.org.br)",
+      "WebFetch(domain:www.tce.sp.gov.br)",
+      "Bash(python -c \"import playwright\")",
+      "Bash(pip install *)",
+      "Bash(python3 -m pip install playwright --quiet)",
+      "PowerShell(pip *)",
+      "PowerShell(python -m pip install playwright --quiet 2>&1 | Select-Object -Last 5)",
+      "PowerShell(python -m ensurepip --upgrade 2>&1; python -m pip --version 2>&1)",
+      "PowerShell(python -m playwright install chromium 2>&1 | Select-Object -Last 8)",
+      "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python analisar_portal.py 2>&1)",
+      "PowerShell(Start-Process \"C:\\\\projetos\\\\PNTP\\\\relatorio_pntp.html\")",
+      "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python gerar_relatorio_urls.py 2>&1)",
+      "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python mapear_urls_portal.py 2>&1)",
+      "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python mapear_urls_portal.py)",
+      "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python coletar_hrefs.py 2>&1)",
+      "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python gerar_relatorio_final.py 2>&1)"
+    ]
+  }
+}
