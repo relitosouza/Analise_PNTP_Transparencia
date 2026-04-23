@@ -1,0 +1,180 @@
+- generic [ref=e4]:
+  - generic [ref=e6] [cursor=pointer]:
+    - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e7]
+    - img "Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga." [ref=e8]
+  - generic [ref=e9]:
+    - complementary [ref=e10]:
+      - generic [ref=e11]:
+        - img "Brasão" [ref=e12] [cursor=pointer]
+        - generic [ref=e14]:
+          - textbox "Pesquisar" [ref=e15]
+          - button "search" [ref=e17] [cursor=pointer]:
+            - img "search" [ref=e18]
+        - menu [ref=e21]:
+          - menuitem "home Sobre o Portal" [ref=e22] [cursor=pointer]:
+            - img "home" [ref=e23]
+            - generic [ref=e26]: Sobre o Portal
+          - listitem [ref=e27]:
+            - menuitem "message Saiba mais arrow-right" [ref=e28] [cursor=pointer]
+          - menuitem "folder-open Dados Abertos" [ref=e39] [cursor=pointer]:
+            - img "folder-open" [ref=e40]
+            - generic [ref=e43]: Dados Abertos
+          - listitem [ref=e44]:
+            - menuitem "setting Informações COVID-19 arrow-right" [ref=e45] [cursor=pointer]
+          - menuitem "file-text Audiências Públicas" [ref=e56] [cursor=pointer]:
+            - img "file-text" [ref=e57]
+            - generic [ref=e60]: Audiências Públicas
+          - menuitem "idcard Administração Pública" [ref=e61] [cursor=pointer]:
+            - img "idcard" [ref=e62]
+            - generic [ref=e65]: Administração Pública
+          - listitem [ref=e66]:
+            - menuitem "message Canais de participação arrow-right" [ref=e67] [cursor=pointer]
+          - listitem [ref=e78]:
+            - menuitem "safety Concursos e Processos Seletivos arrow-right" [ref=e79] [cursor=pointer]
+          - listitem [ref=e91]:
+            - menuitem "profile Concessões arrow-right" [ref=e92] [cursor=pointer]
+          - listitem [ref=e103]:
+            - menuitem "snippets Contas Públicas arrow-right" [ref=e104] [cursor=pointer]
+          - listitem [ref=e115]:
+            - menuitem "file-pdf Controladoria Geral do Município de Osasco arrow-right" [ref=e116] [cursor=pointer]
+          - listitem [ref=e127]:
+            - menuitem "safety Gestão de Pessoas arrow-right" [ref=e128] [cursor=pointer]
+          - listitem [ref=e140]:
+            - menuitem "snippets Legislação e Imprensa Oficial do Município arrow-right" [ref=e141] [cursor=pointer]
+          - listitem [ref=e152]:
+            - menuitem "profile Licitações e Contratos arrow-right" [ref=e153] [cursor=pointer]
+          - menuitem "dollar Repasses Mundo da Criança" [ref=e164] [cursor=pointer]:
+            - img "dollar" [ref=e165]
+            - generic [ref=e168]: Repasses Mundo da Criança
+          - listitem [ref=e169]:
+            - menuitem "message Ouvidoria Geral arrow-right" [ref=e170] [cursor=pointer]
+          - menuitem "file-search Fala Cidadão" [ref=e181] [cursor=pointer]:
+            - img "file-search" [ref=e182]
+            - generic [ref=e185]: Fala Cidadão
+          - listitem [ref=e186]:
+            - menuitem "bank Patrimônio arrow-right" [ref=e187] [cursor=pointer]
+          - listitem [ref=e198]:
+            - menuitem "file-search Políticas, Planos Municipais, Ind. e Inf. Temática arrow-right" [ref=e199] [cursor=pointer]
+          - listitem [ref=e210]:
+            - menuitem "environment Projetos e Obras arrow-right" [ref=e211] [cursor=pointer]
+          - listitem [ref=e222]:
+            - menuitem "setting Serviços arrow-right" [ref=e223] [cursor=pointer]
+          - listitem [ref=e234]:
+            - menuitem "file-search Terceiro Setor arrow-right" [ref=e235] [cursor=pointer]
+          - listitem [ref=e246]:
+            - menuitem "idcard Convênios arrow-right" [ref=e247] [cursor=pointer]
+          - listitem [ref=e258]:
+            - menuitem "flag Convênios de Cooperação arrow-right" [ref=e259] [cursor=pointer]
+          - listitem [ref=e270]:
+            - menuitem "team Peças Orçamentárias arrow-right" [ref=e271] [cursor=pointer]
+          - menuitem "profile Peças Contábeis" [ref=e282] [cursor=pointer]:
+            - img "profile" [ref=e283]
+            - generic [ref=e286]: Peças Contábeis
+          - menuitem "line-chart Estatísticas" [ref=e287] [cursor=pointer]:
+            - img "line-chart" [ref=e288]
+            - generic [ref=e291]: Estatísticas
+          - menuitem "info-circle Concessões" [ref=e292] [cursor=pointer]:
+            - img "info-circle" [ref=e293]
+            - generic [ref=e297]: Concessões
+          - menuitem "dollar Emendas Parlamentares" [ref=e298] [cursor=pointer]:
+            - img "dollar" [ref=e299]
+            - generic [ref=e302]: Emendas Parlamentares
+          - listitem [ref=e303]:
+            - menuitem "flag Relações Internacionais arrow-right" [ref=e304] [cursor=pointer]
+        - img "menu-fold" [ref=e317] [cursor=pointer]:
+          - img [ref=e318]
+    - generic [ref=e320]:
+      - generic [ref=e321]:
+        - heading "." [level=1] [ref=e323]
+        - button "bulb" [ref=e325] [cursor=pointer]:
+          - img "bulb" [ref=e326]:
+            - img [ref=e327]
+      - main [ref=e329]:
+        - generic [ref=e330]:
+          - generic [ref=e331]:
+            - link "home" [ref=e333] [cursor=pointer]:
+              - /url: "#/"
+            - text: /
+          - generic [ref=e337]: Home
+        - generic [ref=e362]:
+          - generic [ref=e365]:
+            - paragraph [ref=e366]
+            - separator [ref=e368]
+            - paragraph
+          - generic [ref=e372]:
+            - generic [ref=e373]: Estadual e Federal
+            - generic [ref=e374]
+          - img "Imagem Card" [ref=e392] [cursor=pointer]
+          - generic [ref=e395]:
+            - paragraph [ref=e396]
+            - separator [ref=e398]
+            - paragraph
+          - img "Imagem Card" [ref=e401] [cursor=pointer]
+          - img "Imagem Card" [ref=e404] [cursor=pointer]
+          - img "Imagem Card" [ref=e407] [cursor=pointer]
+          - img "Imagem Card" [ref=e410] [cursor=pointer]
+          - img "Imagem Card" [ref=e413] [cursor=pointer]
+          - img "Imagem Card" [ref=e416] [cursor=pointer]
+          - generic [ref=e419]:
+            - paragraph [ref=e420]
+            - separator [ref=e423]
+          - img "Imagem Card" [ref=e426] [cursor=pointer]
+          - img "Imagem Card" [ref=e429] [cursor=pointer]
+          - img "Imagem Card" [ref=e432] [cursor=pointer]
+          - img "Imagem Card" [ref=e435] [cursor=pointer]
+          - generic [ref=e438]:
+            - paragraph [ref=e439]
+            - separator [ref=e441]
+            - paragraph
+            - paragraph
+          - img "Imagem Card" [ref=e444] [cursor=pointer]
+          - img "Imagem Card" [ref=e447] [cursor=pointer]
+          - img "Imagem Card" [ref=e450] [cursor=pointer]
+          - img "Imagem Card" [ref=e453] [cursor=pointer]
+          - generic [ref=e456]:
+            - paragraph [ref=e457]
+            - separator [ref=e459]
+            - paragraph
+          - img "Imagem Card" [ref=e462] [cursor=pointer]
+          - img "Imagem Card" [ref=e465] [cursor=pointer]
+          - img "Imagem Card" [ref=e468] [cursor=pointer]
+          - img "Imagem Card" [ref=e471] [cursor=pointer]
+          - img "Imagem Card" [ref=e474] [cursor=pointer]
+          - generic [ref=e477]:
+            - paragraph [ref=e478]
+            - separator [ref=e480]
+            - paragraph
+          - img "Imagem Card" [ref=e483] [cursor=pointer]
+          - img "Imagem Card" [ref=e486] [cursor=pointer]
+          - generic [ref=e489]:
+            - heading "Informações Institucionais" [level=1] [ref=e490]
+            - paragraph
+            - separator [ref=e492]
+            - paragraph
+            - paragraph
+            - paragraph
+            - paragraph
+            - paragraph
+            - paragraph
+          - img "Imagem Card" [ref=e495] [cursor=pointer]
+          - img "Imagem Card" [ref=e498] [cursor=pointer]
+          - img "Imagem Card" [ref=e501] [cursor=pointer]
+          - img "Imagem Card" [ref=e504] [cursor=pointer]
+          - img "Imagem Card" [ref=e507] [cursor=pointer]
+          - img "Imagem Card" [ref=e510] [cursor=pointer]
+          - paragraph [ref=e514]:
+            - strong [ref=e515]
+      - generic [ref=e338]:
+        - img "facebook" [ref=e340] [cursor=pointer]:
+          - img [ref=e341]
+        - img "instagram" [ref=e344] [cursor=pointer]:
+          - img [ref=e345]
+        - img "youtube" [ref=e348] [cursor=pointer]:
+          - img [ref=e349]
+      - generic [ref=e352]:
+        - generic [ref=e353]:
+          - generic [ref=e354]: Av Bussocaba , 300 - Centro - Osasco - 06023-901
+          - generic [ref=e355]: "(11) 3652-9000 - Horário de atendimento: Segunda a Sexta das 8h às 17h"
+        - button "environment" [ref=e357] [cursor=pointer]:
+          - img "environment" [ref=e358]:
+            - img [ref=e359]
