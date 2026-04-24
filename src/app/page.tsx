@@ -6,6 +6,7 @@ import ScoreCards from '@/components/ScoreCards';
 import DimensionSummary from '@/components/DimensionSummary';
 import EssentialAlerts from '@/components/EssentialAlerts';
 import CriteriaTable from '@/components/CriteriaTable';
+import ChartsTab from '@/components/ChartsTab';
 import { buildRelatorio } from '@/data/relatorio';
 import type { RelatorioCriterio } from '@/data/relatorio';
 import { PORTAL_URL } from '@/lib/utils';
@@ -13,6 +14,7 @@ import { PORTAL_URL } from '@/lib/utils';
 export default function HomePage() {
   const [data, setData] = useState<RelatorioCriterio[]>([]);
   const [loading, setLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState<'audit' | 'charts'>('audit');
 
   useEffect(() => {
     async function loadAllData() {
@@ -113,11 +115,47 @@ export default function HomePage() {
         {/* Essential Alerts */}
         <EssentialAlerts data={data} />
 
-        {/* Dimension Summary */}
-        <DimensionSummary data={data} />
+        {/* Tab Selection */}
+        <div className="flex space-x-1 rounded-xl bg-slate-200/50 p-1">
+          <button
+            onClick={() => setActiveTab('audit')}
+            className={`flex flex-1 items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-bold transition-all duration-200 ${
+              activeTab === 'audit'
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-slate-500 hover:bg-white/50 hover:text-slate-700'
+            }`}
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg>
+            Painel de Auditoria
+          </button>
+          <button
+            onClick={() => setActiveTab('charts')}
+            className={`flex flex-1 items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-bold transition-all duration-200 ${
+              activeTab === 'charts'
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-slate-500 hover:bg-white/50 hover:text-slate-700'
+            }`}
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+            </svg>
+            Gráficos & Insights
+          </button>
+        </div>
 
-        {/* Full Criteria Table */}
-        <CriteriaTable data={data} onStatusUpdate={handleStatusUpdate} />
+        {activeTab === 'audit' ? (
+          <>
+            {/* Dimension Summary */}
+            <DimensionSummary data={data} />
+
+            {/* Full Criteria Table */}
+            <CriteriaTable data={data} onStatusUpdate={handleStatusUpdate} />
+          </>
+        ) : (
+          <ChartsTab data={data} />
+        )}
 
         {/* Methodology */}
         <div className="overflow-hidden rounded-2xl border border-slate-200/60 bg-white p-6 shadow-sm">
