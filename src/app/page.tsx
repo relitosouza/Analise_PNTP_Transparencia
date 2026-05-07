@@ -8,13 +8,17 @@ import EssentialAlerts from '@/components/EssentialAlerts';
 import CriteriaTable from '@/components/CriteriaTable';
 import ChartsTab from '@/components/ChartsTab';
 import { buildRelatorio } from '@/data/relatorio';
+import { buildRelatorioITGP } from '@/data/itgp_relatorio';
+
 import type { RelatorioCriterio } from '@/data/relatorio';
 import { PORTAL_URL } from '@/lib/utils';
 
 export default function HomePage() {
-  const [data, setData] = useState<RelatorioCriterio[]>([]);
+  const [pntpData, setPntpData] = useState<RelatorioCriterio[]>([]);
+  const [itgpData, setItgpData] = useState<RelatorioCriterio[]>([]);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<'audit' | 'charts'>('audit');
+  const [activeTab, setActiveTab] = useState<'pntp' | 'itgp' | 'charts'>('pntp');
+
 
   useEffect(() => {
     async function loadAllData() {
@@ -52,14 +56,32 @@ export default function HomePage() {
           return item;
         });
 
-        setData(updated);
+        // 5. Load ITGP Data and apply merge logic
+        const itgpReport = buildRelatorioITGP();
+        const itgpUpdated = itgpReport.map((item) => {
+          const manual = manualUpdates[item.id];
+          if (manual) {
+            return {
+              ...item,
+              status: manual.status === 'ok' ? ('ok' as const) : ('ausente' as const),
+              observacao: manual.obs || item.observacao,
+              url: manual.url || item.url,
+            };
+          }
+          return item;
+        });
+        setItgpData(itgpUpdated);
+
+        setPntpData(updated);
       } catch (err) {
         console.error('Error loading data:', err);
-        setData(buildRelatorio());
+        setPntpData(buildRelatorio());
+        setItgpData(buildRelatorioITGP());
       } finally {
         setLoading(false);
       }
     }
+
 
     loadAllData();
   }, []);
@@ -73,25 +95,41 @@ export default function HomePage() {
           body: JSON.stringify({ id, status, url, obs }),
         });
 
-        // Update local state
-        setData((prev) =>
-          prev.map((item) =>
-            item.id === id
-              ? {
-                  ...item,
-                  status: status === 'ok' ? ('ok' as const) : ('ausente' as const),
-                  observacao: obs || 'Status atualizado manualmente.',
-                  url: url || item.url,
-                }
-              : item
-          )
-        );
+        // Update local state based on which tab is active (if we want to support both)
+        if (activeTab === 'pntp') {
+          setPntpData((prev) =>
+            prev.map((item) =>
+              item.id === id
+                ? {
+                    ...item,
+                    status: status === 'ok' ? ('ok' as const) : ('ausente' as const),
+                    observacao: obs || 'Status atualizado manualmente.',
+                    url: url || item.url,
+                  }
+                : item
+            )
+          );
+        } else if (activeTab === 'itgp') {
+          setItgpData((prev) =>
+            prev.map((item) =>
+              item.id === id
+                ? {
+                    ...item,
+                    status: status === 'ok' ? ('ok' as const) : ('ausente' as const),
+                    observacao: obs || 'Status atualizado manualmente.',
+                    url: url || item.url,
+                  }
+                : item
+            )
+          );
+        }
       } catch (err) {
         console.error('Failed to update status:', err);
       }
     },
-    []
+    [activeTab]
   );
+
 
   if (loading) {
     return (
@@ -110,17 +148,17 @@ export default function HomePage() {
 
       <main className="mx-auto max-w-7xl space-y-6 px-4 py-8 sm:px-6">
         {/* KPI Cards */}
-        <ScoreCards data={data} />
+        <ScoreCards data={activeTab === 'itgp' ? itgpData : pntpData} />
 
         {/* Essential Alerts */}
-        <EssentialAlerts data={data} />
+        <EssentialAlerts data={activeTab === 'itgp' ? itgpData : pntpData} />
 
         {/* Tab Selection */}
         <div className="flex space-x-1 rounded-xl bg-slate-200/50 p-1">
           <button
-            onClick={() => setActiveTab('audit')}
+            onClick={() => setActiveTab('pntp')}
             className={`flex flex-1 items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-bold transition-all duration-200 ${
-              activeTab === 'audit'
+              activeTab === 'pntp'
                 ? 'bg-white text-blue-600 shadow-sm'
                 : 'text-slate-500 hover:bg-white/50 hover:text-slate-700'
             }`}
@@ -128,7 +166,20 @@ export default function HomePage() {
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
             </svg>
-            Painel de Auditoria
+            Painel PNTP
+          </button>
+          <button
+            onClick={() => setActiveTab('itgp')}
+            className={`flex flex-1 items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-bold transition-all duration-200 ${
+              activeTab === 'itgp'
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-slate-500 hover:bg-white/50 hover:text-slate-700'
+            }`}
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+            Painel ITGP
           </button>
           <button
             onClick={() => setActiveTab('charts')}
@@ -145,17 +196,22 @@ export default function HomePage() {
           </button>
         </div>
 
-        {activeTab === 'audit' ? (
+
+        {activeTab === 'pntp' || activeTab === 'itgp' ? (
           <>
             {/* Dimension Summary */}
-            <DimensionSummary data={data} />
+            <DimensionSummary data={activeTab === 'itgp' ? itgpData : pntpData} />
 
             {/* Full Criteria Table */}
-            <CriteriaTable data={data} onStatusUpdate={handleStatusUpdate} />
+            <CriteriaTable 
+              data={activeTab === 'itgp' ? itgpData : pntpData} 
+              onStatusUpdate={handleStatusUpdate} 
+            />
           </>
         ) : (
-          <ChartsTab data={data} />
+          <ChartsTab pntpData={pntpData} itgpData={itgpData} />
         )}
+
 
         {/* Methodology */}
         <div className="overflow-hidden rounded-2xl border border-slate-200/60 bg-white p-6 shadow-sm">
@@ -201,7 +257,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-400">
         <p>
-          Análise — Programa Nacional de Transparência Pública 2026 — Portal da Transparência de Osasco · Gerado com Next.js
+          Programa Nacional de Transparência Pública Osasco 2026 — Portal da Transparência · Gerado com Next.js
         </p>
       </footer>
     </div>

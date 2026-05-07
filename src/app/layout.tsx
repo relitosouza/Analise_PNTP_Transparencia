@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Análise — Programa Nacional de Transparência Pública 2026',
-  description: 'Comparativo entre os critérios da Cartilha do Programa Nacional de Transparência Pública 2026 (Atricon/TCE-SP) e as informações disponíveis no Portal da Transparência de Osasco.',
-  keywords: ['PNTP', '2026', 'transparência', 'Osasco', 'TCE-SP', 'Atricon', 'auditoria'],
+  title: 'Programa Nacional de Transparência Pública Osasco 2026',
+  description: 'Comparativo entre os critérios da Cartilha PNTP e ITGP para o Portal da Transparência de Osasco.',
+  keywords: ['PNTP', 'ITGP', '2026', 'transparência', 'Osasco', 'TCE-SP', 'Atricon', 'auditoria'],
 };
 
 export default function RootLayout({

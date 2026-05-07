@@ -55,4 +55,4 @@ export function formatDate(date: Date = new Date()): string {
   });
 }
 
-export const PORTAL_URL = 'https://transparencia-osasco.smarapd.com.br';
+export const PORTAL_URL = 'https://transparencia.osasco.sp.gov.br/';
