@@ -10,9 +10,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'ID e status são obrigatórios' }, { status: 400 });
     }
 
-    // Save update to database
-    // Note: We create a new audit entry to keep history, 
-    // or we could update the latest one. Let's create a new one.
+    // 1. Ensure the criterion exists in the database
+    await prisma.criterion.upsert({
+      where: { id },
+      update: {}, // No changes needed if it exists
+      create: { 
+        id,
+        description: '', // We don't have the full description here, but we can update it later
+      },
+    });
+
+    // 2. Save update to database as a new audit entry
     await prisma.audit.create({
       data: {
         criterionId: id,

@@ -8,11 +8,17 @@ import type { RelatorioCriterio } from '@/data/relatorio';
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 interface ChartsTabProps {
-  data: RelatorioCriterio[];
+  pntpData: RelatorioCriterio[];
+  itgpData: RelatorioCriterio[];
 }
 
-export default function ChartsTab({ data }: ChartsTabProps) {
+
+export default function ChartsTab({ pntpData, itgpData }: ChartsTabProps) {
   const [history, setHistory] = useState<{ date: string; score: number }[]>([]);
+  const [dataSource, setDataSource] = useState<'pntp' | 'itgp'>('pntp');
+
+  const data = dataSource === 'pntp' ? pntpData : itgpData;
+
 
   useEffect(() => {
     async function loadHistory() {
@@ -284,7 +290,7 @@ export default function ChartsTab({ data }: ChartsTabProps) {
 
   // 6. Line Chart - Evolution
   const lineSeries = useMemo(() => {
-    if (history.length > 0) {
+    if (dataSource === 'pntp' && history.length > 0) {
       return [
         {
           name: 'Score PNTP',
@@ -295,11 +301,14 @@ export default function ChartsTab({ data }: ChartsTabProps) {
     // Fallback narrative for presentation
     return [
       {
-        name: 'Score PNTP (Simulado)',
-        data: [34, 35, 38, 42, 45, 52, 58, 64, 66],
+        name: `Score ${dataSource.toUpperCase()} (Simulado)`,
+        data: dataSource === 'pntp' 
+          ? [34, 35, 38, 42, 45, 52, 58, 64, 66]
+          : [0, 5, 10, 15, 20, 25, 30, 35, 40],
       },
     ];
-  }, [history]);
+  }, [history, dataSource]);
+
 
   const lineOptions: ApexCharts.ApexOptions = {
     chart: {
@@ -353,7 +362,34 @@ export default function ChartsTab({ data }: ChartsTabProps) {
 
   return (
     <div className="space-y-6 pb-12">
+      {/* Data Source Switcher */}
+      <div className="flex justify-center">
+        <div className="inline-flex rounded-lg bg-slate-200/50 p-1">
+          <button
+            onClick={() => setDataSource('pntp')}
+            className={`rounded-md px-6 py-1.5 text-sm font-bold transition-all ${
+              dataSource === 'pntp'
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-slate-500 hover:text-slate-700'
+            }`}
+          >
+            Dados PNTP
+          </button>
+          <button
+            onClick={() => setDataSource('itgp')}
+            className={`rounded-md px-6 py-1.5 text-sm font-bold transition-all ${
+              dataSource === 'itgp'
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-slate-500 hover:text-slate-700'
+            }`}
+          >
+            Dados ITGP
+          </button>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+
         {/* Donut Chart */}
         <div className="flex flex-col rounded-2xl border border-slate-200/60 bg-white p-6 shadow-sm">
           <div className="mb-6">

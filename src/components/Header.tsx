@@ -24,16 +24,17 @@ export default function Header() {
                 </svg>
               </div>
               <span className="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold tracking-wide text-emerald-300 ring-1 ring-emerald-500/30">
-                Programa Nacional de Transparência Pública 2026
+                Auditoria Ciclo 2026
               </span>
+
             </div>
 
             <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-              Análise — Programa Nacional de Transparência Pública 2026
+              Programa Nacional de Transparência Pública Osasco 2026
             </h1>
+
             <p className="max-w-2xl text-sm leading-relaxed text-blue-200/80">
-              Comparativo entre os critérios da Cartilha PNTP 2026 (Atricon/TCE-SP) e as informações
-              disponíveis em{' '}
+              Comparativo entre os critérios da Cartilha PNTP e ITGP e{' '}
               <a
                 href={PORTAL_URL}
                 target="_blank"
@@ -43,6 +44,7 @@ export default function Header() {
                 {PORTAL_URL}
               </a>
             </p>
+
           </div>
 
           <div className="hidden shrink-0 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-right backdrop-blur-sm sm:block">
