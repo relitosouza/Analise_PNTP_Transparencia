@@ -1,49 +1,60 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import type { RelatorioCriterio } from '@/data/relatorio';
-import { pesoLabel, pesoColorClasses } from '@/lib/utils';
-import type { Peso } from '@/data/criterios';
+import { itgpPerguntas, type ITGPResposta, type ITGPStatus } from '@/data/itgp';
 
 interface Props {
-  data: RelatorioCriterio[];
-  onStatusUpdate: (id: string, status: string, url: string, obs: string) => void;
+  respostas: Record<string, ITGPResposta>;
+  onUpdate: (id: string, update: Partial<ITGPResposta>) => void;
 }
 
-export default function CriteriaTable({ data, onStatusUpdate }: Props) {
+const SCORE_LABELS: Record<string, string> = {
+  '1': 'Sim',
+  '0.75': '3/4',
+  '0.66': '2/3',
+  '0.5': 'Parcial',
+  '0.33': '1/3',
+  '0.25': '1/4',
+  '0': 'Não',
+  'nao_avaliado': '—'
+};
+
+export default function ITGPCriteriaTable({ respostas, onUpdate }: Props) {
   const [filterDim, setFilterDim] = useState('');
-  const [filterStatus, setFilterStatus] = useState('');
-  const [filterPeso, setFilterPeso] = useState('');
+  const [filterScore, setFilterScore] = useState('');
   const [search, setSearch] = useState('');
   const [editId, setEditId] = useState<string | null>(null);
-  const [editStatus, setEditStatus] = useState('ok');
+  const [editStatus, setEditStatus] = useState<ITGPStatus>('nao_avaliado');
   const [editUrl, setEditUrl] = useState('');
   const [editObs, setEditObs] = useState('');
 
-  const dims = useMemo(() => [...new Set(data.map((d) => d.dimensao))], [data]);
+  const dims = useMemo(() => [...new Set(itgpPerguntas.map((p) => p.dimensao))], []);
 
   const filtered = useMemo(() => {
-    return data.filter((item) => {
-      if (filterDim && item.dimensao !== filterDim) return false;
-      if (filterStatus && item.status !== filterStatus) return false;
-      if (filterPeso && item.peso !== filterPeso) return false;
-      if (search && !item.texto.toLowerCase().includes(search.toLowerCase()) && !item.id.includes(search)) return false;
+    return itgpPerguntas.filter((p) => {
+      const resp = respostas[p.id];
+      const status = resp?.status ?? 'nao_avaliado';
+
+      if (filterDim && p.dimensao !== filterDim) return false;
+      if (filterScore && status.toString() !== filterScore) return false;
+      if (search && !p.texto.toLowerCase().includes(search.toLowerCase()) && !p.id.toLowerCase().includes(search.toLowerCase())) return false;
       return true;
     });
-  }, [data, filterDim, filterStatus, filterPeso, search]);
+  }, [respostas, filterDim, filterScore, search]);
 
   const handleSave = () => {
     if (editId) {
-      onStatusUpdate(editId, editStatus, editUrl, editObs);
+      onUpdate(editId, { status: editStatus, url: editUrl, observacao: editObs });
       setEditId(null);
     }
   };
 
-  const openEdit = (item: RelatorioCriterio) => {
-    setEditId(item.id);
-    setEditStatus(item.status);
-    setEditUrl(item.url);
-    setEditObs(item.observacao);
+  const openEdit = (p: typeof itgpPerguntas[0]) => {
+    const r = respostas[p.id];
+    setEditId(p.id);
+    setEditStatus(r?.status ?? 'nao_avaliado');
+    setEditUrl(r?.url ?? '');
+    setEditObs(r?.observacao ?? '');
   };
 
   let lastDim = '';
@@ -53,7 +64,7 @@ export default function CriteriaTable({ data, onStatusUpdate }: Props) {
       <div className="border-b border-slate-100 px-6 py-4">
         <h2 className="flex items-center gap-2 text-base font-bold text-on-surface">
           <span className="material-symbols-outlined text-secondary">list_alt</span>
-          Detalhamento Completo dos Critérios
+          Detalhamento Completo dos Critérios ITGP
         </h2>
       </div>
 
@@ -63,7 +74,7 @@ export default function CriteriaTable({ data, onStatusUpdate }: Props) {
           <span className="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
           <input
             type="text"
-            placeholder="Buscar critério..."
+            placeholder="Buscar critério ITGP..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="rounded-lg border border-slate-200 bg-white pl-9 pr-3 py-1.5 text-sm text-on-surface placeholder-slate-400 shadow-sm outline-none transition-colors focus:ring-2 focus:ring-secondary focus:border-transparent"
@@ -80,25 +91,17 @@ export default function CriteriaTable({ data, onStatusUpdate }: Props) {
           ))}
         </select>
         <select
-          value={filterStatus}
-          onChange={(e) => setFilterStatus(e.target.value)}
+          value={filterScore}
+          onChange={(e) => setFilterScore(e.target.value)}
           className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm text-on-surface shadow-sm outline-none focus:ring-2 focus:ring-secondary"
         >
           <option value="">Todos Status</option>
-          <option value="ok">Encontrados</option>
-          <option value="ausente">Ausentes</option>
+          <option value="1">✓ Sim (1.0)</option>
+          <option value="0.5">½ Parcial (0.5)</option>
+          <option value="0">✕ Não (0.0)</option>
+          <option value="nao_avaliado">Não avaliado</option>
         </select>
-        <select
-          value={filterPeso}
-          onChange={(e) => setFilterPeso(e.target.value)}
-          className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm text-on-surface shadow-sm outline-none focus:ring-2 focus:ring-secondary"
-        >
-          <option value="">Todos Pesos</option>
-          <option value="essencial">Essencial</option>
-          <option value="obrigatorio">Obrigatório</option>
-          <option value="recomendado">Recomendado</option>
-        </select>
-        <span className="ml-auto text-xs text-slate-400">{filtered.length} de {data.length}</span>
+        <span className="ml-auto text-xs text-slate-400">{filtered.length} de {itgpPerguntas.length}</span>
       </div>
 
       {/* Table */}
@@ -106,31 +109,33 @@ export default function CriteriaTable({ data, onStatusUpdate }: Props) {
         <table className="w-full text-sm">
           <thead>
             <tr className="border-b border-slate-100 bg-primary text-white">
-              <th className="px-4 py-3 text-center text-xs font-bold uppercase tracking-wider">Status</th>
+              <th className="px-4 py-3 text-center text-xs font-bold uppercase tracking-wider">Score</th>
               <th className="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider">ID</th>
               <th className="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider">Critério</th>
               <th className="px-4 py-3 text-center text-xs font-bold uppercase tracking-wider">Peso</th>
               <th className="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider">Observação</th>
-              <th className="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider">URL Portal</th>
+              <th className="px-4 py-3 text-left text-xs font-bold uppercase tracking-wider">Evidência</th>
               <th className="px-4 py-3 text-center text-xs font-bold uppercase tracking-wider">Ação</th>
             </tr>
           </thead>
           <tbody>
-            {filtered.map((item) => {
-              const showDimSep = item.dimensao !== lastDim;
-              if (showDimSep) lastDim = item.dimensao;
+            {filtered.map((p) => {
+              const showDimSep = p.dimensao !== lastDim;
+              if (showDimSep) lastDim = p.dimensao;
 
-              const isOk = item.status === 'ok';
-              const pesoC = pesoColorClasses(item.peso);
+              const r = respostas[p.id];
+              const score = r?.status ?? 'nao_avaliado';
+              const label = SCORE_LABELS[score.toString()] || '—';
 
               return (
-                <TableRow
-                  key={item.id}
-                  item={item}
-                  isOk={isOk}
-                  pesoC={pesoC}
+                <ITGPTableRow
+                  key={p.id}
+                  pergunta={p}
+                  res={r}
+                  score={score}
+                  label={label}
                   showDimSep={showDimSep}
-                  onEdit={() => openEdit(item)}
+                  onEdit={() => openEdit(p)}
                 />
               );
             })}
@@ -142,21 +147,25 @@ export default function CriteriaTable({ data, onStatusUpdate }: Props) {
       {editId && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm animate-fadeIn" onClick={() => setEditId(null)}>
           <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl animate-slideUp" onClick={(e) => e.stopPropagation()}>
-            <h3 className="mb-4 text-lg font-bold text-primary">Editar Critério {editId}</h3>
+            <h3 className="mb-4 text-lg font-bold text-primary">Editar Critério ITGP {editId}</h3>
             <div className="space-y-4">
               <div>
-                <label className="mb-1 block text-xs font-semibold text-slate-600">Status</label>
+                <label className="mb-1 block text-xs font-semibold text-slate-600">Status / Pontuação</label>
                 <select
-                  value={editStatus}
-                  onChange={(e) => setEditStatus(e.target.value)}
+                  value={editStatus.toString()}
+                  onChange={(e) => setEditStatus(e.target.value === 'nao_avaliado' ? 'nao_avaliado' : parseFloat(e.target.value))}
                   className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm text-on-surface outline-none focus:ring-2 focus:ring-secondary"
                 >
-                  <option value="ok">✓ Encontrado</option>
-                  <option value="ausente">✕ Ausente</option>
+                  <option value="nao_avaliado">Não avaliado</option>
+                  {itgpPerguntas.find(p => p.id === editId)?.opcoes.map((opt) => (
+                    <option key={opt.valor} value={opt.valor.toString()}>
+                      {opt.label} ({opt.valor})
+                    </option>
+                  ))}
                 </select>
               </div>
               <div>
-                <label className="mb-1 block text-xs font-semibold text-slate-600">URL</label>
+                <label className="mb-1 block text-xs font-semibold text-slate-600">URL da Evidência</label>
                 <input
                   type="text"
                   value={editUrl}
@@ -166,7 +175,7 @@ export default function CriteriaTable({ data, onStatusUpdate }: Props) {
                 />
               </div>
               <div>
-                <label className="mb-1 block text-xs font-semibold text-slate-600">Observação</label>
+                <label className="mb-1 block text-xs font-semibold text-slate-600">Observação Técnica</label>
                 <textarea
                   value={editObs}
                   onChange={(e) => setEditObs(e.target.value)}
@@ -185,7 +194,7 @@ export default function CriteriaTable({ data, onStatusUpdate }: Props) {
                   onClick={handleSave}
                   className="rounded-lg bg-secondary px-4 py-2 text-sm font-medium text-white transition-colors hover:opacity-90"
                 >
-                  Salvar
+                  Salvar Alterações
                 </button>
               </div>
             </div>
@@ -196,65 +205,72 @@ export default function CriteriaTable({ data, onStatusUpdate }: Props) {
   );
 }
 
-function TableRow({
-  item,
-  isOk,
-  pesoC,
+function ITGPTableRow({
+  pergunta,
+  res,
+  score,
+  label,
   showDimSep,
   onEdit,
 }: {
-  item: RelatorioCriterio;
-  isOk: boolean;
-  pesoC: ReturnType<typeof pesoColorClasses>;
+  pergunta: typeof itgpPerguntas[0];
+  res: ITGPResposta | undefined;
+  score: ITGPStatus;
+  label: string;
   showDimSep: boolean;
   onEdit: () => void;
 }) {
+  const isOk = score === 1;
+  const isPartial = typeof score === 'number' && score > 0 && score < 1;
+  const isFail = score === 0;
+
   return (
     <>
       {showDimSep && (
         <tr>
           <td colSpan={7} className="bg-primary-container px-4 py-2 text-xs font-bold tracking-wide text-white">
-            {item.dimensao}
+            {pergunta.dimensao}
           </td>
         </tr>
       )}
-      <tr className={`border-b transition-colors group ${isOk ? 'border-l-4 border-l-emerald-400 bg-emerald-50/30 hover:bg-emerald-50/60' : 'border-l-4 border-l-red-300 bg-red-50/30 hover:bg-red-50/60'}`}>
+      <tr className={`border-b transition-colors group ${isOk ? 'bg-emerald-50/20 hover:bg-emerald-50/40' : isFail ? 'bg-red-50/20 hover:bg-red-50/40' : isPartial ? 'bg-amber-50/20 hover:bg-amber-50/40' : 'hover:bg-slate-50'}`}>
         <td className="px-4 py-3 text-center">
-          {isOk ? (
-            <span className="material-symbols-outlined text-emerald-500 text-lg">check_circle</span>
-          ) : (
-            <span className="material-symbols-outlined text-error text-lg">cancel</span>
-          )}
+          <div className={`mx-auto w-10 h-10 rounded-lg flex items-center justify-center text-[10px] font-black border ${isOk ? 'bg-emerald-100 text-emerald-700 border-emerald-200' : isFail ? 'bg-red-100 text-red-700 border-red-200' : isPartial ? 'bg-amber-100 text-amber-700 border-amber-200' : 'bg-slate-100 text-slate-400 border-slate-200'}`}>
+            {label}
+          </div>
         </td>
-        <td className="px-4 py-3 font-bold text-primary">{item.id}</td>
-        <td className="max-w-xs px-4 py-3 text-on-surface">{item.texto}</td>
+        <td className="px-4 py-3 font-bold text-primary font-mono text-xs">{pergunta.id}</td>
+        <td className="max-w-xs px-4 py-3">
+           <p className="text-on-surface font-bold text-xs">{pergunta.texto}</p>
+           <p className="text-[10px] text-slate-400 mt-1 italic">{pergunta.guia}</p>
+        </td>
         <td className="px-4 py-3 text-center">
-          <span className={`inline-block rounded-full border px-2.5 py-0.5 text-[10px] font-bold ${pesoC.bg} ${pesoC.text} ${pesoC.border}`}>
-            {pesoLabel(item.peso)}
+          <span className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-black ${pergunta.peso === 2 ? 'bg-primary-container text-white' : 'bg-slate-200 text-slate-600'}`}>
+            P{pergunta.peso}
           </span>
         </td>
-        <td className="max-w-[200px] px-4 py-3 text-xs text-slate-500 italic">{item.observacao}</td>
+        <td className="max-w-[200px] px-4 py-3 text-[11px] text-slate-500">{res?.observacao || '—'}</td>
         <td className="max-w-[180px] px-4 py-3">
-          {item.url ? (
+          {res?.url ? (
             <a
-              href={item.url}
+              href={res.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="break-all font-mono text-[11px] text-secondary hover:underline flex items-center gap-1"
+              className="font-mono text-[10px] text-secondary hover:underline flex items-center gap-1"
             >
               <span className="material-symbols-outlined text-xs">link</span>
-              Link Portal
+              EVIDÊNCIA
             </a>
           ) : (
-            <span className="text-[11px] italic text-slate-300">ausente</span>
+            <span className="text-[10px] italic text-slate-300">não informada</span>
           )}
         </td>
         <td className="px-4 py-3 text-center">
           <button
             onClick={onEdit}
-            className="rounded-lg border border-slate-200 px-3 py-1.5 text-[11px] font-bold text-slate-500 transition-all hover:border-secondary hover:bg-secondary/5 hover:text-secondary flex items-center gap-1 mx-auto"
+            className="rounded-lg border border-slate-200 px-3 py-1.5 text-[10px] font-black text-slate-500 transition-all hover:border-secondary hover:bg-secondary/5 hover:text-secondary flex items-center gap-1 mx-auto"
           >
-            <span className="material-symbols-outlined text-xs">edit</span>
+            <span className="material-symbols-outlined text-xs">edit_note</span>
             EDITAR
           </button>
         </td>

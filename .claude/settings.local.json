@@ -18,7 +18,9 @@
       "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python mapear_urls_portal.py 2>&1)",
       "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python mapear_urls_portal.py)",
       "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python coletar_hrefs.py 2>&1)",
-      "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python gerar_relatorio_final.py 2>&1)"
+      "PowerShell(Set-Location \"C:\\\\projetos\\\\PNTP\"; $env:PYTHONIOENCODING=\"utf-8\"; python gerar_relatorio_final.py 2>&1)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)"
     ]
   }
 }
