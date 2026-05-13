@@ -186,7 +186,11 @@ function PerguntaItem({
         <div className="flex-1">
           <h4 className="font-bold text-lg text-on-surface leading-tight tracking-tight">
             {pergunta.texto}
-            <span className={`ml-3 inline-block rounded-md px-2 py-0.5 text-[10px] font-black tracking-widest ${pergunta.peso === 2 ? 'bg-primary text-white' : 'bg-slate-100 text-slate-500'}`}>
+            <span className={`ml-3 inline-block rounded-md px-2 py-0.5 text-[10px] font-black tracking-widest ${
+              pergunta.peso >= 3 ? 'bg-secondary text-white' : 
+              pergunta.peso === 2 ? 'bg-primary text-white' : 
+              'bg-slate-100 text-slate-500'
+            }`}>
               PESO {pergunta.peso}
             </span>
           </h4>

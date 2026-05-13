@@ -10,8 +10,8 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Monitoramento da Transparência — PNTP / ITGP',
-  description: 'Visão consolidada das pontuações gerais PNTP e ITGP em tempo real.',
+  title: 'Monitoramento da Transparência — PNTP / ITGP Osasco 2026',
+  description: 'Visão consolidada das pontuações gerais PNTP e ITGP em tempo real para o município de Osasco.',
   keywords: ['PNTP', 'ITGP', '2026', 'transparência', 'Osasco', 'TCE-SP', 'Atricon', 'auditoria'],
 };
 

@@ -1,14 +1,22 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import ScoreCards from '@/components/ScoreCards';
 import ChartsTab from '@/components/ChartsTab';
+import EssentialAlerts from '@/components/EssentialAlerts';
+import DimensionSummary from '@/components/DimensionSummary';
+import CriteriaTable from '@/components/CriteriaTable';
 import { buildRelatorio } from '@/data/relatorio';
+import { buildRelatorioITGP } from '@/data/itgp_relatorio';
+import { PORTAL_URL } from '@/lib/utils';
+
 import type { RelatorioCriterio } from '@/data/relatorio';
 
 export default function HomePage() {
-  const [data, setData] = useState<RelatorioCriterio[]>([]);
+  const [pntpData, setPntpData] = useState<RelatorioCriterio[]>([]);
+  const [itgpData, setItgpData] = useState<RelatorioCriterio[]>([]);
   const [loading, setLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState<'pntp' | 'itgp' | 'charts'>('pntp');
 
   useEffect(() => {
     async function loadAllData() {
@@ -31,10 +39,26 @@ export default function HomePage() {
           return item;
         });
 
-        setData(updated);
+        const itgpReport = buildRelatorioITGP();
+        const itgpUpdated = itgpReport.map((item) => {
+          const manual = manualUpdates[item.id];
+          if (manual) {
+            return {
+              ...item,
+              status: manual.status === 'ok' ? ('ok' as const) : ('ausente' as const),
+              observacao: manual.obs || item.observacao,
+              url: manual.url || item.url,
+            };
+          }
+          return item;
+        });
+        
+        setItgpData(itgpUpdated);
+        setPntpData(updated);
       } catch (err) {
         console.error('Error loading data:', err);
-        setData(buildRelatorio());
+        setPntpData(buildRelatorio());
+        setItgpData(buildRelatorioITGP());
       } finally {
         setLoading(false);
       }
@@ -42,6 +66,49 @@ export default function HomePage() {
 
     loadAllData();
   }, []);
+
+  const handleStatusUpdate = useCallback(
+    async (id: string, status: string, url: string, obs: string) => {
+      try {
+        await fetch('/api/update', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id, status, url, obs }),
+        });
+
+        if (activeTab === 'pntp') {
+          setPntpData((prev) =>
+            prev.map((item) =>
+              item.id === id
+                ? {
+                    ...item,
+                    status: status === 'ok' ? ('ok' as const) : ('ausente' as const),
+                    observacao: obs || 'Status atualizado manualmente.',
+                    url: url || item.url,
+                  }
+                : item
+            )
+          );
+        } else if (activeTab === 'itgp') {
+          setItgpData((prev) =>
+            prev.map((item) =>
+              item.id === id
+                ? {
+                    ...item,
+                    status: status === 'ok' ? ('ok' as const) : ('ausente' as const),
+                    observacao: obs || 'Status atualizado manualmente.',
+                    url: url || item.url,
+                  }
+                : item
+            )
+          );
+        }
+      } catch (err) {
+        console.error('Failed to update status:', err);
+      }
+    },
+    [activeTab]
+  );
 
   if (loading) {
     return (
@@ -54,6 +121,8 @@ export default function HomePage() {
     );
   }
 
+  const currentData = activeTab === 'itgp' ? itgpData : pntpData;
+
   return (
     <div className="space-y-8 animate-fadeIn">
       <header>
@@ -61,32 +130,108 @@ export default function HomePage() {
         <p className="text-slate-500">Visão consolidada das pontuações gerais PNTP e ITGP em tempo real.</p>
       </header>
 
-      {/* KPI Cards */}
-      <ScoreCards data={data} />
+      <main className="mx-auto max-w-7xl space-y-6">
+        {/* KPI Cards */}
+        <ScoreCards data={currentData} />
 
-      {/* Charts & Insights as main dashboard content */}
-      <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-        <h3 className="text-lg font-bold text-primary mb-6 flex items-center gap-2">
-          <span className="material-symbols-outlined text-secondary">analytics</span>
-          Análise de Evolução e Dimensões
-        </h3>
-        <ChartsTab data={data} />
-      </div>
+        {/* Essential Alerts */}
+        <EssentialAlerts data={currentData} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-surface-container p-6 rounded-xl">
-          <h4 className="text-sm font-bold text-primary mb-2">Dica de Auditoria</h4>
-          <p className="text-xs text-slate-600 leading-relaxed">
-            A tendência atual sugere um foco nos critérios essenciais de Saúde e Educação para atingir o nível Ouro no PNTP 2026.
-          </p>
+        {/* Tab Selection */}
+        <div className="flex space-x-1 rounded-xl bg-slate-200/50 p-1">
+          <button
+            onClick={() => setActiveTab('pntp')}
+            className={`flex flex-1 items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-bold transition-all duration-200 ${
+              activeTab === 'pntp'
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-slate-500 hover:bg-white/50 hover:text-slate-700'
+            }`}
+          >
+            <span className="material-symbols-outlined text-sm">assignment</span>
+            Painel PNTP
+          </button>
+          <button
+            onClick={() => setActiveTab('itgp')}
+            className={`flex flex-1 items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-bold transition-all duration-200 ${
+              activeTab === 'itgp'
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-slate-500 hover:bg-white/50 hover:text-slate-700'
+            }`}
+          >
+            <span className="material-symbols-outlined text-sm">security</span>
+            Painel ITGP
+          </button>
+          <button
+            onClick={() => setActiveTab('charts')}
+            className={`flex flex-1 items-center justify-center gap-2 rounded-lg py-2.5 text-sm font-bold transition-all duration-200 ${
+              activeTab === 'charts'
+                ? 'bg-white text-blue-600 shadow-sm'
+                : 'text-slate-500 hover:bg-white/50 hover:text-slate-700'
+            }`}
+          >
+            <span className="material-symbols-outlined text-sm">analytics</span>
+            Gráficos & Insights
+          </button>
         </div>
-        <div className="bg-secondary/5 p-6 rounded-xl border border-secondary/10">
-          <h4 className="text-sm font-bold text-secondary mb-2">Status do Portal</h4>
-          <p className="text-xs text-slate-600 leading-relaxed">
-            O portal da transparência de Osasco encontra-se atualmente com 100 critérios mapeados, sendo 42 marcados como não-conformes.
-          </p>
+
+        {activeTab === 'pntp' || activeTab === 'itgp' ? (
+          <>
+            <DimensionSummary data={currentData} />
+            <CriteriaTable 
+              data={currentData} 
+              onStatusUpdate={handleStatusUpdate} 
+            />
+          </>
+        ) : (
+          <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <ChartsTab pntpData={pntpData} itgpData={itgpData} />
+          </div>
+        )}
+
+        {/* Methodology */}
+        <div className="overflow-hidden rounded-2xl border border-slate-200/60 bg-white p-6 shadow-sm">
+          <h2 className="mb-4 flex items-center gap-2 text-base font-bold text-slate-800">
+             <span className="material-symbols-outlined text-blue-500">menu_book</span>
+            Metodologia
+          </h2>
+          <div className="space-y-3 text-sm leading-relaxed text-slate-600">
+            <p>
+              Esta análise foi realizada de forma semi-automatizada. O script original
+              utilizou <strong>Playwright</strong> para renderização do portal JavaScript (SPA)
+              e verificou a presença de termos-chave para cada critério do Programa Nacional de Transparência Pública 2026.
+            </p>
+            <p>
+              A versão atual consolida os dados previamente coletados e permite atualizações
+              manuais pelo auditor via interface web, garantindo rastreabilidade completa.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-4 text-xs">
+              <div className="rounded-lg bg-slate-50 px-3 py-2">
+                <span className="font-semibold text-slate-700">Portal:</span>{' '}
+                <a href={PORTAL_URL} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  {PORTAL_URL}
+                </a>
+              </div>
+              <div className="rounded-lg bg-slate-50 px-3 py-2">
+                <span className="font-semibold text-slate-700">Fonte:</span>{' '}
+                <a
+                  href="https://radardatransparencia.atricon.org.br/pdf/Cartilha-PNTP-2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Cartilha PNTP 2026 — Atricon
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </main>
+
+      <footer className="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-400">
+        <p>
+          Programa Nacional de Transparência Pública Osasco 2026 — Portal da Transparência · Gerado com Next.js
+        </p>
+      </footer>
     </div>
   );
 }

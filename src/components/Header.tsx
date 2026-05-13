@@ -1,29 +1,67 @@
 'use client';
 
-export default function Header() {
-  return (
-    <header className="flex justify-between items-center h-16 px-6 w-full bg-white dark:bg-slate-900 sticky top-0 z-40 border-b border-slate-200 dark:border-slate-800 shadow-sm font-['Public_Sans'] antialiased">
-      <div className="flex items-center gap-8">
-        <span className="text-lg font-black tracking-tight text-[#003366] dark:text-blue-200 uppercase">Monitoramento da Transparência</span>
-        <div className="relative w-80">
-          <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
-          <input 
-            type="text"
-            className="w-full pl-10 pr-4 py-1.5 text-sm bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent outline-none transition-all" 
-            placeholder="Buscar entidades ou processos..." 
-          />
-        </div>
-      </div>
+import { PORTAL_URL, formatDate } from '@/lib/utils';
+import { useMemo } from 'react';
 
-      <div className="flex items-center gap-4">
-        <button className="p-2 text-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer rounded-full relative">
-          <span className="material-symbols-outlined">notifications</span>
-          <span className="absolute top-2.5 right-2.5 w-2 h-2 bg-error rounded-full border-2 border-white"></span>
-        </button>
-        <button className="p-2 text-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer rounded-full">
-          <span className="material-symbols-outlined">help</span>
-        </button>
-        <div className="h-8 w-px bg-slate-200 dark:bg-slate-700 mx-2"></div>
+export default function Header() {
+  const now = useMemo(() => formatDate(new Date()), []);
+
+  return (
+    <header className="relative overflow-hidden bg-gradient-to-br from-[#0a1628] via-[#0d2b4e] to-[#1a5276]">
+      {/* Animated gradient overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(59,130,246,0.15),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(16,185,129,0.1),transparent_50%)]" />
+
+      <div className="relative mx-auto max-w-7xl px-6 py-10">
+        <div className="flex items-start justify-between gap-6">
+          <div className="space-y-3">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 backdrop-blur-sm">
+                <svg className="h-6 w-6 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span className="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold tracking-wide text-emerald-300 ring-1 ring-emerald-500/30">
+                Auditoria Ciclo 2026
+              </span>
+            </div>
+
+            <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+              Programa Nacional de Transparência Pública Osasco 2026
+            </h1>
+
+            <p className="max-w-2xl text-sm leading-relaxed text-blue-200/80">
+              Comparativo entre os critérios da Cartilha PNTP e ITGP e{' '}
+              <a
+                href={PORTAL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-blue-300 underline decoration-blue-400/40 underline-offset-2 transition-colors hover:text-white"
+              >
+                {PORTAL_URL}
+              </a>
+            </p>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <div className="hidden shrink-0 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-right backdrop-blur-sm sm:block">
+              <p className="text-[11px] uppercase tracking-widest text-blue-300/60">Gerado em</p>
+              <p className="mt-0.5 text-sm font-semibold text-white">{now}</p>
+              <p className="mt-2 text-[11px] uppercase tracking-widest text-blue-300/60">Município</p>
+              <p className="mt-0.5 text-sm font-semibold text-white">Osasco — SP</p>
+            </div>
+            
+            <div className="flex items-center gap-2">
+              <button className="p-2 text-blue-200 hover:bg-white/10 transition-colors cursor-pointer rounded-full relative">
+                <span className="material-symbols-outlined">notifications</span>
+                <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border border-[#0d2b4e]"></span>
+              </button>
+              <button className="p-2 text-blue-200 hover:bg-white/10 transition-colors cursor-pointer rounded-full">
+                <span className="material-symbols-outlined">help</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );

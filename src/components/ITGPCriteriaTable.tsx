@@ -245,7 +245,11 @@ function ITGPTableRow({
            <p className="text-[10px] text-slate-400 mt-1 italic">{pergunta.guia}</p>
         </td>
         <td className="px-4 py-3 text-center">
-          <span className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-black ${pergunta.peso === 2 ? 'bg-primary-container text-white' : 'bg-slate-200 text-slate-600'}`}>
+          <span className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-black ${
+            pergunta.peso >= 3 ? 'bg-secondary text-white shadow-sm' : 
+            pergunta.peso === 2 ? 'bg-primary-container text-white' : 
+            'bg-slate-200 text-slate-600'
+          }`}>
             P{pergunta.peso}
           </span>
         </td>
