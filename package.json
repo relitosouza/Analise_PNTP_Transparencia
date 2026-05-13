@@ -15,7 +15,10 @@
     "@prisma/config": "^7.8.0",
     "apexcharts": "^5.10.6",
     "dotenv": "^17.4.2",
+<<<<<<< HEAD
     "framer-motion": "^12.38.0",
+=======
+>>>>>>> 212df8707af6f97e13a5cdd17d9a045e38a2bdde
     "next": "16.2.4",
     "pg": "^8.20.0",
     "react": "19.2.4",

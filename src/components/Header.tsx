@@ -1,10 +1,20 @@
 'use client';
 
+<<<<<<< HEAD
 import { PORTAL_URL, formatDate } from '@/lib/utils';
 import { useMemo } from 'react';
 
 export default function Header() {
   const now = useMemo(() => formatDate(new Date()), []);
+=======
+import { PORTAL_URL } from '@/lib/utils';
+
+export default function Header() {
+  const now = new Date().toLocaleDateString('pt-BR', {
+    day: '2-digit', month: '2-digit', year: 'numeric',
+    hour: '2-digit', minute: '2-digit',
+  });
+>>>>>>> 212df8707af6f97e13a5cdd17d9a045e38a2bdde
 
   return (
     <header className="relative overflow-hidden bg-gradient-to-br from-[#0a1628] via-[#0d2b4e] to-[#1a5276]">
@@ -24,6 +34,10 @@ export default function Header() {
               <span className="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-semibold tracking-wide text-emerald-300 ring-1 ring-emerald-500/30">
                 Auditoria Ciclo 2026
               </span>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 212df8707af6f97e13a5cdd17d9a045e38a2bdde
             </div>
 
             <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
@@ -41,6 +55,7 @@ export default function Header() {
                 {PORTAL_URL}
               </a>
             </p>
+<<<<<<< HEAD
           </div>
 
           <div className="flex items-center gap-4">
@@ -63,6 +78,22 @@ export default function Header() {
           </div>
         </div>
       </div>
+=======
+
+          </div>
+
+          <div className="hidden shrink-0 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-right backdrop-blur-sm sm:block">
+            <p className="text-[11px] uppercase tracking-widest text-blue-300/60">Gerado em</p>
+            <p className="mt-0.5 text-sm font-semibold text-white">{now}</p>
+            <p className="mt-2 text-[11px] uppercase tracking-widest text-blue-300/60">Município</p>
+            <p className="mt-0.5 text-sm font-semibold text-white">Osasco — SP</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom gradient line */}
+      <div className="h-1 bg-gradient-to-r from-blue-500 via-emerald-400 to-blue-500" />
+>>>>>>> 212df8707af6f97e13a5cdd17d9a045e38a2bdde
     </header>
   );
 }

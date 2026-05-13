@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+<<<<<<< HEAD
 import { Public_Sans } from 'next/font/google';
 import ClientLayout from '@/components/ClientLayout';
 import './globals.css';
@@ -12,6 +13,19 @@ const publicSans = Public_Sans({
 export const metadata: Metadata = {
   title: 'Monitoramento da Transparência — PNTP / ITGP Osasco 2026',
   description: 'Visão consolidada das pontuações gerais PNTP e ITGP em tempo real para o município de Osasco.',
+=======
+import { Inter } from 'next/font/google';
+import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+
+export const metadata: Metadata = {
+  title: 'Programa Nacional de Transparência Pública Osasco 2026',
+  description: 'Comparativo entre os critérios da Cartilha PNTP e ITGP para o Portal da Transparência de Osasco.',
+>>>>>>> 212df8707af6f97e13a5cdd17d9a045e38a2bdde
   keywords: ['PNTP', 'ITGP', '2026', 'transparência', 'Osasco', 'TCE-SP', 'Atricon', 'auditoria'],
 };
 
@@ -21,6 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+<<<<<<< HEAD
     <html lang="pt-BR" className={publicSans.variable}>
       <head>
         <link 
@@ -32,6 +47,11 @@ export default function RootLayout({
         <ClientLayout>
           {children}
         </ClientLayout>
+=======
+    <html lang="pt-BR" className={inter.variable}>
+      <body className="min-h-screen bg-slate-50 font-sans antialiased">
+        {children}
+>>>>>>> 212df8707af6f97e13a5cdd17d9a045e38a2bdde
       </body>
     </html>
   );
